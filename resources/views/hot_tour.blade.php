@@ -2,12 +2,12 @@
 
 @section('header')
     <div class="wrapper-slider">
-    <div class="slider_top">
-        <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
-    </div>
+        <div class="slider_top">
+            <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="">
+            <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="">
+            <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
+            <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
+        </div>
         <h1>Туристическое агенство <span>&laquo;5 сезонов&raquo;</span> в ЛНР</h1>
     </div>
     <div class="search_block_header">
@@ -41,11 +41,11 @@
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>
         </div>
-    <h2>ОАЭ</h2>
-    <div class="tv-hot-tours tv-moduleid-974374"></div>
-    <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        <h2>Горящие туры</h2>
+        <div class="tv-hot-tours tv-moduleid-974450"></div>
+        <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     </div>
-    @endsection
+@endsection
 
 @section('footer-script')
     <script>

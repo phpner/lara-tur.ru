@@ -1,22 +1,35 @@
+// Colors
+$blue: #06badd;
+$red: #cd171f;
+$yellow: #fdb813;
+$orangeHover: #d69a0f;
+$green: #348b35;
+
 .top_menu{
     background-image: linear-gradient(40deg, white 39%, rgba(251, 251, 251, 0.38) 100%);
     position: relative;
     z-index: 5;
     box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.49);
+    padding: 5px 0;
 }
 .top_menu .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
-.top_menu ul {
+.top_menu .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 0;
+
 }
 
-.top_menu ul li a{
+.top_menu .menu > li {
+    position: relative;
+}
+
+.top_menu .menu > li > a{
     color: $green;
     font-size: 22px;
     text-decoration: none;
@@ -24,8 +37,10 @@
     font-weight: 500;
     position: relative;
 }
-
-.top_menu ul li a:after{
+.top_menu .menu > li > a.active{
+    color: $orange;
+}
+.top_menu .menu > li > a:after{
     content: '';
     position: absolute;
     width: 80%;
@@ -38,8 +53,398 @@
    opacity: 0;
     transition: all .4s
 }
-.top_menu ul li a:hover:after{
+
+.top_menu .menu > li:hover > a{
+    color: $orange;
+}
+.top_menu .menu > li:hover > a:after{
     opacity: 1;
     bottom: -11px;
 
+}
+
+#dropDownHolder {
+    position: absolute;
+    left: 50%;
+    top: -4px;
+    transform: translateX(-50%);
+    background: #fbfbfb;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.DownHolder:hover #dropDownHolder, .DownHolder a:hover #dropDownHolder{
+    opacity: 1;
+    top: 44px;
+    visibility: visible;
+
+}
+
+.m-top-countries{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 20px;
+}
+.m-top-countries > li{
+    width: 100%;
+}
+.m-top-countries > li a{
+    text-decoration: none;
+    color: #5a5a5a;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid transparent;
+}
+
+.m-top-countries > li a:hover{
+    color: $green;
+    border-bottom: 1px solid;
+}
+.no-decoration i{
+   /* display: block;
+    margin: auto;*/
+}
+.all_city{
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    width: 250px;
+    margin: 8px;
+    background: $orange;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.41);
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.all_city:hover{
+    background: $orangeHover;
+}
+
+.jsItemLabel{
+    flex: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: $orange;
+    border-bottom: 1px solid;
+    margin-bottom: 6px;
+    padding: 10px 0;
+}
+
+.sprite {
+    background: url("../img/spritesheet.png") no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.sprite-albaniya {
+    background-position: -2px -2px;
+}
+
+.sprite-andorra {
+    background-position: -22px -2px;
+}
+
+.sprite-antigua {
+    background-position: -42px -2px;
+}
+
+.sprite-armeniya {
+    background-position: -62px -2px;
+}
+
+.sprite-avstraliya {
+    background-position: -82px -2px;
+}
+
+.sprite-avstriya {
+    background-position: -102px -2px;
+}
+
+.sprite-azerbajjdzhan {
+    background-position: -122px -2px;
+}
+
+.sprite-bagamskie-ostrova {
+    background-position: -142px -2px;
+}
+
+.sprite-barbados {
+    background-position: -2px -22px;
+}
+
+.sprite-belarus {
+    background-position: -22px -22px;
+}
+
+.sprite-bolgariya {
+    background-position: -42px -22px;
+}
+
+.sprite-braziliya {
+    background-position: -62px -22px;
+}
+
+.sprite-chekhiya {
+    background-position: -82px -22px;
+}
+
+.sprite-chernogoriya {
+    background-position: -102px -22px;
+}
+
+.sprite-daniya {
+    background-position: -122px -22px;
+}
+
+.sprite-dominikana {
+    background-position: -142px -22px;
+}
+
+.sprite-egipet {
+    background-position: -2px -42px;
+}
+
+.sprite-estoniya {
+    background-position: -22px -42px;
+}
+
+.sprite-fidzhi {
+    background-position: -42px -42px;
+}
+
+.sprite-filippiny {
+    background-position: -62px -42px;
+}
+
+.sprite-finlyandiya {
+    background-position: -82px -42px;
+}
+
+.sprite-franciya {
+    background-position: -102px -42px;
+}
+
+.sprite-germaniya {
+    background-position: -122px -42px;
+}
+
+.sprite-greciya {
+    background-position: -142px -42px;
+}
+
+.sprite-gruziya {
+    background-position: -2px -62px;
+}
+
+.sprite-indiya {
+    background-position: -22px -62px;
+}
+
+.sprite-indoneziya {
+    background-position: -42px -62px;
+}
+
+.sprite-iordaniya {
+    background-position: -62px -62px;
+}
+
+.sprite-irlandiya {
+    background-position: -82px -62px;
+}
+
+.sprite-ispaniya {
+    background-position: -102px -62px;
+}
+
+.sprite-italiya {
+    background-position: -122px -62px;
+}
+
+.sprite-izrail {
+    background-position: -142px -62px;
+}
+
+.sprite-kambodzha {
+    background-position: -2px -82px;
+}
+
+.sprite-katar {
+    background-position: -22px -82px;
+}
+
+.sprite-keniya {
+    background-position: -42px -82px;
+}
+
+.sprite-khorvatiya {
+    background-position: -62px -82px;
+}
+
+.sprite-kipr {
+    background-position: -82px -82px;
+}
+
+.sprite-kitajj {
+    background-position: -102px -82px;
+}
+
+.sprite-kosta-rika {
+    background-position: -122px -82px;
+}
+
+.sprite-kuba {
+    background-position: -142px -82px;
+}
+
+.sprite-laos {
+    background-position: -2px -102px;
+}
+
+.sprite-latviya {
+    background-position: -22px -102px;
+}
+
+.sprite-litva {
+    background-position: -42px -102px;
+}
+
+.sprite-makedoniya {
+    background-position: -62px -102px;
+}
+
+.sprite-malajjziya {
+    background-position: -82px -102px;
+}
+
+.sprite-maldivy {
+    background-position: -102px -102px;
+}
+
+.sprite-malta {
+    background-position: -122px -102px;
+}
+
+.sprite-marokko {
+    background-position: -142px -102px;
+}
+
+.sprite-mavrikijj {
+    background-position: -2px -122px;
+}
+
+.sprite-meksika {
+    background-position: -22px -122px;
+}
+
+.sprite-monako {
+    background-position: -42px -122px;
+}
+
+.sprite-niderlandy {
+    background-position: -62px -122px;
+}
+
+.sprite-oae {
+    background-position: -82px -122px;
+}
+
+.sprite-polsha {
+    background-position: -102px -122px;
+}
+
+.sprite-portugaliya {
+    background-position: -122px -122px;
+}
+
+.sprite-rossiya {
+    background-position: -142px -122px;
+}
+
+.sprite-sejjshelskie-ostrova {
+    background-position: -2px -142px;
+}
+
+.sprite-sent-lyusiya {
+    background-position: -22px -142px;
+}
+
+.sprite-serbiya {
+    background-position: -42px -142px;
+}
+
+.sprite-shri-lanka {
+    background-position: -62px -142px;
+}
+
+.sprite-shveciya {
+    background-position: -82px -142px;
+}
+
+.sprite-shvejjcariya {
+    background-position: -102px -142px;
+}
+
+.sprite-singapur {
+    background-position: -122px -142px;
+}
+
+.sprite-slovakiya {
+    background-position: -142px -142px;
+}
+
+.sprite-sloveniya {
+    background-position: -162px -2px;
+}
+
+.sprite-ssha {
+    background-position: -162px -22px;
+}
+
+.sprite-tailand {
+    background-position: -162px -42px;
+}
+
+.sprite-tanzaniya {
+    background-position: -162px -62px;
+}
+
+.sprite-tunis {
+    background-position: -162px -82px;
+}
+
+.sprite-turciya {
+    background-position: -162px -102px;
+}
+
+.sprite-ukraine {
+    background-position: -162px -122px;
+}
+
+.sprite-velikobritaniya {
+    background-position: -162px -142px;
+
+}
+
+.sprite-vengriya {
+    background-position: -2px -162px;
+}
+
+.sprite-vetnam {
+    background-position: -22px -162px;
+}
+
+.sprite-yamajjka {
+    background-position: -42px -162px;
+}
+
+.sprite-yaponiya {
+    background-position: -62px -162px;
 }
