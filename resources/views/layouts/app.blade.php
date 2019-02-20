@@ -79,10 +79,10 @@
                                     <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
                                 </li>
                                 <li data-cvalue="tanzaniya" class="dd-item">
-                                    <a class="no-decoration" href="#"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
+                                    <a class="<?php echo $page === "tanzaniya" ? 'active' : ''?>" href="{{route('tanzaniya')}}"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
                                 </li>
                                 <li data-cvalue="indoneziya" class="dd-item">
-                                    <a class="no-decoration" href="#"> <i class="sprite sprite-indoneziya"></i><span>Индонезия</span> </a>
+                                    <a class="<?php echo $page === "indoneziya" ? 'active' : ''?>" href="{{route('indoneziya')}}"> <i class="sprite sprite-indoneziya"></i><span>Индонезия</span> </a>
                                 </li>
                             </div>
                         </ul>

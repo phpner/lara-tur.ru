@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Турция</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Турцию</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -75,7 +75,7 @@
                 На шопинг лучше ехать зимой, когда в торговых центрах организовывают грандиозные распродажи.
             </div>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/tursia/turtsiya-3.jpg')}}" alt="">

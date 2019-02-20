@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в Мексику</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Мексику</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -73,7 +73,7 @@
             <h4><strong>Лучшее время для отдыха:</strong></h4>
             <p><span style="font-weight:400"><strong>С ноября по апрель</strong> в Мексике пик туристического сезона, температура воды в этот период до +28°С. <strong>Летом и ранней осенью</strong> туристов меньше из-за возможных осадков и ветреной погоды. Однако дожди в Мексике кратковременны и не помешают отдыху. В этот период можно приобрести горящий тур по выгодной цене.</span></p>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/meksika/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Фото Кафедральный собор в Мехико">

@@ -8,7 +8,7 @@
             <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
             <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
         </div>
-        <h1>Туристическое агенство <span>&laquo;5 сезонов&raquo;</span> в ЛНР</h1>
+        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span> в ЛНР</h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>

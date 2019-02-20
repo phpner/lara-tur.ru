@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры на Шри-Ланку</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры на Шри-Ланку</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -63,7 +63,7 @@
             <p><span style="font-weight:400">Оптимальным временем для путешествия на остров принято считать период с конца осени по середину весны. В это время </span>горящие туры в Шри-Ланку<b> </b><span style="font-weight:400">найти сложно. Летом идут дожди, поэтому спрос на туры снижается и появляются выгодные предложения. Однако осадки, как правило, выпадают ночью, и отпуску может помешать только повышенная влажность воздуха. Море летом нередко штормит. Если хотите поплавать без волн, выбирайте для отдыха бухты, защищенные от ветров.</span></p>
 
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/shri-lanka/3.jpg')}}" alt="">

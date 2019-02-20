@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в Индию</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Индию</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -71,7 +71,7 @@
             <h4>Лучше время для отдыха:</h4>
             <p><span style="font-weight:400">Высоким туристическим сезоном считается <strong>декабрь-февраль</strong>, в это время лучше всего отправится на западное и восточное побережье. С <strong>марта по июнь</strong> в Индию рекомендуется ехать любителям жаркого климата – температура воздуха в этот период +38°С…+41°С. Низкий сезон в Индии во время тропических дождей. Максимальное количество осадков выпадает <strong>с июня по сентябрь.</strong> Отдыхать летом не рекомендуется из-за высокой влажности и температуры воздуха до +40°С.</span></p>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/indiya/3.jpg')}}" alt="">

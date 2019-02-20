@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в Доминикану</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Доминикану</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -64,7 +64,7 @@
 
             </p>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/indiya/3.jpg')}}" alt="">

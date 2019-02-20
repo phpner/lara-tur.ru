@@ -33,50 +33,85 @@ Route::prefix('tour')->group(function () {
         return view('pages.egipet',["menu" => 3, 'page' => 'egipet']);
     })->name("egipet");
 
-    /*turkey*/
+    /**
+     * turkey
+     */
 
     Route::get('turkey', function(){
         return view('pages.turkey',["menu" => 3,  'page' => 'turkey']);
     })->name("turkey");
 
-    /*OAE*/
+    /**
+     * OAE
+     */
 
     Route::get('oae', function(){
         return view('pages.oae',["menu" => 3, 'page' => 'oae']);
     })->name("oae");
 
-    /*tailand*/
+    /**
+     * tailand
+     */
 
     Route::get('tailand', function(){
         return view('pages.tailand',["menu" => 3, 'page' => 'tailand']);
     })->name("tailand");
 
-    /*tailand*/
+    /**
+     * tailand
+     */
 
     Route::get('shri-lanka', function(){
         return view('pages.shri_lanka',["menu" => 3, 'page' => 'shri-lanka']);
     })->name("shri-lanka");
 
+    /**
+     * indiya
+     */
+
     Route::get('indiya', function(){
         return view('pages.indiya',["menu" => 3, 'page' => 'indiya']);
     })->name("indiya");
 
-    /*dominikana*/
+    /**
+     * dominikana
+     */
     Route::get('dominikana', function(){
         return view('pages.dominikana',["menu" => 3, 'page' => 'dominikana']);
     })->name("dominikana");
 
-    /*dominikana*/
+    /**
+     * dominikana
+     */
 
     Route::get('meksika', function(){
         return view('pages.meksika',["menu" => 3, 'page' => 'meksika']);
     })->name("meksika");
 
-    /*bolgariya*/
+    /**
+     * bolgariya
+     */
 
     Route::get('bolgariya', function(){
         return view('pages.bolgariya',["menu" => 3, 'page' => 'bolgariya']);
     })->name("bolgariya");
+
+    /**
+     * tanzaniya
+     */
+
+    Route::get('tanzaniya', function(){
+        return view('pages.tanzaniya',["menu" => 3, 'page' => 'tanzaniya']);
+    })->name("tanzaniya");
+
+
+    /**
+     * indoneziya
+     */
+
+    Route::get('indoneziya', function(){
+        return view('pages.indoneziya',["menu" => 3, 'page' => 'indoneziya']);
+    })->name("indoneziya");
 
 });
 /* END BLOCK TOUR*/

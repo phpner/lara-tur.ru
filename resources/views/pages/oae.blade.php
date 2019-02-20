@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в ОАЭ</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в ОАЭ</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -75,7 +75,7 @@
                 Наиболее комфортный отдых в Эмиратах – с октября по май. Летом из-за жаркой погоды стоимость туров снижается, поэтому есть высокий шанс приобрести горящие путевки в ОАЭ по выгодной цене.
             </p>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/oae/3.jpg')}}" alt="">

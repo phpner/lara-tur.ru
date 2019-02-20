@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в Болгарию</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Болгарию</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -65,7 +65,7 @@
             </ul>
             <h4><b>Лучшее время для отдыха:</b></h4><span style="font-weight:400">Больше всего отдыхающих в Болгарии <strong>с мая по октябрь</strong>, когда вода в море прогревается до +25°С…+27°С. В начале и конце сезона цены на туры значительно ниже, чем в летний период. На горных трассах можно покататься на лыжах или сноуборде <strong>с декабря по середину апреля</strong>. </span>Купить путевку в Болгарию<b> </b><span style="font-weight:400">для экскурсионного отдыха стоит <strong>на весну или осень</strong>, а для рекреационной поездки актуально любое время года.</span>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/bolgariya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Полезно знать о Болгарии">

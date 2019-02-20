@@ -2,8 +2,8 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper pt-118px">
-        <h2>Туры в Таиланд</h2>
+    <section class="wrapper pt-118px">
+        <h1>Туры в Таиланд</h1>
         <!-- block info -->
         <div class="info_img">
 
@@ -90,7 +90,7 @@
             </ul>
             <p>Низкий сезон начинается <strong>в конце весны и продолжается до середины осени</strong>. Подешевле всего приобрести тур в Таиланд именно на данный период. Тем более, что проливные дожди бывают в основном ночью, а днем обычно горячо и безоблачно.</p>
         </div>
-    </div>
+    </section>
 
     <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
         <img class="main_img" src="{{asset('public/img/tailand/3.jpg')}}" alt="">
