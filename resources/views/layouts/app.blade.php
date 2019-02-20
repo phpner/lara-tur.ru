@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,7 +21,10 @@
 @yield('menu')
 @if (!isset($menu))
     <?php  $menu = '';?>
-    @endif
+@endif
+@if (!isset($page))
+    <?php  $page = '';?>
+@endif
 <header>
     <nav class="top_menu">
         <div class="wrapper">
@@ -49,37 +52,37 @@
                             <div class="m-top-countries">
                                 <li class="dd-item divider jsItemLabel">Топовые</li>
                                 <li data-cvalue="egipet" class="dd-item">
-                                    <a class="no-decoration" href="{{route('egipet')}}"> <i class="sprite sprite-egipet"></i><span>Египет</span> </a>
+                                    <a class="<?php echo $page === "egipet" ? 'active' : ''?>" href="{{route('egipet')}}"> <i class="sprite sprite-egipet"></i><span>Египет</span> </a>
                                 </li>
                                 <li data-cvalue="turciya" class="dd-item">
-                                    <a class="no-decoration" href="{{route('turkey')}}"> <i class="sprite sprite-turciya"></i><span>Турция</span> </a>
+                                    <a class="<?php echo $page === "turkey" ? 'active' : ''?>" href="{{route('turkey')}}"> <i class="sprite sprite-turciya"></i><span>Турция</span> </a>
                                 </li>
                                 <li data-cvalue="oae" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/oae"> <i class="sprite sprite-oae"></i><span>ОАЭ</span> </a>
+                                    <a class="<?php echo $page === "oae" ? 'active' : ''?>" href="{{route('oae')}}"> <i class="sprite sprite-oae"></i><span>ОАЭ</span> </a>
                                 </li>
                                 <li data-cvalue="tailand" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/tailand"> <i class="sprite sprite-tailand"></i><span>Таиланд (Тайланд)</span> </a>
+                                    <a class="<?php echo $page === "tailand" ? 'active' : ''?>" href="{{route('tailand')}}"> <i class="sprite sprite-tailand"></i><span>Таиланд (Тайланд)</span> </a>
                                 </li>
                                 <li data-cvalue="shri-lanka" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/shri-lanka"> <i class="sprite sprite-shri-lanka"></i><span>Шри-Ланка</span> </a>
+                                    <a class="<?php echo $page === "shri-lanka" ? 'active' : ''?>" href="{{route('shri-lanka')}}"> <i class="sprite sprite-shri-lanka"></i><span>Шри-Ланка</span> </a>
                                 </li>
                                 <li data-cvalue="indiya" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/indiya"> <i class="sprite sprite-indiya"></i><span>Индия</span> </a>
+                                    <a class="<?php echo $page === "indiya" ? 'active' : ''?>" href="{{route('indiya')}}"> <i class="sprite sprite-indiya"></i><span>Индия</span> </a>
                                 </li>
                                 <li data-cvalue="dominikana" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/dominikana"> <i class="sprite sprite-dominikana"></i><span>Доминикана</span> </a>
+                                    <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i>Доминикана</span> </a>
                                 </li>
                                 <li data-cvalue="meksika" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/meksika"> <i class="sprite sprite-meksika"></i><span>Мексика</span> </a>
+                                    <a class="<?php echo $page === "meksika" ? 'active' : ''?>" href="{{route('meksika')}}">  <i class="sprite sprite-meksika"></i><span>Мексика</span> </a>
                                 </li>
                                 <li data-cvalue="bolgariya" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/bolgariya"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
+                                    <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
                                 </li>
                                 <li data-cvalue="tanzaniya" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/tanzaniya"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
+                                    <a class="no-decoration" href="#"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
                                 </li>
                                 <li data-cvalue="indoneziya" class="dd-item">
-                                    <a class="no-decoration" href="//www.poehalisnami.ua/tour/indoneziya"> <i class="sprite sprite-indoneziya"></i><span>Индонезия</span> </a>
+                                    <a class="no-decoration" href="#"> <i class="sprite sprite-indoneziya"></i><span>Индонезия</span> </a>
                                 </li>
                             </div>
                         </ul>
@@ -140,6 +143,8 @@
 </div>
 
 <!-- end callback -->
+
+<a href="#" class="scrollup scrollup_sticky"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
 <script src="{{asset('public/js/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('public/js/jquery.magnific-popup.min.js')}}"></script>

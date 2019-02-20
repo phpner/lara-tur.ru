@@ -18,6 +18,6 @@ class Egipet extends Controller
     {
         $weather = $this->weather->getMydata('26.2540493','29.2675469');
 
-        return view('Pages.egipet',["menu" => 3, 'weather' =>  $weather ]);
+        return view('pages.egipet',["menu" => 3, 'weather' =>  $weather ]);
     }
 }

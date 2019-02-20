@@ -2,7 +2,7 @@
 @section('menu')
 @endsection
 @section('center')
-    <div class="wrapper">
+    <div class="wrapper pt-118px">
         <h2>Турция</h2>
         <!-- block info -->
         <div class="info_img">

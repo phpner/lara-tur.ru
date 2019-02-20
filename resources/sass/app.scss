@@ -697,9 +697,11 @@ footer i{
     color: #424242;
     font-size: 15px;
     text-transform: uppercase;
+    background: #e4e4e4;
     border-radius: 6px;
     cursor: pointer;
     transition: all .4s;
+
 }
 
 .form_callback input[type=submit]:hover{
@@ -791,6 +793,31 @@ input:-webkit-autofill {
     padding:0 15px;
 }
 
+
+.scrollup {
+    width: 51px;
+    height: 51px;
+    position: fixed;
+    display: none;
+    bottom: 52px;
+    left: 50px;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    background: #d2d2d2;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.scrollup:hover{
+    background: #8e8e8e;
+}
+
+.pt-118px{
+    padding-top: 118px;
+}
+
 /* end style for кнопка */
 /*==========  Desktop First Method  ==========*/
 
@@ -866,6 +893,15 @@ input:-webkit-autofill {
     .top_menu .menu > li > a{
         font-size: 19px;
     }
+    .zoom-anim-dialog-info{
+        width: 100%;
+    }
+    .top_menu{
+        position: relative;
+    }
+    .pt-118px{
+        padding-top: 0;
+    }
 }
 
 
@@ -937,9 +973,32 @@ input:-webkit-autofill {
     .text_block{
         font-size: 18px;
     }
-
+    .phpner_call-btn{
+        width: 45px;
+        height: 45px;
+    }
+    #phpner_button-wrapper{
+        bottom: 26px!important;
+        right: 26px!important;
+    }
+    .scrollup{
+        bottom: 26px;
+        width: 44px;
+        height: 44px;
+        left: 20px;
+    }
+    .info_img{
+        flex-flow: column;
+        align-items: center;
+    }
+    .info_img a{
+        width: 100%;
+    }
 }
 
+@media only screen and (max-width : 600px){
+
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     footer a{
@@ -948,6 +1007,10 @@ input:-webkit-autofill {
     .m-top-countries > li{
         width: 100%;
     }
+    .form_width{
+        width: 98%!important;
+    }
+
 }
 
 /* Custom, iPhone Retina */

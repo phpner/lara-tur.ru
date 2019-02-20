@@ -37,6 +37,8 @@ $(document).ready(function () {
 
 
     if (Modernizr.touchevents){
+        $(".top_menu").css('position',"relative");
+        $(".pt-118px").css('padding-top','0px');
         $('.DownHolder').on("click",function () {
             $("#dropDownHolder").toggleClass('hoverActive');
         });
@@ -48,7 +50,7 @@ $(document).ready(function () {
         var height =  nav.outerHeight();
 
         $(window).on('scroll',function () {
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() > 10) {
                 nav.addClass("f-nav");
 
             } else {
@@ -139,6 +141,22 @@ $(document).ready(function () {
     };
 
     $(".form_callback").validate(settingFprm);
+
+    $(window).scroll(function() {
+
+        if($(this).scrollTop() > 350) {
+
+            $('.scrollup').fadeIn();
+
+        } else {
+            $('.scrollup').fadeOut();
+        }
+
+    });
+
+    $('.scrollup').click(function() {
+        $('body,html').animate({scrollTop:0},1800);
+    });
 
 
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
