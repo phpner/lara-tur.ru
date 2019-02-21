@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Индию – заказ онлайн горящую путевку. Лучшие цены на отдых в Индию!@endsection
+@section('description')Купить путевку на отдых в Индию по самым низким ценам! онлайн заказ туров на сайте &laquo;5 сезонов&raquo;.@endsection
+@section('keywords')туры в Индию@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Индию</h1>

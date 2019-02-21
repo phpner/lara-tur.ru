@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title')Турагентство &laquo;5 сезонов&raquo; доступный отдых по самым популярным странам мира.@endsection
+@section('description')Турагентство &laquo;5 сезонов&raquo; - это более 50 000 горящих туров в Европу,  ОАЭ, Азию, путевки в Египет, Африку и Америку, Турцию, Тайланд и другие популярные страны!@endsection
+@section('keywords')турагентство &laquo;5 сезонов&raquo;@endsection
 @section('header')
     <div class="wrapper-slider">
     <div class="slider_top">
@@ -8,7 +10,7 @@
         <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
         <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
     </div>
-        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span> в ЛНР</h1>
+        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span></h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
@@ -45,6 +47,37 @@
     <div class="tv-hot-tours tv-moduleid-974374"></div>
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     </div>
+    <section class="section-callback">
+        <div class="wrapper">
+            <div class="bg"></div>
+            <div class="section-callback__content">
+                <p class="section-callback__title">Оставьте запрос и наши менеджеры <br> подберут Вам лучший тур</p>
+                <a href="#" class="btn btn-brand "> Оставить заявку </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="our_partner">
+        <div class="wrapper">
+            <h3>Наши партнёры</h3>
+            <div class="slider_partner">
+                <div class="item_operator">
+                    <img src="/img/we-work-with/a0.png">
+                </div>
+                <div class="item_operator"><img src="/img/we-work-with/a1.png" alt="Anex"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a2.png" alt="TEZ TOUR"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a3.png" alt="PEGAS"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a4.png" alt="colortravel"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a5.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a6.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a7.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a8.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a9.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a10.png"></div>
+                <div class="item_operator"><img src="/img/we-work-with/a11.png"></div>
+            </div>
+        </div>
+    </section>
     @endsection
 
 @section('footer-script')

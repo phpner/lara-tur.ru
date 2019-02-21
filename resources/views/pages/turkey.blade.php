@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Турцию – купить горящую путевку на отдых в Турции | Стоимость на поездку в Турцию@endsection
+@section('description')Купить путевку на отдых в Турцию по самым низким ценам на <?php echo date("Y");?> год! онлайн заказ туров на веб-сайте &laquo;5 сезонов&raquo;.@endsection
+@section('keywords')туры, Луганск, отпуск, отдых, Турцию,отдых, турагенство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Турцию</h1>

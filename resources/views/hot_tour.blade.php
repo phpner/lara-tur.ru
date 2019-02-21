@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title')Горящие туры - купить горящие путевки за границу.@endsection
+@section('description')Лучшие горящие туры за границу. Купить горящие путевки от проверенных туроператоров!@endsection
+@section('keywords')Горящие туры, горящие путевки@endsection
 @section('header')
     <div class="wrapper-slider">
         <div class="slider_top">

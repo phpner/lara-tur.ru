@@ -5,18 +5,10 @@ namespace App\Http\Controllers\Pages;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Egipet extends Controller
+class Shri_lanka extends Controller
 {
-
-    public function __construct()
-    {
-
-    }
-
     public function index()
     {
-
-
-        return view('pages.egipet',["menu" => 3, 'page' => 'egipet']);
+        return view('pages.shri_lanka',["menu" => 3, 'page' => 'shri-lanka']);
     }
 }

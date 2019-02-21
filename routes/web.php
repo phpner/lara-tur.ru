@@ -29,89 +29,67 @@ Route::get('/hot-tour', function () {
     /* BLOCK TOUR*/
 Route::prefix('tour')->group(function () {
 
-    Route::get('egipet', function(){
-        return view('pages.egipet',["menu" => 3, 'page' => 'egipet']);
-    })->name("egipet");
+    Route::get('egipet', "Pages\Egipet@index")->name("egipet");
 
     /**
      * turkey
      */
 
-    Route::get('turkey', function(){
-        return view('pages.turkey',["menu" => 3,  'page' => 'turkey']);
-    })->name("turkey");
+    Route::get('turkey',"Pages\Turkey@index")->name("turkey");
 
     /**
      * OAE
      */
 
-    Route::get('oae', function(){
-        return view('pages.oae',["menu" => 3, 'page' => 'oae']);
-    })->name("oae");
+    Route::get('oae',"Pages\Oae@index")->name("oae");
 
     /**
      * tailand
      */
 
-    Route::get('tailand', function(){
-        return view('pages.tailand',["menu" => 3, 'page' => 'tailand']);
-    })->name("tailand");
+    Route::get('tailand',"Pages\Tailand@index")->name("tailand");
 
     /**
      * tailand
      */
 
-    Route::get('shri-lanka', function(){
-        return view('pages.shri_lanka',["menu" => 3, 'page' => 'shri-lanka']);
-    })->name("shri-lanka");
+    Route::get('shri-lanka', "Pages\Shri_lanka@index")->name("shri-lanka");
 
     /**
      * indiya
      */
 
-    Route::get('indiya', function(){
-        return view('pages.indiya',["menu" => 3, 'page' => 'indiya']);
-    })->name("indiya");
+    Route::get('indiya',  "Pages\Indiya@index")->name("indiya");
 
     /**
      * dominikana
      */
-    Route::get('dominikana', function(){
-        return view('pages.dominikana',["menu" => 3, 'page' => 'dominikana']);
-    })->name("dominikana");
+    Route::get('dominikana', "Pages\Dominikana@index")->name("dominikana");
 
     /**
      * dominikana
      */
 
-    Route::get('meksika', function(){
-        return view('pages.meksika',["menu" => 3, 'page' => 'meksika']);
-    })->name("meksika");
+    Route::get('meksika',  "Pages\Meksika@index")->name("meksika");
 
     /**
      * bolgariya
      */
 
-    Route::get('bolgariya', function(){
-        return view('pages.bolgariya',["menu" => 3, 'page' => 'bolgariya']);
-    })->name("bolgariya");
+    Route::get('bolgariya',"Pages\Bolgariya@index")->name("bolgariya");
 
     /**
      * tanzaniya
      */
 
-    Route::get('tanzaniya', function(){
-        return view('pages.tanzaniya',["menu" => 3, 'page' => 'tanzaniya']);
-    })->name("tanzaniya");
+    Route::get('tanzaniya', "Pages\Tanzaniya@index")->name("tanzaniya");
 
 
     /**
      * indoneziya
      */
 
-    Route::get('indoneziya', function(){
-        return view('pages.indoneziya',["menu" => 3, 'page' => 'indoneziya']);
-    })->name("indoneziya");
+    Route::get('indoneziya',  "Pages\Indoneziya@index")->name("indoneziya");
 
 });
 /* END BLOCK TOUR*/

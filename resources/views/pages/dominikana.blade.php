@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Доминикану – заказ онлайн горящую путевку. Лучшие цены на отдых!@endsection
+@section('description')Купить путевку на отдых в Доминикану по самым низким ценам! онлайн заказ туров!@endsection
+@section('keywords')туры в Доминикану@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Доминикану</h1>

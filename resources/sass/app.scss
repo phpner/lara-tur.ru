@@ -117,6 +117,8 @@ header .wrapper_header{
 #logo{
     height: 72px;
     transition: all .8s;
+    position: relative;
+    top: -11px;
 }
 .wrapper{
     width: 1200px;
@@ -470,10 +472,10 @@ footer i{
     position: fixed;
     width: 100%;
     top: 0;
-
 }
 .f-nav #logo{
     height: 55px;
+    top: 0;
 }
 .f-nav .header_contact{
    overflow: hidden;
@@ -873,6 +875,71 @@ input:-webkit-autofill {
     padding-top: 118px;
 }
 
+.section-callback{
+    background-image: linear-gradient(45deg,#ff9a34 43%, #ff0c00 107%);
+    padding: 50px 0;
+    position: relative;
+    margin-top: 25px;
+}
+
+.section-callback .bg{
+    background-image: url("../img/callback-bg2.png");
+    height: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.section-callback__content .section-callback__title{
+    margin: 32px 0;
+    font-size: 32px;
+    line-height: 1.38;
+    color: #fff;
+}
+.section-callback__content:after{
+    content: '';
+    display: block;
+    height: 100%;
+    background: url(/img/call1.png) no-repeat 78% 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.section-callback__content .btn-brand{
+    position: relative;
+    z-index: 10;
+    background: #378d38;
+    padding: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.slider_partner .item_operator{
+    height: 80px !important;
+    background: #fff;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.slider_partner .item_operator img{
+    width: 100%;
+    height: 100%;
+}
+.our_partner h3{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    color: #5a5a5a;
+}
 /* end style for кнопка */
 /*==========  Desktop First Method  ==========*/
 
@@ -957,6 +1024,31 @@ input:-webkit-autofill {
     .pt-118px{
         padding-top: 0;
     }
+    .section-callback__content:after{
+        display: none;
+    }
+    .section-callback__content{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-callback .bg{
+        background-size: 100% 100%;
+    }
+    .section-callback{
+        padding: 20px 0;
+    }
+    .section-callback__content .btn-brand{
+        margin-top: 0;
+    }
+    .slider_partner{
+        height: 350px;
+    }
+    .slider_partner img{
+        width: 250px;
+    }
+
 }
 
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Таиланд – заказ онлайн горящую путевку на отдых в Таиланде@endsection
+@section('description')Купить путевку на отдых в Таиланде по самым низким ценам на <?php echo date("Y");?> год! онлайн заказ туров на веб-сайте &laquo;5 сезонов&raquo;.@endsection
+@section('keywords')туры, Луганск, отпуск, отдых, Таиланд, Тайский, Тайланд, отдых, турагенство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Таиланд</h1>

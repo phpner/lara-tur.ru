@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Мексику – заказ горящую путевку. Лучшие цены на отдых в <?php echo date('Y')?>!@endsection
+@section('description')Купить путевку на отдых в Мексику по самым низким ценам! Онлайн заказ туров на сайте &laquo;5 сезонов&raquo;!@endsection
+@section('keywords')туры в Мексику@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Мексику</h1>

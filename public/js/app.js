@@ -158,7 +158,17 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop:0},1800);
     });
 
-
+    $(".slider_partner").slick({
+        slidesToShow: 5,
+        dots: false,
+        arrows: true,
+      /*  autoplay: true,*/
+        autoplaySpeed: 0,
+        infinite: true,
+        speed: 3000,
+        pauseOnHover:false,
+        cssEase: 'linear',
+    });
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);
         $('footer').css('bottom', +this.scrollHeight - 450)

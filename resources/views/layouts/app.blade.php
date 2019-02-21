@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>@yield('title')</title>
+    <meta name=description content="@yield('description')">
+    <meta name=keywords content="@yield('keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -11,14 +14,13 @@
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('public/img/favicon.png') }}" type="image/x-icon" />
-    <title>@yield('title')</title>
 </head>
 <body>
 <div id="answers">
     <span>Спасибо. Заявка принята. <br> Мы скоро перезвоним!</span>
 </div>
 <div class="sendForm" style="display: none;"><img src="{{asset('public/img/sending.gif')}}" alt=""></div>
-@yield('menu')
+
 @if (!isset($menu))
     <?php  $menu = '';?>
 @endif

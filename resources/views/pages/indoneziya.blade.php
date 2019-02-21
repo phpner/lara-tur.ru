@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('menu')
-@endsection
+@section('title')Туры в Индонезию – заказ онлайн горящую путевку. Лучшие цены на отдых!@endsection
+@section('description')Купить путевку на отдых в Индонезию по самым низким ценам! онлайн заказ туров!@endsection
+@section('keywords')туры в Индонезию@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Индонезию</h1>
