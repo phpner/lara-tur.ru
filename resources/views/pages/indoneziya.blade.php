@@ -29,6 +29,8 @@
             <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+
+    <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">
             <p class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</p>
@@ -36,6 +38,8 @@
             <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+    <!-- End Block Найди сам! -->
+
         <!-- block info popup-->
         <div id="about-tour" class="zoom-anim-dialog-info mfp-hide">
             <img class="main_img" src="{{asset('public/img/indoneziya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Об Индонезии">

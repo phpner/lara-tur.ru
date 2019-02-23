@@ -10,7 +10,7 @@
             <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
             <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
         </div>
-        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span> в ЛНР</h1>
+        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span></h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
@@ -19,6 +19,9 @@
 @endsection
 @section("center")
     <div class="wrapper">
+
+        <h2>Горящие туры</h2>
+        <hr class="style-seven">
         <div class="text_block">
             <b class="text_center">
                 Следите за появлением горящих туров на нашем сайте
@@ -43,7 +46,7 @@
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>
         </div>
-        <h2>Горящие туры</h2>
+
         <div class="tv-hot-tours tv-moduleid-974450"></div>
         <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     </div>

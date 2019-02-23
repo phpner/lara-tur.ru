@@ -9,6 +9,7 @@ $(document).ready(function () {
         $("#nav-icon").toggleClass('open');
         //$('#wrapper').toggleClass('over');
         $("header ul.menu").toggleClass('opener');
+        $("#dropDownHolder").removeClass('hoverActive');
 
     });
 
@@ -62,9 +63,7 @@ $(document).ready(function () {
 
     $("#phpner_button-wrapper").on("click",function(){
     $.magnificPopup.open({
-            type: 'inline',
-
-
+        type: 'inline',
             items :{
                 src: "#callback"
             },
@@ -78,14 +77,32 @@ $(document).ready(function () {
             mainClass: 'my-mfp-zoom-in'
         });
 
-        $("#phpner_close").click(function(){ $('#myModal-after').modal('hide');})
-        console.log( this);
+
+        $("#phpner_close").click(function(){ $('#myModal-after').modal('hide');});
+    });
+    /*Открыть форму по href*/
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+            beforeOpen: function() {
+                if($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        }
     });
 
-    $(".form_callback input").on('focus',function () {
+    $(".form_callback input, .form_callback_choose input, .form_contact input").on('focus',function () {
         $(this).siblings('span').addClass('form-holder');
     });
-    $(".form_callback input").on('blur',function () {
+    $(".form_callback input, .form_callback_choose input, .form_contact input").on('blur',function () {
         if(this.value == ''){
             $(this).siblings('span').removeClass('form-holder')
         }else {
@@ -118,7 +135,7 @@ $(document).ready(function () {
                 beforeSend: function() {
                     $(".mfp-close").trigger("click");
                     $(".sendForm").fadeIn(400);
-                    $(".form_callback")[0].reset();
+                    $(form)[0].reset();
                     $(".controll_input span").removeClass('form-holder')
                     $(".controll_input input").removeClass('valid')
                 },
@@ -126,22 +143,26 @@ $(document).ready(function () {
                   var text =  response === 'ok' ? "Спасибо. Заявка принята. <br> Мы скоро перезвоним!" :'Ошибка отправки!';
 
                     $('#answers span').html(text);
-
                     $(".sendForm").fadeOut(400);
                     $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
                     console.log(response);
                 },
-                error: function(){
+                error: function(res){
                     $(".sendForm").fadeOut(400);
                     $('#answers span').html("Что-то пошло не так! <br> Пропробуйте нам перезвонить");
                     $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
+                    console.log(res);
                 }
             });
         }
     };
 
     $(".form_callback").validate(settingFprm);
+    $(".form_contact").validate(settingFprm);
+    $(".form_callback_choose").validate(settingFprm);
 
+
+    /*Кнопка на верх*/
     $(window).scroll(function() {
 
         if($(this).scrollTop() > 350) {
@@ -158,16 +179,41 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop:0},1800);
     });
 
+    /*Сайдер парнеры*/
     $(".slider_partner").slick({
-        slidesToShow: 5,
+        slidesToShow: 7,
         dots: false,
         arrows: true,
-      /*  autoplay: true,*/
+        autoplay: true,
         autoplaySpeed: 0,
         infinite: true,
         speed: 3000,
         pauseOnHover:false,
         cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);

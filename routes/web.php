@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', ['menu' => 0]);
 });
 
 Route::get('/search', function () {
@@ -90,6 +90,27 @@ Route::prefix('tour')->group(function () {
      */
 
     Route::get('indoneziya',  "Pages\Indoneziya@index")->name("indoneziya");
+
+    /**
+     *  rossiya
+     */
+
+    Route::get('rossiya',  "Pages\Rossiya@index")->name("rossiya");
+
+    /**
+     * contact
+     */
+    Route::get('contact',  function (){
+        return view('pages.contact', ['menu' => 6]);
+    })->name("contact");
+
+    /**
+     * countries
+     */
+    Route::get('countries',  function (){
+        return view('pages.countries');
+    })->name("countries");
+
 
 });
 /* END BLOCK TOUR*/

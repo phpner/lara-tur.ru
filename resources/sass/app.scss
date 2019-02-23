@@ -14,7 +14,7 @@ body{
     font-size: 18px;
     font-weight: 400;
     overflow-x: hidden;
-    background: url("../img/bg.png");
+   /* background: url("../img/bg.png");*/
 }
 .h1{
     position: absolute;
@@ -40,11 +40,7 @@ h2 {
     text-align: center;
     padding: 30px 0;
     font-size: 30px;
-    color: #348b35;
-    background: white;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.17);
-    margin-top: 15px;
-    border-radius: 8px;
+    color: $green;
 }
 
 .h2{
@@ -55,16 +51,29 @@ h2 {
     background: #428aaf;
     margin-top: 15px;
 }
-
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
 section h1{
     text-align: center;
     padding: 30px 0;
     font-size: 30px;
-    color: #348b35;
-    background: white;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.17);
-    margin-top: 15px;
-    border-radius: 8px;
+    color: $green;
 }
 
 header{
@@ -145,12 +154,12 @@ header .wrapper_header{
     position: relative;
 }
 
-.header_contact{
+.header_contact, .page_contact{
     width: 100%;
     margin: auto;
     text-align: center;
 }
-.header_contact a{
+.header_contact a, .page_contact a{
     color: #5d5d5d;
     font-size: 21px;
 }
@@ -160,11 +169,18 @@ header .wrapper_header{
     font-size: 25px;
     margin-right: 9px;
 }
-.header_contact .header_mail{
+
+.page_contact i{
+    color: $green;
+    margin-right: 9px;
+    font-size: 29px;
+}
+
+.header_contact .header_mail, .page_contact .contact_mail{
     margin-left: 10px;
 }
 
-.header_contact .header_tel, .header_contact .header_mail{
+.header_contact .header_tel, .header_contact .header_mail, .contact_mail, .contact_tel{
     display: inline-flex;
     align-items: center;
 }
@@ -177,7 +193,6 @@ footer{
     background-image: linear-gradient(45deg,#e7e7e7 0%, #fdfdfd 100%);
     color: #fff;
     border-top: 2px solid #adadad;
-    margin-top: 50px;
 }
 
 footer .footer_mail{
@@ -215,8 +230,8 @@ footer i{
     color: #ff7302;
 }
 .choose_tour{
-    margin: 30px auto;
-    min-height: 80vh;
+    background: #f7f7f7;
+    padding: 43px;
 }
 
 .nav-icon-line{
@@ -481,6 +496,7 @@ footer i{
    overflow: hidden;
     height: 0;
     width: 0;
+    display: none;
 }
 
 /*  style for кнопка */
@@ -704,7 +720,6 @@ footer i{
     border-style: solid!important;
     border-top-color: transparent!important;
     border-bottom-color: transparent!important;
-
     position: absolute!important;
     z-index: 500!important;
     content: ''!important;
@@ -716,13 +731,13 @@ footer i{
 .form_width{
     width: 450px!important;
 }
-.form_callback{
+.form_callback, .form_callback_choose{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form_callback input:not([type=submit]){
+.form_callback input:not([type=submit]), .form_callback_choose input:not([type=submit]){
     width: 100%;
     border: none;
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.55);
@@ -747,7 +762,7 @@ footer i{
     z-index: 1;
     transition: all .4s;
 }
-.form_callback input[type=submit]{
+.form_callback input[type=submit],  .form_callback_choose input[type=submit]{
     border: none;
     padding: 15px 20px;
     margin-top: 15px;
@@ -758,10 +773,9 @@ footer i{
     border-radius: 6px;
     cursor: pointer;
     transition: all .4s;
-
 }
 
-.form_callback input[type=submit]:hover{
+.form_callback input[type=submit]:hover, .form_callback_choose input[type=submit]:hover{
     background: rgb(163, 160, 160);
 }
 
@@ -785,7 +799,7 @@ input:-webkit-autofill {
     box-shadow: 0 0 2px 0 rgba(67, 222, 51, 0.78);
 }
 
-.form_callback  textarea{
+.form_callback  textarea, .form_callback_choose textarea{
     width: 93%;
     border: none;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.55);
@@ -793,8 +807,50 @@ input:-webkit-autofill {
     height: 90px;
     padding-left: 12px;
     padding-top: 8px;
+    outline: none;
 }
 
+#edit-field-request-country-value-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+#edit-field-request-country-value-wrapper label{
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+#edit-field-request-country-value-wrapper select{
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
+    height: 38px;
+    padding-left: 12px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    outline: none;
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
 .form-holder{
     top: -2px!important;
     background-color: white;
@@ -879,7 +935,6 @@ input:-webkit-autofill {
     background-image: linear-gradient(45deg,#ff9a34 43%, #ff0c00 107%);
     padding: 50px 0;
     position: relative;
-    margin-top: 25px;
 }
 
 .section-callback .bg{
@@ -939,6 +994,19 @@ input:-webkit-autofill {
     padding: 20px 0;
     font-size: 35px;
     color: #5a5a5a;
+}
+.our_partner{
+    background: white;
+    padding: 25px 0 40px;
+    overflow: hidden;
+}
+.contact_tour{
+    background: #f7f7f7;
+    padding: 59px 0;
+    box-shadow: -1px -2px 5px 0px rgba(0, 0, 0, 0.27);
+}
+.contact_form{
+    margin-bottom: 30px;
 }
 /* end style for кнопка */
 /*==========  Desktop First Method  ==========*/
@@ -1048,7 +1116,9 @@ input:-webkit-autofill {
     .slider_partner img{
         width: 250px;
     }
-
+    .slider_partner{
+        height: 100px;
+    }
 }
 
 
@@ -1140,6 +1210,9 @@ input:-webkit-autofill {
     }
     .info_img a{
         width: 100%;
+    }
+    .choose_tour{
+        padding: 20px 0;
     }
 }
 

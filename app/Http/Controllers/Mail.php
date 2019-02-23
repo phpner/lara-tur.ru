@@ -42,8 +42,14 @@ class Mail extends Controller
             $tel = "";
         }
 
+        if($request['field_request_country']){
+            $field_request_country = 'Страна:'. trim(strip_tags($request['field_request_country']));
+        }else{
+            $field_request_country = "";
+        }
 
-        $body = "<br> Дата: $data <br> Имя: $name <br> Телефон: $tel<br> Email: $email <br> Сообщение: $text " ;
+
+        $body = "<br> Дата: $data <br> Имя: $name <br> Телефон: $tel <br>$field_request_country<br> Email: $email <br> Сообщение: $text " ;
 
         $mail = new PHPMailer(); //вызываем класс
 

@@ -24,7 +24,7 @@
                 Следите за появлением горящих туров на нашем сайте
             </b>
             <p>
-                (информация обновляется ежедневно) Вы сможете сэкономить до <span class="danger_text">30%</span> от стоимости тура.
+                Вы сможете найти тур со скидкой до <span class="danger_text">30%</span> на нашем сайте.
             </p>
             <p>
                 Eсли Вы видите подходящий Вам горящий тур, поторопитесь его забронировать.
@@ -37,49 +37,18 @@
                 Сделать это можно:
             </b>
             <div class="header_contact text_contact">
-                <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380508885455">+38 (050) 888-54-55</a></span>
+                <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
                 <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezonlnr@gmail.com</a></span>
-                <span class="call_back"><a href="#"><i class="fas fa-headset"></i>Обратная связь</a></span>
+               {{-- <span class="call_back"><a href="#"><i class="fas fa-headset"></i>Обратная связь</a></span>--}}
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>
         </div>
     <h2>ОАЭ</h2>
+        <hr class="style-seven">
     <div class="tv-hot-tours tv-moduleid-974374"></div>
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     </div>
-    <section class="section-callback">
-        <div class="wrapper">
-            <div class="bg"></div>
-            <div class="section-callback__content">
-                <p class="section-callback__title">Оставьте запрос и наши менеджеры <br> подберут Вам лучший тур</p>
-                <a href="#" class="btn btn-brand "> Оставить заявку </a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="our_partner">
-        <div class="wrapper">
-            <h3>Наши партнёры</h3>
-            <div class="slider_partner">
-                <div class="item_operator">
-                    <img src="/img/we-work-with/a0.png">
-                </div>
-                <div class="item_operator"><img src="/img/we-work-with/a1.png" alt="Anex"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a2.png" alt="TEZ TOUR"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a3.png" alt="PEGAS"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a4.png" alt="colortravel"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a5.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a6.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a7.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a8.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a9.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a10.png"></div>
-                <div class="item_operator"><img src="/img/we-work-with/a11.png"></div>
-            </div>
-        </div>
-    </section>
     @endsection
-
 @section('footer-script')
     <script>
         $(document).ready(function () {
