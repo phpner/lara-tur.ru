@@ -94,5 +94,14 @@
         </ul>
     </div>
     <!-- End block info popup-->
+    <!-- Block Найди сам! -->
+    <section class="find_by_self">
+        <div class="wrapper">
+            <p class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</p>
+            <div class="tv-search-form tv-moduleid-187833"></div>
+            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        </div>
+    </section>
+    <!-- End Block Найди сам! -->
 @endsection
 

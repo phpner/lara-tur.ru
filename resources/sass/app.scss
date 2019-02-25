@@ -34,7 +34,8 @@ body{
     color: $green;
     text-shadow: 0 0 1px white;
     font-style: italic;
-    font-family: 'EB Garamond', serif;
+    font-family: cursive;
+    text-shadow: 5px 2px 0px #0a0909, -1px 2px 20px #ffffff;
 }
 h2 {
     text-align: center;
@@ -921,6 +922,21 @@ input:-webkit-autofill {
     background: #d2d2d2;
     border-radius: 10px;
     transition: all .4s;
+    border: 2px solid #fff;
+}
+
+.TVSRNavButton.TVSRSearchMoreBtn {
+    width: 200px!important;
+    padding: 20px 0!important;
+    margin: 20px auto!important;
+    background: #ff9a34!important;
+    color: #fff!important;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.47)!important;
+    border-radius: 8px!important;
+
+}
+.TVSRPriceValue {
+    background-color: #e01656!important;
 }
 
 .scrollup:hover{
@@ -1007,6 +1023,13 @@ input:-webkit-autofill {
 }
 .contact_form{
     margin-bottom: 30px;
+}
+
+.TVSRFixePanel{
+    position: relative!important;
+}
+.find_by_self .TVTopForm{
+    background-color: #428aaf!important;
 }
 /* end style for кнопка */
 /*==========  Desktop First Method  ==========*/
@@ -1217,6 +1240,12 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width : 600px){
+    .h2, h2{
+        font-size: 20px;
+    }
+    .header_contact a, .page_contact a{
+        font-size: 17px;
+    }
 
 }
 /* Extra Small Devices, Phones */
@@ -1229,6 +1258,7 @@ input:-webkit-autofill {
     }
     .form_width{
         width: 98%!important;
+
     }
 
 }

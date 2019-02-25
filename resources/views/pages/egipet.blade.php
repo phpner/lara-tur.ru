@@ -107,6 +107,7 @@
             </ul>
         </div>
     <!-- End block info popup-->
+
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

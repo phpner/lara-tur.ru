@@ -43,6 +43,7 @@ $(document).ready(function () {
         $('.DownHolder').on("click",function () {
             $("#dropDownHolder").toggleClass('hoverActive');
         });
+        $(".h2").css('background', '#378d38');
     } else {
         console.log("NO !! touch!!");
         $('#dropDownHolder').removeClass("hoverActive");
@@ -214,6 +215,10 @@ $(document).ready(function () {
             }
 
         ]
+    });
+
+    $(document).on('load','.tv-hot-tours',function(){
+        console.log(this)
     });
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);

@@ -7,6 +7,12 @@
     <meta name=keywords content="@yield('keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']?>" />
+    <meta property="og:image" content="http://<?php echo $_SERVER['HTTP_HOST']?>/img/5sezonov.png" />
+    <meta property="og:image:width" content="537">
+    <meta property="og:image:height" content="240">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('public/css/slick.css') }}">
@@ -54,44 +60,45 @@
                         <ul class="li-town">
                             <div class="m-top-countries">
                                 <li class="dd-item divider jsItemLabel">Топовые</li>
-                                <li data-cvalue="egipet" class="dd-item">
-                                    <a class="<?php echo $page === "egipet" ? 'active' : ''?>" href="{{route('egipet')}}"> <i class="sprite sprite-egipet"></i><span>Египет</span> </a>
-                                </li>
-                                <li data-cvalue="turciya" class="dd-item">
-                                    <a class="<?php echo $page === "turkey" ? 'active' : ''?>" href="{{route('turkey')}}"> <i class="sprite sprite-turciya"></i><span>Турция</span> </a>
-                                </li>
-                                <li data-cvalue="oae" class="dd-item">
-                                    <a class="<?php echo $page === "oae" ? 'active' : ''?>" href="{{route('oae')}}"> <i class="sprite sprite-oae"></i><span>ОАЭ</span> </a>
-                                </li>
-                                <li data-cvalue="tailand" class="dd-item">
-                                    <a class="<?php echo $page === "tailand" ? 'active' : ''?>" href="{{route('tailand')}}"> <i class="sprite sprite-tailand"></i><span>Таиланд (Тайланд)</span> </a>
-                                </li>
-                                <li data-cvalue="shri-lanka" class="dd-item">
-                                    <a class="<?php echo $page === "shri-lanka" ? 'active' : ''?>" href="{{route('shri-lanka')}}"> <i class="sprite sprite-shri-lanka"></i><span>Шри-Ланка</span> </a>
-                                </li>
-                                <li data-cvalue="indiya" class="dd-item">
-                                    <a class="<?php echo $page === "indiya" ? 'active' : ''?>" href="{{route('indiya')}}"> <i class="sprite sprite-indiya"></i><span>Индия</span> </a>
+                                <li data-cvalue="bolgariya" class="dd-item">
+                                    <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
                                 </li>
                                 <li data-cvalue="dominikana" class="dd-item">
                                     <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i>Доминикана</span> </a>
                                 </li>
-                                <li data-cvalue="meksika" class="dd-item">
-                                    <a class="<?php echo $page === "meksika" ? 'active' : ''?>" href="{{route('meksika')}}">  <i class="sprite sprite-meksika"></i><span>Мексика</span> </a>
+                                <li data-cvalue="egipet" class="dd-item">
+                                    <a class="<?php echo $page === "egipet" ? 'active' : ''?>" href="{{route('egipet')}}"> <i class="sprite sprite-egipet"></i><span>Египет</span> </a>
                                 </li>
-                                <li data-cvalue="bolgariya" class="dd-item">
-                                    <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
-                                </li>
-                                <li data-cvalue="tanzaniya" class="dd-item">
-                                    <a class="<?php echo $page === "tanzaniya" ? 'active' : ''?>" href="{{route('tanzaniya')}}"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
+                                <li data-cvalue="indiya" class="dd-item">
+                                    <a class="<?php echo $page === "indiya" ? 'active' : ''?>" href="{{route('indiya')}}"> <i class="sprite sprite-indiya"></i><span>Индия</span> </a>
                                 </li>
                                 <li data-cvalue="indoneziya" class="dd-item">
                                     <a class="<?php echo $page === "indoneziya" ? 'active' : ''?>" href="{{route('indoneziya')}}"> <i class="sprite sprite-indoneziya"></i><span>Индонезия</span> </a>
+                                </li>
+                                <li data-cvalue="meksika" class="dd-item">
+                                    <a class="<?php echo $page === "meksika" ? 'active' : ''?>" href="{{route('meksika')}}">  <i class="sprite sprite-meksika"></i><span>Мексика</span> </a>
+                                </li>
+                                <li data-cvalue="oae" class="dd-item">
+                                    <a class="<?php echo $page === "oae" ? 'active' : ''?>" href="{{route('oae')}}"> <i class="sprite sprite-oae"></i><span>ОАЭ</span> </a>
                                 </li>
                                 <li data-cvalue="rossiya" class="dd-item">
                                     <a class="<?php echo $page === "rossiya" ? 'active' : ''?>" href="{{route('rossiya')}}">
                                         <i class="sprite sprite-rossiya"></i><span>Россия</span>
                                     </a>
                                 </li>
+                                <li data-cvalue="turciya" class="dd-item">
+                                    <a class="<?php echo $page === "turkey" ? 'active' : ''?>" href="{{route('turkey')}}"> <i class="sprite sprite-turciya"></i><span>Турция</span> </a>
+                                </li>
+                                <li data-cvalue="tailand" class="dd-item">
+                                    <a class="<?php echo $page === "tailand" ? 'active' : ''?>" href="{{route('tailand')}}"> <i class="sprite sprite-tailand"></i><span>Таиланд (Тайланд)</span> </a>
+                                </li>
+                                <li data-cvalue="tanzaniya" class="dd-item">
+                                    <a class="<?php echo $page === "tanzaniya" ? 'active' : ''?>" href="{{route('tanzaniya')}}"> <i class="sprite sprite-tanzaniya"></i><span>Танзания</span> </a>
+                                </li>
+                                <li data-cvalue="shri-lanka" class="dd-item">
+                                    <a class="<?php echo $page === "shri-lanka" ? 'active' : ''?>" href="{{route('shri-lanka')}}"> <i class="sprite sprite-shri-lanka"></i><span>Шри-Ланка</span> </a>
+                                </li>
+
                             </div>
                         </ul>
                         <div class="center"><a class="all_city" href="{{route('countries')}}">Все страны</a></div>

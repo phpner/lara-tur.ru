@@ -201,7 +201,7 @@ body { font-family: Ubuntu,sans-serif; font-size: 18px; font-weight: 400; overfl
 
 .h1 { position: absolute; top: 296px; z-index: 15; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); -o-transform: translate(-50%); transform: translate(-50%); color: #fff; font-size: 60px; text-shadow: 0 0 20px #000; width: 100%; text-align: center; }
 
-.h1 span { color: #348b35; text-shadow: 0 0 1px #fff; font-style: italic; font-family: EB Garamond,serif; }
+.h1 span { color: #348b35; text-shadow: 0 0 1px #fff; font-style: italic; font-family: cursive; text-shadow: 5px 2px 0 #0a0909,-1px 2px 20px #fff; }
 
 h2 { color: #348b35; }
 
@@ -459,7 +459,11 @@ input:-webkit-autofill { -webkit-animation-name: b; -webkit-animation-fill-mode:
 
 #answers span, .scrollup { text-align: center; color: #fff; }
 
-.scrollup { width: 51px; height: 51px; position: fixed; display: none; bottom: 52px; left: 50px; z-index: 10; line-height: 48px; background: #d2d2d2; -webkit-border-radius: 10px; border-radius: 10px; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s; }
+.scrollup { width: 51px; height: 51px; position: fixed; display: none; bottom: 52px; left: 50px; z-index: 10; line-height: 48px; background: #d2d2d2; -webkit-border-radius: 10px; border-radius: 10px; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s; border: 2px solid #fff; }
+
+.TVSRNavButton.TVSRSearchMoreBtn { width: 200px !important; padding: 20px 0 !important; margin: 20px auto !important; background: #ff9a34 !important; color: #fff !important; -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.47) !important; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.47) !important; -webkit-border-radius: 8px !important; border-radius: 8px !important; }
+
+.TVSRPriceValue { background-color: #e01656 !important; }
 
 .scrollup:hover { background: #8e8e8e; }
 
@@ -486,6 +490,10 @@ input:-webkit-autofill { -webkit-animation-name: b; -webkit-animation-fill-mode:
 .contact_tour { background: #f7f7f7; padding: 59px 0; -webkit-box-shadow: -1px -2px 5px 0 rgba(0, 0, 0, 0.27); box-shadow: -1px -2px 5px 0 rgba(0, 0, 0, 0.27); }
 
 .contact_form { margin-bottom: 30px; }
+
+.TVSRFixePanel { position: relative !important; }
+
+.find_by_self .TVTopForm { background-color: #428aaf !important; }
 
 @media only screen and (max-width: 1220px) { .wrapper { width: 100%; }
   footer .footer_flat { left: 6px; width: 144px; }
@@ -541,6 +549,9 @@ input:-webkit-autofill { -webkit-animation-name: b; -webkit-animation-fill-mode:
   .info_img { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: center; -webkit-align-items: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; }
   .info_img a { width: 100%; }
   .choose_tour { padding: 20px 0; } }
+
+@media only screen and (max-width: 600px) { .h2, h2 { font-size: 20px; }
+  .header_contact a, .page_contact a { font-size: 17px; } }
 
 @media only screen and (max-width: 480px) { footer a { font-size: 22px; }
   .m-top-countries > li { width: 100%; }
