@@ -20,7 +20,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.popup-with-zoom-anim').magnificPopup({
+/*    $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
 
         fixedContentPos: false,
@@ -34,6 +34,31 @@ $(document).ready(function () {
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in'
+    });*/
+
+    $('.zoom-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+                return item.el.attr('title');
+            }
+        },
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+
     });
 
 
@@ -217,9 +242,24 @@ $(document).ready(function () {
         ]
     });
 
-    $(document).on('load','.tv-hot-tours',function(){
-        console.log(this)
-    });
+
+    /** Слайдер на страницах**/
+    if ($(".slider_page").length > 0){
+        $(".slider_page").slick({
+            /*autoplay: true,*/
+            draggable: true,
+            arrows: false,
+            dots: true,
+            fade: true,
+            speed: 900,
+            infinite: true,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+            touchThreshold: 100
+        });
+        console.log('ywss!!')
+    }
+
+
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);
         $('footer').css('bottom', +this.scrollHeight - 450)

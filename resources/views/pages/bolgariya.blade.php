@@ -7,21 +7,26 @@
         <h1>Туры в Болгарию</h1>
         <!-- block info -->
         <div class="info_img">
+            <div class="slider_page zoom-gallery">
 
-            <a class="popup-with-zoom-anim" href="#about-tour">
-                <img src="{{asset('public/img/bolgariya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; О Болгарии">
-                <span>О Болгарии</span>
+            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                <img src="{{asset('public/img/bolgariya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
+
             </a>
 
-            <a class="popup-with-zoom-anim" href="#felax-tour">
-                <img src="{{asset('public/img/bolgariya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Увлекательные факты о Болгарии">
-                <span>Отдых в Болгарии</span>
+            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/2.jpg')}}">
+                <img src="{{asset('public/img/bolgariya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
+
             </a>
 
-            <a class="popup-with-zoom-anim" href="#have-to-know">
-                <img src="{{asset('public/img/bolgariya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Полезно знать о Болгарии">
-                <span>Полезно знать</span>
+            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/3.jpg')}}">
+                <img src="{{asset('public/img/bolgariya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
+
             </a>
+            </div>
+            <div class="text_info_in_page">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt dignissimos error eveniet exercitationem magnam maxime minus nesciunt nisi non, nulla numquam perspiciatis, quia quisquam sequi sint temporibus voluptates voluptatum.
+            </div>
         </div>
         <!-- End block info -->
         <div class="choose_tour">
@@ -34,7 +39,7 @@
             <img class="main_img" src="{{asset('public/img/bolgariya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; О Болгарии">
             <h3>О Болгарии</h3>
 
-            <p> Болгария расположена на востоке Балканского полуострова. Восточные берега страны омывает Черное море.</p>
+            <p>Болгария расположена на востоке Балканского полуострова. Восточные берега страны омывает Черное море.</p>
             <p>Туризм составляет важную часть экономики Болгарии, поэтому интенсивно развивается. Ежегодно страну посещает около 9 млн иностранных туристов.</p>
             <p>Первые упоминания о болгарах датируются 354 годом, хотя история некоторых болгарских городов, например, Пловдива, тянется корнями еще глубже. Протогосударство современной Болгарии было создано в 681 году, называлось Первое Болгарское Царство. Позже страна то завоевывалась, то вновь получала независимость. Так, Болгария побывала в составе Византийской империи, Видинского царства, Оттоманского господства.</p>
             <p>В XX столетии здесь начал развиваться туризм, с 1960 года активно строились “дома отдыха”, горные и морские курорты, а с наступлением XXI века тут заработали сотни частных отелей и ресторанов с отличным сервисом.</p>

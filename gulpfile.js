@@ -15,7 +15,7 @@ gulp.task('sass', function () {
      browsers:['last 50 versions'], 
      add: true
    }}))
-    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))    
+    .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))    
     .pipe(gulp.dest('./public/css'));
 });
 
@@ -36,9 +36,10 @@ gulp.task('sass', function () {
 
 gulp.task('uncss', function () {
     return gulp.src('./site/css/**/*.css')
-        .pipe(uncss({
-            html: ['./site/*.php']
-        }))
+        .pipe(autoprefixer({
+             browsers: ['last 99 versions'],
+             cascade: false
+         }))
         .pipe(gulp.dest('./public/css/'));
 });
 
