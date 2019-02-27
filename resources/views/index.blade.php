@@ -38,7 +38,7 @@
             </b>
             <div class="header_contact text_contact">
                 <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezonlnr@gmail.com</a></span>
+                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
                {{-- <span class="call_back"><a href="#"><i class="fas fa-headset"></i>Обратная связь</a></span>--}}
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>

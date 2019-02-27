@@ -8,7 +8,7 @@
         <hr class="style-seven">
         <div class="page_contact">
             <span class="contact_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-            <span class="contact_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezon@gmail.com</a></span>
+            <span class="contact_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
             {{-- <span class="call_back"><a href="#"><i class="fas fa-headset"></i>Обратная связь</a></span>--}}
         </div>
         <div class="zoom-anim-dialog-info form_width contact_form">

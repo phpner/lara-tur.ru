@@ -1,0 +1,19 @@
+.phpner_call-btn{
+    background: #348b35!important;
+    border-radius: 50%;
+}
+.old-ie{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background: red;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    z-index: 9999999999;
+    padding: 20px 0;
+}
+.old-ie span{
+    font-size: 50px;
+    font-weight: bold;
+}

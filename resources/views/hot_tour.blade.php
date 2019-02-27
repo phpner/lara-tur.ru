@@ -41,7 +41,7 @@
             </b>
             <div class="header_contact text_contact">
                 <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380508885455">+38 (050) 888-54-55</a></span>
-                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezonlnr@gmail.com</a></span>
+                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
                
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>

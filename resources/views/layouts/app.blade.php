@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('public/img/favicon.png') }}" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="{{asset('public/css/ei.css') }}" />
+    <div class="old-ie">Похоже Ваш браузер устарел, обновите его! <br>или позвоните нам <br> <span>+38 (095) 446-32-72</span></div>
+
+    <![endif]-->
+
 </head>
 <body>
 <div id="answers">
@@ -38,7 +45,7 @@
         <div class="wrapper">
             <div class="header_contact">
                 <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezonlnr@gmail.com</a></span>
+                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
             </div>
             <a class="header_logo" href="/"><img id="logo" src="{{asset('img/logo.png')}}" alt="Лого 5 сезонов ЛНР"></a>
             <div class="nav-icon-line">
@@ -148,19 +155,22 @@
     <img class="footer_bag" src="{{asset("public/img/bag.png")}}" alt="">
     <img class="footer_flat" src="{{asset("public/img/flat.png")}}" alt="">
     <span class="footer_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-    <span class="footer_mail"><i class="fas fa-at"></i><a href="mailto:5sezonlnr@gmail.com">5sezonlnr@gmail.com</a></span>
+    <span class="footer_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
 </footer>
 <!-- Кнопка -->
-<div id="phpner_button-wrapper" style="position: fixed; bottom: 50px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
-    <div id="phpner_button-call" style="position: relative; top: 0; left: 0;" >
-            <span class="phpner_button_tooltip--container phpner_button_tooltip--left">
-                <span class="phpner_button_tooltip phpner_button_tooltip--hide phpner_button_tooltip--hover">
-                    <span class="phpner_button_tooltip--text">Есть вопросы? Нажмите и мы перезвоним вам!</span>
-                    <span class="phpner_button_tooltip--close">x</span>
-                </span>
-            </span>
-        <div class="phpner_call-btn bigEntrance phpner-pulse" style="opacity: 1;">
-            <div class="phone-call_wave phone-call_wave__stroke"></div>
+<div class="wrapper-for-contact">
+
+
+    <div id="phpner_button-wrapper" style="position: fixed; bottom: 50px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
+        <div class="left-menu">
+            <span><a title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
+        </span>
+        <span class="write-to-us"><img  class="envelope" src="{{asset('public/img/envelope.png')}}" ></span>
+        </div>
+        <div id="phpner_button-call" style="position: relative; top: 0; left: 0;" >
+            <div class="phpner_call-btn bigEntrance phpner-pulse" style="opacity: 1;">
+                <div class="phone-call_wave phone-call_wave__stroke"></div>
+            </div>
         </div>
     </div>
 </div>

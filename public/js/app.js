@@ -87,7 +87,7 @@ $(document).ready(function () {
     }
 
 
-    $("#phpner_button-wrapper").on("click",function(){
+    $(".write-to-us").on("click",function(){
     $.magnificPopup.open({
         type: 'inline',
             items :{
@@ -246,12 +246,12 @@ $(document).ready(function () {
     /** Слайдер на страницах**/
     if ($(".slider_page").length > 0){
         $(".slider_page").slick({
-            /*autoplay: true,*/
+            autoplay: true,
             draggable: true,
             arrows: false,
             dots: true,
             fade: true,
-            speed: 900,
+            speed: 1300,
             infinite: true,
             cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
             touchThreshold: 100
