@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title')Турагентство &laquo;5 сезонов&raquo; доступный отдых по самым популярным странам мира.@endsection
 @section('description')Турагентство &laquo;5 сезонов&raquo; - это более 50 000 горящих туров в Европу,  ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд и другие популярные страны!@endsection
-@section('keywords')турагентство, 5 сезонов, туроператор горящий тур@endsection
+@section('keywords')турагентство, 5 сезонов, туроператор горящий тур, Европа, ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд@endsection
 @section('header')
     <div class="wrapper-slider">
     <div class="slider_top">
@@ -43,7 +43,7 @@
             </div>
             <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>
         </div>
-    <h2>ОАЭ</h2>
+    <h2 class="h1">ОАЭ</h2>
         <hr class="style-seven">
     <div class="tv-hot-tours tv-moduleid-974374"></div>
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>

@@ -136,7 +136,7 @@
 </section>
 
 <section class="our_partner">
-        <h3>Наши партнёры</h3>
+        <div class="title">Наши партнёры</div>
         <div class="slider_partner">
             <div class="item_operator">
                 <img src="/img/we-work-with/a0.png">
@@ -189,7 +189,7 @@
 <!-- callback -->
 <div id="callback" class="zoom-anim-dialog-info form_width mfp-hide">
     <form action="{{route('send-mail')}}" method="post" class="form_callback" >
-        <h3>Заполните ваши контакты</h3>
+        <div class="title">Заполните ваши контакты</div>
         {{ csrf_field() }}
         <div class="controll_input">
             <input type="text" name="name">
@@ -211,7 +211,7 @@
 
 <div id="callbackChoose" class="zoom-anim-dialog-info form_width mfp-hide">
     <form action="{{route('send-mail')}}" method="post" class="form_callback_choose" >
-        <h3>Заполните ваши контакты</h3>
+        <div class="title">Заполните ваши контакты</div>
         {{ csrf_field() }}
         <div class="controll_input">
             <input id="name" type="text" name="name">

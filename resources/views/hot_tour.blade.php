@@ -20,7 +20,7 @@
 @section("center")
     <div class="wrapper">
 
-        <h2>Горящие туры</h2>
+        <h2 class="h1">Горящие туры</h2>
         <hr class="style-seven">
         <div class="text_block">
             <b class="text_center">
