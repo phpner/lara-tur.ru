@@ -834,7 +834,8 @@ footer i {
 
 .info_img a {
   padding: 10px;
-  outline: none; }
+  outline: none;
+  height: 300px; }
 
 .info_img .text_info_in_page {
   padding-top: 12px;
@@ -1458,30 +1459,43 @@ input:-webkit-autofill {
   flex-direction: column;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   padding: 0 5px; }
 
 .wrapper-for-contact:hover .left-menu {
-  height: 153px;
-  top: -135px; }
+  height: 200px;
+  top: -179px; }
 
 .wrapper-for-contact:hover .phone-call_wave__stroke {
   -webkit-animation: step-end;
   -o-animation: step-end;
   animation: step-end; }
 
-.wrapper-for-contact .viber {
+.wrapper-for-contact .viber, .wrapper-for-contact .whatsapp {
   width: 35px;
   height: 35px;
   margin-top: 10px; }
 
 .wrapper-for-contact .envelope {
   cursor: pointer;
-  width: 42px;
-  height: 31px;
+  width: 35px;
+  height: 28px;
   margin-top: 20px; }
+
+#vk-mob {
+  display: none; }
+
+@media only screen and (max-width: 1500px) {
+  .slider_top img {
+    height: 690px; } }
+
+@media only screen and (max-width: 1300px) {
+  .slider_top img {
+    height: 600px; }
+  .h1 {
+    top: 225px; } }
 
 @media only screen and (max-width: 1220px) {
   .wrapper {
@@ -1492,8 +1506,6 @@ input:-webkit-autofill {
   footer .footer_bag {
     right: 10px;
     width: 62px; }
-  .slider_top img {
-    height: 670px; }
   header .wrapper_header {
     min-height: 584px; }
   .h1 {
@@ -1582,7 +1594,17 @@ input:-webkit-autofill {
   .slider_partner img {
     width: 250px; }
   .slider_partner {
-    height: 100px; } }
+    height: 100px; }
+  #vk-pc {
+    display: none; }
+  #vk-mob {
+    display: inline-block; }
+  .TVLineForm.TVTheme2, .TVWideForm.TVTheme2 {
+    width: 100% !important; }
+  .TVModalContainer.TVFadeIn {
+    width: 90% !important; }
+  .TVOrderWindow {
+    width: 100% !important; } }
 
 @media only screen and (max-width: 768px) {
   footer .footer_bag, footer .footer_flat {
@@ -1676,7 +1698,40 @@ input:-webkit-autofill {
     width: 100%;
     padding: 15px; }
   .wrapper-for-contact .left-menu {
-    left: -3px; } }
+    left: -3px; }
+  .TVTheme2 .TVCountry, .TVTheme2 .TVDates, .TVTheme2 .TVLocationButton, .TVTheme2 .TVNights, .TVTheme2 .TVTourists {
+    width: 100% !important;
+    margin-bottom: 15px;
+    border-bottom: 1px solid; }
+  .TVMainFilter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .TVWideForm.TVTheme2 .TVSearchButton {
+    width: 250px; }
+  .TVChooseCountry, .TVPopCountries {
+    width: 100% !important; }
+  .TVChooseCountry .TVListBox.TVEnd {
+    font-size: 28px;
+    height: auto !important; }
+  .TVOtherCountries .TVListBoxItem, .TVPopCountries .TVListBoxItem {
+    margin-bottom: 18px; }
+  .TVOtherCountries {
+    width: 100% !important; }
+  .TVOtherCountries .TVListBox {
+    margin-right: 0;
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 28px !important; } }
 
 @media only screen and (max-width: 600px) {
   .h2, h2 {

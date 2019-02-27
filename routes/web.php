@@ -105,11 +105,20 @@ Route::prefix('tour')->group(function () {
     })->name("contact");
 
     /**
+     * vetnam
+     */
+    Route::get('vetnam',  function (){
+        return view('pages.vetnam');
+    })->name("vetnam");
+
+    /**
      * countries
      */
     Route::get('countries',  function (){
         return view('pages.countries');
     })->name("countries");
+
+
 
 
 });

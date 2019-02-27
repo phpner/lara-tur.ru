@@ -7,23 +7,40 @@
         <h1>Туры в Росcию</h1>
         <hr class="style-seven">
         <!-- block info -->
-        {{--<div class="info_img">
+        <div class="info_img">
 
-            <a class="popup-with-zoom-anim" href="#about-tour">
-                <img src="{{asset('public/img/egipet/OEgipte_1.jpg')}}" alt="">
-                <span>О Росиии</span>
-            </a>
+            <div class="slider_page zoom-gallery">
 
-            <a class="popup-with-zoom-anim" href="#felax-tour">
-                <img src="{{asset('public/img/egipet/0egipet3.jpg')}}" alt="">
-                <span>Отдых в Росиии</span>
-            </a>
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                    <img src="{{asset('public/img/russiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
 
-            <a class="popup-with-zoom-anim" href="#have-to-know">
-                <img src="{{asset('public/img/egipet/Otdich_1.jpg')}}" alt="">
-                <span>Полезно знать</span>
-            </a>
-        </div>--}}
+                </a>
+
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/2.jpg')}}">
+                    <img src="{{asset('public/img/russiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
+
+                </a>
+
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/3.jpg')}}">
+                    <img src="{{asset('public/img/russiya/3.jpg')}}" alt="Вьетнам - Золотой мост в руках бога">
+
+                </a>
+                <a title="&laquo;5 сезонов&raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/4.jpg')}}">
+                    <img src="{{asset('public/img/russiya/4.jpg')}}" alt="Вьетнам - Золотой мост в руках бога">
+
+                </a>
+            </div>
+            <div class="text_info_in_page">
+                <i>&laquo;5 сезонов&raquo;</i> организует уникальный и удивительный тур в северную пальмира. <br>Помимо проживания в отелях 3-4 заезды можем предложить уникальную экскурсионную программу,
+                <br>
+                Вас ждет Эрмитаж, Петродворец с уникальными фонтанами. Окунитесь в роскошь петровской эпохи. <br> Сказочный Петродворец двор, понравиться не только вам, но и детям.
+                северная столица, это бывшая столица русской империи. <br> все злясь пропитано духом как петровской эпохи, так и начала революции 1917 года.
+                <br>
+                <i>&laquo;5 сезонов&raquo;</i> предлагает уникальную подборку экскурсий.<br>
+                А также организовываем программу по золотому кольцу России Суздаль Ярослав.
+
+            </div>
+        </div>
         <!-- End block info -->
 
 
@@ -32,9 +49,6 @@
             <div class="tv-hot-tours tv-moduleid-974436"></div>
             <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
         </div>
-
-    {{--  <div class="tv-country tv-moduleid-974368"></div>
-      <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>--}}
 
     <!-- block info popup-->
         <div id="about-tour" class="zoom-anim-dialog-info mfp-hide">
@@ -78,42 +92,6 @@
             </div>
         </div>
     </section>
-
-    <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
-        <img class="main_img" src="{{asset('public/img/egipet/Otdich_1.jpg')}}" alt="">
-        <h3>Путеводитель по Египту</h3>
-        <h4>Топ достопримечательностей</h4>
-        <ul>
-            <li style="text-align:justify"><strong>Карнакский храм</strong> — крупнейший храмовый комплекс Древнего Египта.</li>
-            <li style="text-align:justify"><strong>Луксорский храм</strong>, первые сведения о котором датируются XIV веком до н. э.</li>
-            <li style="text-align:justify"><strong>Исламский Каир</strong> — средневековая цитадель Египта.</li>
-            <li style="text-align:justify"><strong>Вади-аль-Хитан</strong>, где узнаете факты происхождения китов от животных, обитавших на суше.</li>
-            <li style="text-align:justify"><strong>Пирамиды Гизы</strong> с единственным сохранившимся памятником из Семи чудес древнего мира, пирамидой Хеопса.</li>
-            <li style="text-align:justify"><strong>Большой Сфинкс</strong> — древнейшая монументальная скульптура, которая осталась на Земле.</li>
-            <li style="text-align:justify"><strong>Памятники Нубии</strong> с высеченными на скалах храмами.</li>
-            <li style="text-align:justify"><strong>Монастырь святой Екатерины</strong> — один из древнейших постоянно действующих христианских монастырей в мире.</li>
-        </ul>
-        <p style="text-align:justify">
-            <br>Все, кроме последнего, размещены на континентальной части страны, а монастырь — на Синайском полуострове. Вдоль берегов Нила устраиваются туристические поездки, где покажут большинство этих памяток.</p>
-        <h4><br>Полезно знать</h4>
-        <ul>
-            <li style="text-align:justify">В период <strong>Рамадана</strong> в Египте <strong>запрещается пить, курить</strong> и даже есть <strong>в общественных местах</strong>.</li>
-            <li style="text-align:justify">На пляжах египетских курортов <strong>нельзя загорать топлес</strong>, а гуляя по городу — одеваться откровенно.</li>
-            <li style="text-align:justify">Помните, что <strong>катаются на верблюдах</strong> бесплатно, а вот слезть с животного можно только <strong>за деньги</strong>.</li>
-            <li style="text-align:justify"><strong>Не</strong> рекомендуется <strong>пить</strong> воду <strong>из-под крана</strong> и мыть в ней овощи и фрукты, для этого лучше использовать кипяченую или бутилированную воду.</li>
-            <li style="text-align:justify">Из Египта <strong>запрещено вывозить кораллы</strong> и другие дары моря.</li>
-        </ul>
-    </div>
-    <!-- End block info popup-->
-    <!-- Block Найди сам! -->
-    <section class="find_by_self">
-        <div class="wrapper">
-            <p class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</p>
-            <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
-        </div>
-    </section>
-    <!-- End Block Найди сам! -->
 
 @endsection
 

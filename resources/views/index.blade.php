@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title')Турагентство &laquo;5 сезонов&raquo; доступный отдых по самым популярным странам мира.@endsection
-@section('description')Турагентство &laquo;5 сезонов&raquo; - это более 50 000 горящих туров в Европу,  ОАЭ, Азию, путевки в Египет, Африку и Америку, Турцию, Тайланд и другие популярные страны!@endsection
-@section('keywords')турагентство &laquo;5 сезонов&raquo;@endsection
+@section('description')Турагентство &laquo;5 сезонов&raquo; - это более 50 000 горящих туров в Европу,  ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд и другие популярные страны!@endsection
+@section('keywords')турагентство, 5 сезонов, туроператор горящий тур@endsection
 @section('header')
     <div class="wrapper-slider">
     <div class="slider_top">

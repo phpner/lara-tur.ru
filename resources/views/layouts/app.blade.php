@@ -70,6 +70,9 @@
                                 <li data-cvalue="bolgariya" class="dd-item">
                                     <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
                                 </li>
+                                <li data-cvalue="vetnam" class="dd-item">
+                                    <a class="<?php echo $page === "vetnam" ? 'active' : ''?>" href="{{route('vetnam')}}"> <i class="sprite sprite-vetnam"></i><span>Вьетнам</span></a>
+                                </li>
                                 <li data-cvalue="dominikana" class="dd-item">
                                     <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i>Доминикана</span> </a>
                                 </li>
@@ -163,9 +166,16 @@
 
     <div id="phpner_button-wrapper" style="position: fixed; bottom: 50px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
         <div class="left-menu">
-            <span><a title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
-        </span>
-        <span class="write-to-us"><img  class="envelope" src="{{asset('public/img/envelope.png')}}" ></span>
+            <span>
+                <a id="vk-pc" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
+                <a id="vk-mob" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
+             </span>
+            <span>
+                <a title="whatsapp" href="whatsapp://send?phone=+380954463272"><img class="whatsapp" src="{{asset('public/img/whatsapp.png')}}" ></a>
+            </span>
+            <span class="write-to-us">
+                <img  class="envelope" src="{{asset('public/img/envelope.png')}}" >
+            </span>
         </div>
         <div id="phpner_button-call" style="position: relative; top: 0; left: 0;" >
             <div class="phpner_call-btn bigEntrance phpner-pulse" style="opacity: 1;">
