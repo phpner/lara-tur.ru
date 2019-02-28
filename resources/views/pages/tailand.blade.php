@@ -5,6 +5,7 @@
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Таиланд</h1>
+        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
             <div class="slider_page zoom-gallery">
@@ -18,7 +19,7 @@
                 </a>
 
                 <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/3.jpg')}}">
-                    <img src="{{asset('public/img/tailand/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Таиланде">
+                    <img src="{{asset('public/img/tailand/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Таиланд">
                 </a>
             </div>
             <div class="text_info_in_page">

@@ -5,6 +5,7 @@
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры в Турцию</h1>
+        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
             <div class="slider_page zoom-gallery">

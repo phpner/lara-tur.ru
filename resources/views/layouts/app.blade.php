@@ -57,7 +57,8 @@
                     <span></span>
                 </div>
             </div>
-            <ul class="menu">
+            <nav>
+             <ul class="menu">
                 <li><a class="<?php echo $menu === 0 ? 'active' : ''?>" href="/">Главная</a></li>
                 <li><a class="<?php echo $menu === 1 ? 'active' : ''?>" href="{{route('choose-tour')}}">Подбор тура</a></li>
                 <li><a  class="<?php echo $menu === 2 ? 'active' : ''?>" href="{{route('hot-tour')}}">Горящие туры</a></li>
@@ -120,6 +121,7 @@
                 -->
                 <li><a  class="<?php echo $menu === 6 ? 'active' : ''?>" href="{{route('contact')}}">Контакты</a></li>
             </ul>
+            </nav>
         </div>
     </nav>
     @yield('header')

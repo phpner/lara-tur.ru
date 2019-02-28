@@ -5,6 +5,7 @@
 @section('center')
     <section class="wrapper pt-118px">
         <h1>Туры во Вьетнам</h1>
+        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
 

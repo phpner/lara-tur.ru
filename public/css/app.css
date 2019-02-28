@@ -1415,6 +1415,13 @@ input:-webkit-autofill {
   padding: 25px 0 40px;
   overflow: hidden; }
 
+.our_partner .title {
+  text-align: center;
+  font-size: 30px;
+  color: #424242;
+  font-family: Ubuntu,sans-serif;
+  margin-bottom: 30px; }
+
 .contact_tour {
   background: #f7f7f7;
   padding: 59px 0;
@@ -1753,4 +1760,6 @@ input:-webkit-autofill {
   .m-top-countries > li {
     width: 100%; }
   .form_width {
-    width: 98% !important; } }
+    width: 98% !important; }
+  .info_img a {
+    height: 230px; } }

@@ -11,22 +11,22 @@
 
             <div class="slider_page zoom-gallery">
 
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
-                    <img src="{{asset('public/img/russiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                    <img src="{{asset('public/img/russiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
 
                 </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/2.jpg')}}">
-                    <img src="{{asset('public/img/russiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/2.jpg')}}">
+                    <img src="{{asset('public/img/russiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
 
                 </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/3.jpg')}}">
-                    <img src="{{asset('public/img/russiya/3.jpg')}}" alt="Вьетнам - Золотой мост в руках бога">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/3.jpg')}}">
+                    <img src="{{asset('public/img/russiya/3.jpg')}}" alt="туры в Росcию">
 
                 </a>
-                <a title="&laquo;5 сезонов&raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/4.jpg')}}">
-                    <img src="{{asset('public/img/russiya/4.jpg')}}" alt="Вьетнам - Золотой мост в руках бога">
+                <a title="&laquo;5 сезонов&raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/4.jpg')}}">
+                    <img src="{{asset('public/img/russiya/4.jpg')}}" alt="туры по Росcии">
 
                 </a>
             </div>
@@ -37,7 +37,8 @@
                 северная столица, это бывшая столица русской империи. <br> все злесь пропитано духом как петровской эпохи, так и начала революции 1917 года.
                 <br>
                 <h2><i>&laquo;5 сезонов&raquo;</i> предлагает уникальную подборку экскурсий.</h2><br>
-                <h3>А также организовываем программу по золотому кольцу России Суздаль Ярослав.</h3>
+                <h3>А также организовываем программу по золотому кольцу России Суздаль Ярослав.</h3><br>
+                Туристическое агентство <i>«5 сезонов»</i> предлагает бронирование билетов на отдых в <h2>Россию из ЛНР</h2>
 
             </div>
         </div>
