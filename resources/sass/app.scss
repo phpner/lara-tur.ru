@@ -446,10 +446,15 @@ footer i{
 
 .info_img{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: #f6f6f6;
     padding-bottom: 10px;
+    line-height: 1.5;
+}
+.info_img p{
+    margin-bottom: 8px;
 }
 .info_img .slick-dots li.slick-active button:before{
     font-size: 18px;
@@ -463,11 +468,14 @@ footer i{
     color: $orange;
 }
 .slider_page{
-    width:50%;
+    width:75%;
 }
 .text_info_in_page{
-    width: 48%;
-    margin-left: 10px;
+    width: 100%;
+    padding: 20px;
+}
+.text_info_in_page{
+
 }
 .info_img a{
     padding: 10px;
@@ -1409,6 +1417,7 @@ input:-webkit-autofill {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+    font-size: 37px;
 }
+
 
