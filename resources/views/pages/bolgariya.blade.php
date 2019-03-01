@@ -26,7 +26,16 @@
             </a>
             </div>
             <div class="text_info_in_page">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt dignissimos error eveniet exercitationem magnam maxime minus nesciunt nisi non, nulla numquam perspiciatis, quia quisquam sequi sint temporibus voluptates voluptatum.
+                <p> Болгария всегда считалась не очень большой по размерам страной, но в ней можно найти все, что
+                    необходимо для туристов: древняя культура, дружелюбные люди, неповторимые пейзажи и, конечно же,
+                    чистое, теплое черное море. Именно тот факт, что здесь теплое море, набирает такую популярность при
+                    покупке горящих туров в Болгарию. Горящие туров в Болгарию, были популярными ещё во времена СССР.
+                </p>
+                <p>
+                    Ведь купить тур в Болгарию было посильно любому комсомольскому вожаку.
+                    На сегодняшний день турагентство <i>&laquo;5 сезонов&raquo;</i> предлагает бронировку в ЛНР горящих туров на отдых в
+                    Болгарию.
+                </p>
             </div>
         </div>
         <!-- End block info -->
