@@ -471,30 +471,35 @@ footer i{
     width:75%;
 }
 .text_info_in_page{
-    width: 100%;
     padding: 20px;
 }
-.text_info_in_page{
 
-}
 .info_img a{
     padding: 10px;
     outline: none;
     height: 300px;
 
 }
-.info_img .text_info_in_page{
-    padding-top: 12px;
-    font-family: 'Open Sans', sans-serif
+
+.TVInterfaceWrapper{
+    border-radius: 0!important;
 }
-.info_img .text_info_in_page h2,.info_img .text_info_in_page h3{
+.bg_gray{
+    background: #f6f6f6;
+}
+.text_info_in_page{
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+ .text_info_in_page h2, .text_info_in_page h3{
     padding-top: 12px;
     font-family: Open Sans,sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     display: inline;
 }
-.info_img .text_info_in_page i{
+.text_info_in_page i{
     color: $green;
     font-weight: 700;
 }
@@ -1059,6 +1064,12 @@ input:-webkit-autofill {
 }
 .contact_form{
     margin-bottom: 30px;
+}
+
+.contact_form h3{
+    margin: 28px 0;
+    font-size: 23px;
+    text-transform: uppercase;
 }
 
 .TVSRFixePanel{

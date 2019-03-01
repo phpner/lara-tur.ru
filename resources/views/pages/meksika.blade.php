@@ -8,21 +8,24 @@
         <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
+            <div class="slider_page zoom-gallery">
+                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/1.jpg')}}">
+                    <img src="{{asset('public/img/meksika/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Мексика">
 
-            <a class="popup-with-zoom-anim" href="#about-tour">
-                <img src="{{asset('public/img/meksika/1.jpg')}}" alt="&laquo;5 сезонов&raquo; О Мексике">
-                <span>О Мексике</span>
-            </a>
+                </a>
 
-            <a class="popup-with-zoom-anim" href="#felax-tour">
-                <img src="{{asset('public/img/meksika/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Увлекательные факты о Мексике">
-                <span>Отдых в Мексике</span>
-            </a>
+                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/2.jpg')}}">
+                    <img src="{{asset('public/img/meksika/2.jpg')}}" alt="&laquo;5 сезонов&raquo; ">
 
-            <a class="popup-with-zoom-anim" href="#have-to-know">
-                <img src="{{asset('public/img/meksika/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Фото Кафедральный собор в Мехико">
-                <span>Полезно знать</span>
-            </a>
+                </a>
+
+                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/3.jpg')}}">
+                    <img src="{{asset('public/img/meksika/3.jpg')}}" alt="Мексика ">
+
+                </a>
+            </div>
+            <div class="text_info_in_page">
+            </div>
         </div>
         <!-- End block info -->
         <div class="choose_tour">

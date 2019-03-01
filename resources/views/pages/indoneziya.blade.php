@@ -9,7 +9,7 @@
         <div class="info_img">
             <div class="slider_page zoom-gallery">
 
-                <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/indoneziya/1.jpg')}}">
                     <img src="{{asset('public/img/indoneziya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Индонезия">
 
                 </a>

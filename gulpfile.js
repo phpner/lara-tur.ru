@@ -5,12 +5,14 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var uncss = require('gulp-uncss');
 var cssnano = require('gulp-cssnano');
+var plumber = require('gulp-plumber');
 
 /*const gulpDeployFtp = require('gulp-deploy-ftp');*/
 
 
 gulp.task('sass', function () {
   return gulp.src('./resources/sass/*.scss')
+    .pipe(plumber())
     .pipe(cssnano({autoprefixer: {
      browsers:['last 50 versions'], 
      add: true
