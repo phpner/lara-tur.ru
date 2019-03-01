@@ -14,7 +14,7 @@
                 </a>
 
                 <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/2.jpg')}}">
-                    <img src="{{asset('public/img/shri-lanka/2.jpg')}}" alt="&laquo;5 сезонов&raquo; ">
+                    <img src="{{asset('public/img/shri-lanka/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Шри-Ланку">
                 </a>
 
                 <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/3.jpg')}}">
@@ -29,7 +29,7 @@
                 нескончаемого лета Вы будете чувствовать у себя в душе, не прекращаемые переливы ярких красок, заставят
                 Вас полюбить Шри-Ланка!
                 </p>
-                Туристическое Агентство &laquo;5 сезонов&raquo; предлагает Вам забронировать билеты в ЛНР на незабываемый отпуск!
+                Туристическое Агентство &laquo;5 сезонов&raquo; предлагает Вам забронировать билеты в Луганске на незабываемый отпуск!
             </div>
         </div>
         <!-- End block info -->

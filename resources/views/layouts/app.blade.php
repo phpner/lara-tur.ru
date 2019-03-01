@@ -7,14 +7,12 @@
     <meta name=keywords content="@yield('keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    @yield('meta')
     <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']?>" />
     <meta property="og:image" content="http://<?php echo $_SERVER['HTTP_HOST']?>/img/5sezonov.png" />
     <meta property="og:image:width" content="537">
     <meta property="og:image:height" content="240">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('public/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
@@ -44,10 +42,10 @@
     <nav class="top_menu">
         <div class="wrapper">
             <div class="header_contact">
-                <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
+                <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+                <span class="header_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
             </div>
-            <a class="header_logo" href="/"><img id="logo" src="{{asset('img/logo.png')}}" alt="Лого 5 сезонов ЛНР"></a>
+            <a class="header_logo" href="/"><img id="logo" src="{{asset('img/logo.png')}}" alt="Лого 5 сезонов Луганск"></a>
             <div class="nav-icon-line">
                 <span id="nav-text-in" class="click-in">МЕНЮ</span>
                 <div id="nav-icon" class="click-in">
@@ -77,9 +75,11 @@
                                 <li data-cvalue="dominikana" class="dd-item">
                                     <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i>Доминикана</span> </a>
                                 </li>
+                                <!--
                                 <li data-cvalue="egipet" class="dd-item">
                                     <a class="<?php echo $page === "egipet" ? 'active' : ''?>" href="{{route('egipet')}}"> <i class="sprite sprite-egipet"></i><span>Египет</span> </a>
                                 </li>
+                                -->
                                 <li data-cvalue="indiya" class="dd-item">
                                     <a class="<?php echo $page === "indiya" ? 'active' : ''?>" href="{{route('indiya')}}"> <i class="sprite sprite-indiya"></i><span>Индия</span> </a>
                                 </li>
@@ -159,8 +159,8 @@
 <footer>
     <img class="footer_bag" src="{{asset("public/img/bag.png")}}" alt="">
     <img class="footer_flat" src="{{asset("public/img/flat.png")}}" alt="">
-    <span class="footer_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-    <span class="footer_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
+    <span class="footer_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+    <span class="footer_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
 </footer>
 <!-- Кнопка -->
 <div class="wrapper-for-contact">
@@ -210,16 +210,14 @@
     </form>
 </div>
 <!-- end callback -->
-
 <div id="callbackChoose" class="zoom-anim-dialog-info form_width mfp-hide">
     <form action="{{route('send-mail')}}" method="post" class="form_callback_choose" >
         <div class="title">Заполните ваши контакты</div>
         {{ csrf_field() }}
         <div class="controll_input">
-            <input id="name" type="text" name="name">
-            <span>Ваше имя</span>
+            <input id="name" type="text" name="name" placeholder="Ваше имя">
         </div>
-        <div class="controll_input">
+        <div class="controll_input_contry">
         <div class="form-item" id="edit-field-request-country-value-wrapper">
             <label for="edit-field-request-country-value">страна:</label>
             <select name="field_request_country" class="form-select" id="edit-field-request-country-value">
@@ -367,19 +365,17 @@
         </div>
         </div>
         <div class="controll_input">
-            <input class="input-tel" type="tel" name="tel">
-            <span>Ваш телевон</span>
+            <input class="input-tel" type="tel" name="tel" placeholder="телефон">
         </div>
         <div class="controll_input">
-            <input type="email" name="email">
-            <span>Ваш email</span>
+            <input type="email" name="email" placeholder="email">
         </div>
         <textarea placeholder="Текст"></textarea>
         <input type="submit" class="btn" value="Отправить заявку" onsubmit="return false;">
     </form>
 </div>
 
-<a href="#" class="scrollup scrollup_sticky"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<a href="#" class="scrollup scrollup_sticky"><i class="icon-arrow-up2" aria-hidden="true"></i></a>
 
 <script src="{{asset('public/js/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('public/js/jquery.magnific-popup.min.js')}}"></script>

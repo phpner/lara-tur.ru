@@ -66,7 +66,8 @@ class Mail extends Controller
         $mail->From = 'phpner@phpner.ga';
         $mail->CharSet = 'utf-8';   //Устанавливаем кодировку
         $mail->SetLanguage('ru');   //для ошибок итд.
-        $mail->addAddress("phpner@gmail.com","phpner"); //куда отправлять список через ","
+        $mail->addAddress("phpner@gmail.com","phpner");
+        $mail->addAddress("zakaz@5-sezonov.ru","5sezonov");
         $mail->FromName = 'Мой сайт';
         $mail->Subject = "Кто-то хочет что-то спросить";
         $mail->Body = $body;

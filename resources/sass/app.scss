@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 @import "variables";
 @import "tom-menu";
+@import "icon";
+
 *{
     margin: 0;
     padding: 0;
@@ -271,6 +273,7 @@ footer i{
     cursor: pointer;
 }
 #nav-icon span {
+
     display: block;
     position: absolute;
     height: 3px;
@@ -290,9 +293,6 @@ footer i{
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-
-
-
 /* Icon 3 */
 
 #nav-icon span:nth-child(1) {
@@ -354,16 +354,7 @@ footer i{
     top: 0!important;
 }
 
-.text_block{
-    font-size: 23px;
-    background: whitesmoke;
-    padding: 16px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 black;
-    box-shadow: 2px 3px 9px 1px rgba(0, 0, 0, 0.71);
-    text-align: center;
-}
+
 
 .we_help{
     font-size: 18px;
@@ -376,16 +367,28 @@ footer i{
     padding: 10px;
 }
 
+.text_block{
+    font-size: 17px;
+    background: whitesmoke;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 9px 1px rgba(0, 0, 0, 0.71);
+    text-align: center;
+    line-height: 1.4;
+}
+
 .text_block p{
     padding-bottom: 8px;
 }
 
-.text_center{
+.text_block .text_center{
     text-align: center;
     display: inline-block;
     width: 100%;
     padding: 9px;
     color:$green;
+    font-size: 23px;
 }
 
 .danger_text{
@@ -402,6 +405,15 @@ footer i{
     color: #424242;
 }
 
+#callbackChoose{
+    background: url("/img/model-bg.jpg") 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+}
+#callbackChoose .mfp-close{
+    border-radius: 0 11px 0 0;
+}
 .zoom-anim-dialog-info .main_img{
     width: 100%;
 }
@@ -418,7 +430,9 @@ footer i{
     padding: 15px 0;
     color: $green;
 }
-
+#callbackChoose .title{
+    color: #fff;
+}
 .zoom-anim-dialog-info p, .text_block_about_tour{
     margin-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -788,6 +802,19 @@ footer i{
     position: relative;
     width: 93%;
     margin-bottom: 17px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
+    background: #fff;
+}
+.controll_input_contry{
+    width: 93%;
+}
+.controll_input_contry select{
+    width: 93%;
+    margin-bottom: 17px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
+    background: #fff;
 }
 .controll_input span{
     position: absolute;
@@ -827,11 +854,11 @@ input:-webkit-autofill {
 }
 
 .controll_input input.error{
-    box-shadow: 0 0 2px 0 rgba(222, 30, 30, 0.78);
+    box-shadow: 0 0 0px 3px rgba(222, 30, 30, 0.78);
 }
 
 .controll_input input.valid{
-    box-shadow: 0 0 2px 0 rgba(67, 222, 51, 0.78);
+    box-shadow: 0 0 0px 2px rgba(67, 222, 51, 0.78);
 }
 
 .form_callback  textarea, .form_callback_choose textarea{
@@ -855,6 +882,7 @@ input:-webkit-autofill {
 #edit-field-request-country-value-wrapper label{
     font-size: 23px;
     margin-bottom: 12px;
+    color: white;
 }
 #edit-field-request-country-value-wrapper select{
     width: 100%;
@@ -863,7 +891,6 @@ input:-webkit-autofill {
     border-radius: 4px;
     height: 38px;
     padding-left: 12px;
-    background-color: transparent;
     outline: none;
     font-size: 18px;
     font-family: Ubuntu, sans-serif;
@@ -1123,6 +1150,10 @@ input:-webkit-autofill {
     display: none;
 }
 
+.page_choose_tour{
+    padding: 20px;
+}
+
 @media only screen and (max-width : 1500px) {
     .slider_top img {
         height: 690px;
@@ -1306,7 +1337,8 @@ input:-webkit-autofill {
 
     .header_contact .header_tel, .header_contact .header_mail{
         margin-top: 8px;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
     }
     #dropDownHolder{
         position: relative;
@@ -1329,7 +1361,7 @@ input:-webkit-autofill {
         top: 0;
     }
     .text_block{
-        font-size: 18px;
+        font-size: 16px;
     }
     .phpner_call-btn{
         width: 45px;

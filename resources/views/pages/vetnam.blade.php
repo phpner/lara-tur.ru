@@ -8,26 +8,27 @@
         <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
-
             <div class="slider_page zoom-gallery">
-
                 <a title="&laquo; 5 сезонов &raquo; Вьетнам" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
                     <img src="{{asset('public/img/vetnam/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
-
                 </a>
 
                 <a title="&laquo; 5 сезонов &raquo; Вьетнам" class="popup-with-zoom-anim" href="{{asset('public/img/vetnam/2.jpg')}}">
                     <img src="{{asset('public/img/vetnam/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Вьетнам">
-
                 </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Вьетнам" class="popup-with-zoom-anim" href="{{asset('public/img/vetnam/3.jpg')}}">
+                <a title="&laquo;5 сезонов&raquo; Вьетнам" class="popup-with-zoom-anim" href="{{asset('public/img/vetnam/3.jpg')}}">
                     <img src="{{asset('public/img/vetnam/3.jpg')}}" alt="Вьетнам - Золотой мост в руках бога">
-
                 </a>
             </div>
             <div class="text_info_in_page">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt dignissimos error eveniet exercitationem magnam maxime minus nesciunt nisi non, nulla numquam perspiciatis, quia quisquam sequi sint temporibus voluptates voluptatum.
+                <p> Вьетнам является недорогим место, где можно ощутить массу удовольствие от пляжного отдыха. Отдых во
+                    Вьетнаме – это большой выбор разнообразного отдыха, можно выбрать минимальный вариант, если бюджет
+                    не позволяет большее.
+                    Наверное, самая популярная экскурсия во Вьетнаме — круиз по незабываемой бухте Халонг…</p>
+                Не упустите свой шанс хорошего отдыха!
+                Сегодня туристическое агентство <i>&laquo;5 сезонов&raquo;</i> предлагает Вам забронировать туры во Вьетнам из Луганска.
+
             </div>
         </div>
         <!-- End block info -->

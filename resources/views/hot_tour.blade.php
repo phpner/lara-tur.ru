@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title')Горящие туры - купить горящие путевки за границу.@endsection
-@section('description')Лучшие горящие туры за границу. Купить горящие путевки от проверенных туроператоров!@endsection
-@section('keywords')Горящие туры, горящие путевки@endsection
+@section('title')Горящие туры - купить горящие путевки за границу в Луганске.@endsection
+@section('description')Лучшие горящие туры за границу. Туристическое агентство 5 сезонов рада предложить Вам отдых по горящим турам!@endsection
+@section('keywords')Горящие туры, горящие путевки, ЛНH, Луганск@endsection
 @section('header')
     <div class="wrapper-slider">
         <div class="slider_top">
@@ -24,32 +24,32 @@
         <hr class="style-seven">
         <div class="text_block">
             <b class="text_center">
-                Следите за появлением горящих туров на нашем сайте
-            </b>
-            <p>
-                (информация обновляется ежедневно) Вы сможете сэкономить до <span class="danger_text">30%</span> от стоимости тура.
-            </p>
-            <p>
-                Eсли Вы видите подходящий Вам горящий тур, поторопитесь его забронировать.
-            </p>
-            <p>
-                Горящие туры действуют очень непродолжительное время!
-            </p>
-
+                Туристическое агентство «5 сезонов» рада предложить Вам отдых по горящим турам!
+            </b>Здесь Вы найдете самые актуальные предложения на данный момент и сможете сэкономить вплоть до <span class="danger_text">30%</span>.
+            Что бы не упустить свой шанс, следите за появлением горящих туров!
+            Вы можете оставить заявку, и наши менеджеры будут наблюдать за турами, которые Вам интересны.
             <b class="text_center">
                 Сделать это можно:
             </b>
             <div class="header_contact text_contact">
-                <span class="header_tel"><i class="fas fa-mobile-alt"></i><a href="tel:+380508885455">+38 (050) 888-54-55</a></span>
-                <span class="header_mail"><i class="fas fa-at"></i><a href="mailto:5sezonovlnr@gmail.com">5sezonovlnr@gmail.com</a></span>
-               
+                <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+                <span class="header_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
+                <span class="header_mail"><i class="icon-mail"></i><a href="#callbackChoose" class="btn btn-brand popup-with-form">Оставить заявку </a></span>
             </div>
-            <p class="we_help"><em>Если у Вас нет времени "ловить" горящий тур, мы сделаем это за Вас!</em></p>
         </div>
 
         <div class="tv-hot-tours tv-moduleid-974450"></div>
         <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     </div>
+    <!-- Block Найди сам! -->
+    <section class="find_by_self">
+        <div class="wrapper">
+            <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
+            <div class="tv-search-form tv-moduleid-187833"></div>
+            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        </div>
+    </section>
+    <!-- End Block Найди сам! -->
 @endsection
 
 @section('footer-script')
