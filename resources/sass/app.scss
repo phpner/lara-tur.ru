@@ -79,6 +79,13 @@ section h1{
     font-size: 30px;
     color: $green;
 }
+.info_img h1{
+    position: absolute;
+    z-index: 5;
+    top: 35px;
+    width: 100%;
+    background-image: linear-gradient(40deg, rgba(255, 255, 255, 0) 21%, rgb(255, 255, 255) 48%, rgba(0, 188, 245, 0) 80%);
+}
 
 header{
     position: relative;
@@ -459,14 +466,14 @@ footer i{
 }
 
 .info_img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: #f6f6f6;
     padding-bottom: 10px;
     line-height: 1.5;
+    position: relative;
+    padding-top: 25px;
+
 }
+
 .info_img p{
     margin-bottom: 8px;
 }
@@ -482,7 +489,7 @@ footer i{
     color: $orange;
 }
 .slider_page{
-    width:75%;
+    width:100%;
 }
 .text_info_in_page{
     padding: 20px;
@@ -491,7 +498,7 @@ footer i{
 .info_img a{
     padding: 10px;
     outline: none;
-    height: 300px;
+    height: 400px;
 
 }
 
@@ -763,7 +770,6 @@ footer i{
     bottom: auto!important;
     border-top-color: transparent!important;
     border-bottom-color: transparent!important;
-
     margin: 0!important;
     border-width: 8px!important;
     border-style: solid!important;
@@ -773,7 +779,6 @@ footer i{
     z-index: 500!important;
     content: ''!important;
     background: 0 0!important;
-
     box-sizing: border-box!important;
 }
 
@@ -1151,7 +1156,7 @@ input:-webkit-autofill {
 }
 
 .page_choose_tour{
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width : 1500px) {
@@ -1200,7 +1205,6 @@ input:-webkit-autofill {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
     .search_block_header {
         position: relative;
     }
@@ -1291,6 +1295,9 @@ input:-webkit-autofill {
     .TVOrderWindow{
         width: 100%!important;
     }
+    .info_img a{
+        height: 340px;
+    }
 }
 
 
@@ -1344,6 +1351,8 @@ input:-webkit-autofill {
         position: relative;
         left: 0;
         transform: translateX(0);
+
+
     }
     .all_city{
         margin-left: auto;
@@ -1359,6 +1368,7 @@ input:-webkit-autofill {
         height: 0;
         overflow: hidden;
         top: 0;
+        width: 100%;
     }
     .text_block{
         font-size: 16px;
@@ -1383,6 +1393,7 @@ input:-webkit-autofill {
     }
     .info_img a{
         width: 100%;
+        height: 290px;
     }
     .info_img .slider_page{
         width: 100%;
@@ -1439,6 +1450,15 @@ input:-webkit-autofill {
     .header_contact a, .page_contact a{
         font-size: 17px;
     }
+    .info_img h1{
+        position: relative;
+        padding-bottom: 15px;
+        padding-top: 0;
+        top: 0;
+    }
+    .info_img a{
+        height: 240px;
+    }
 
 }
 /* Extra Small Devices, Phones */
@@ -1453,7 +1473,7 @@ input:-webkit-autofill {
         width: 98%!important;
     }
     .info_img a{
-        height: 230px;
+        height: 170px;
     }
 
 }

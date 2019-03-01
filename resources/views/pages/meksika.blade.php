@@ -4,10 +4,9 @@
 @section('keywords')туры в Мексикуб Луганскб ЛНР@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Туры в Мексику</h1>
-        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
+            <h1>Туры в Мексику</h1>
             <div class="slider_page zoom-gallery">
                 <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/1.jpg')}}">
                     <img src="{{asset('public/img/meksika/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Мексика">
@@ -37,7 +36,7 @@
         <!-- End block info -->
         <div class="choose_tour">
             <div class="tv-hot-tours tv-moduleid-974444"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
 
         <!-- block info popup-->
@@ -87,33 +86,12 @@
         </div>
     </section>
 
-    <div id="have-to-know" class="zoom-anim-dialog-info mfp-hide">
-        <img class="main_img" src="{{asset('public/img/meksika/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Фото Кафедральный собор в Мехико">
-        <h3>Путеводитель по Мексике</h3>
-        <h4><span style="font-weight:400"></span><strong>Топ достопримечательностей:</strong></h4>
-        <ul>
-            <li style="font-weight:400"><strong>Темпло Майор</strong> — комплекс культовых сооружений, музей под открытым небом. Здесь представлено более 5 тыс. экспонатов и исторических сооружений.</li>
-            <li style="font-weight:400"><strong>Базилика Девы Марии Гваделупской</strong>, датируемая 1531 годом, главный храм государства.</li>
-            <li style="font-weight:400"><strong>Пирамида Кукулькан</strong> — культовое сооружение в Чичен-Ица.</li>
-            <li style="font-weight:400"><strong>Монте-Альбан вблизи Оахака</strong>, находится под охраной ЮНЕСКО. Этот археологический комплекс — центр культуры Сапотеков.</li>
-            <li style="font-weight:400"><strong>Сак-Актун</strong> — подземная река длиной 300 км. Считается природным чудом страны.</li>
-        </ul>
-        <h4><strong>Полезно знать:</strong></h4>
-        <ul>
-            <li style="font-weight:400">Перед посещением Мексики рекомендуется <strong>пройти вакцинацию</strong> от малярии и гепатита, хотя в требованиях для визы этого нет;</li>
-            <li style="font-weight:400">отдавайте предпочтение <strong>кипяченой или бутилированной воде</strong>;</li>
-            <li style="font-weight:400"><strong>следите за вещами</strong> в многолюдных местах, в Мексике часто случаются кражи;</li>
-            <li style="font-weight:400"><strong>не фотографируйте</strong> местных жителей без их разрешения;</li>
-            <li style="font-weight:400"><strong>запрещено курить</strong> в общественных местах, штраф за нарушение составляет от 1500 мексиканских песо (77,20 $).</li>
-        </ul>
-    </div>
-    <!-- End block info popup-->
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">
-            <p class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</p>
+            <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

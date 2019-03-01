@@ -14,7 +14,7 @@
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
-        <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        <script  src="//tourvisor.ru/module/init.js"></script>
     </div>
 @endsection
 @section("center")
@@ -39,14 +39,14 @@
         </div>
 
         <div class="tv-hot-tours tv-moduleid-974450"></div>
-        <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        <script  src="//tourvisor.ru/module/init.js"></script>
     </div>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">
             <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

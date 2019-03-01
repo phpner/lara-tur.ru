@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('public/img/favicon.png') }}" type="image/x-icon" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
-    <!--[if IE]>
+    <!--[if lte 9]>
     <link rel="stylesheet" type="text/css" href="{{asset('public/css/ei.css') }}" />
     <div class="old-ie">Похоже Ваш браузер устарел, обновите его! <br>или позвоните нам <br> <span>+38 (095) 446-32-72</span></div>
 
@@ -30,7 +29,7 @@
 <div id="answers">
     <span>Спасибо. Заявка принята. <br> Мы скоро перезвоним!</span>
 </div>
-<div class="sendForm" style="display: none;"><img src="{{asset('public/img/sending.gif')}}" alt=""></div>
+<div class="sendForm" style="display: none;"><img src="{{asset('public/img/sending.gif')}}" alt="туристическое агентство контакты Луганск ЛНР"></div>
 
 @if (!isset($menu))
     <?php  $menu = '';?>
@@ -63,8 +62,7 @@
                 <li class="DownHolder" >
                     <a class="<?php echo $menu === 3 ? 'active' : ''?>" href="#">Страны</a>
                     <div id="dropDownHolder" class="b-dropdown_complex-b b-dropdown-new-style no-user-select b-contry-flags jsMenuCountries">
-                        <ul class="li-town">
-                            <div class="m-top-countries">
+                        <ul class="li-town m-top-countries">
                                 <li class="dd-item divider jsItemLabel">Топовые</li>
                                 <li data-cvalue="bolgariya" class="dd-item">
                                     <a class="<?php echo $page === "bolgariya" ? 'active' : ''?>" href="{{route('bolgariya')}}"> <i class="sprite sprite-bolgariya"></i><span>Болгария</span> </a>
@@ -73,7 +71,7 @@
                                     <a class="<?php echo $page === "vetnam" ? 'active' : ''?>" href="{{route('vetnam')}}"> <i class="sprite sprite-vetnam"></i><span>Вьетнам</span></a>
                                 </li>
                                 <li data-cvalue="dominikana" class="dd-item">
-                                    <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i>Доминикана</span> </a>
+                                    <a class="<?php echo $page === "dominikana" ? 'active' : ''?>" href="{{route('dominikana')}}"> <i class="sprite sprite-dominikana"></i><span>Доминикана</span> </a>
                                 </li>
                                 <!--
                                 <li data-cvalue="egipet" class="dd-item">
@@ -109,8 +107,6 @@
                                 <li data-cvalue="shri-lanka" class="dd-item">
                                     <a class="<?php echo $page === "shri-lanka" ? 'active' : ''?>" href="{{route('shri-lanka')}}"> <i class="sprite sprite-shri-lanka"></i><span>Шри-Ланка</span> </a>
                                 </li>
-
-                            </div>
                         </ul>
                         <div class="center"><a class="all_city" href="{{route('countries')}}">Все страны</a></div>
                     </div>
@@ -127,35 +123,35 @@
     @yield('header')
 </header>
 @yield('center')
-<section class="section-callback">
+<div class="section-callback">
     <div class="wrapper">
         <div class="bg"></div>
         <div class="section-callback__content">
-            <p class="section-callback__title">Оставьте запрос и наши менеджеры <br> подберут Вам лучший тур</p>
+            <p class="section-callback__title">Оставьте запрос и наши менеджеры <br> подберут Вам лучший тур!</p>
             <a href="#callbackChoose" class="btn btn-brand popup-with-form">Оставить заявку </a>
         </div>
     </div>
-</section>
+</div>
 
-<section class="our_partner">
+<div class="our_partner">
         <div class="title">Наши партнёры</div>
         <div class="slider_partner">
             <div class="item_operator">
-                <img src="/img/we-work-with/a0.png">
+                <img src="/img/we-work-with/a0.png" alt="Луганск туристическое агентство">
             </div>
-            <div class="item_operator"><img src="/img/we-work-with/a1.png" alt="Anex"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a2.png" alt="TEZ TOUR"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a3.png" alt="PEGAS"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a4.png" alt="colortravel"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a5.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a6.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a7.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a8.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a9.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a10.png"></div>
-            <div class="item_operator"><img src="/img/we-work-with/a11.png"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a1.png" alt="Луганск туристическое агентство Anex"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a2.png" alt="Луганск туристическое агентство TEZ TOUR"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a3.png" alt="Луганск туристическое агентство PEGAS"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a4.png" alt="Луганск туристическое агентство colortravel"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a5.png" alt="Луганск туристическое агентство"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a6.png" alt="Луганск туристическое агентство"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a7.png" alt="Луганск туристическое агентство"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a8.png" alt="Луганск туристическое агентство"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a9.png" alt="Луганск туристическое агентство библио глобус"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a10.png" alt="Луганск туристическое агентство sunmar"></div>
+            <div class="item_operator"><img src="/img/we-work-with/a11.png" alt="Луганск туристическое агентство"></div>
         </div>
-</section>
+</div>
 <footer>
     <img class="footer_bag" src="{{asset("public/img/bag.png")}}" alt="">
     <img class="footer_flat" src="{{asset("public/img/flat.png")}}" alt="">
@@ -169,14 +165,14 @@
     <div id="phpner_button-wrapper" style="position: fixed; bottom: 50px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
         <div class="left-menu">
             <span>
-                <a id="vk-pc" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
-                <a id="vk-mob" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" ></a>
+                <a id="vk-pc" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" alt="туристическое агентствоконтакты  Луганск ЛНР viber"></a>
+                <a id="vk-mob" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" alt="туристическое агентство контакты  Луганск ЛНР вайбер"></a>
              </span>
             <span>
-                <a title="whatsapp" href="whatsapp://send?phone=+380954463272"><img class="whatsapp" src="{{asset('public/img/whatsapp.png')}}" ></a>
+                <a title="whatsapp" href="whatsapp://send?phone=+380954463272"><img class="whatsapp" src="{{asset('public/img/whatsapp.png')}}" alt="5 сзонов контакты whatsapp"></a>
             </span>
             <span class="write-to-us">
-                <img  class="envelope" src="{{asset('public/img/envelope.png')}}" >
+                <img  class="envelope" src="{{asset('public/img/envelope.png')}}" alt="5 сезонов письмо" >
             </span>
         </div>
         <div id="phpner_button-call" style="position: relative; top: 0; left: 0;" >

@@ -8,7 +8,7 @@
         <hr class="style-seven">
         <div class="choose_tour">
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
 @endsection

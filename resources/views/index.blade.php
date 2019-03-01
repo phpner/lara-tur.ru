@@ -5,16 +5,16 @@
 @section('header')
     <div class="wrapper-slider">
     <div class="slider_top">
-        <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
-        <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
+        <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="Турагентство 5 сезонов Европу">
+        <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Африку">
+        <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Турцию">
+        <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Африку">
     </div>
         <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span></h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
-        <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+        <script  src="//tourvisor.ru/module/init.js"></script>
     </div>
 @endsection
 @section("center")
@@ -36,7 +36,7 @@
     <h2 class="h1">ОАЭ</h2>
         <hr class="style-seven">
     <div class="tv-hot-tours tv-moduleid-974374"></div>
-    <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+    <script  src="//tourvisor.ru/module/init.js"></script>
     </div>
     @endsection
 @section('footer-script')

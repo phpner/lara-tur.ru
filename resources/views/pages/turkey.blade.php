@@ -39,7 +39,7 @@
         <!-- End block info -->
         <div class="choose_tour">
             <div class="tv-hot-tours tv-moduleid-974444"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
 
     </section>
@@ -48,7 +48,7 @@
         <div class="wrapper">
             <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

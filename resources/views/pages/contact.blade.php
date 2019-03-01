@@ -35,7 +35,7 @@
     <div class="contact_tour">
         <div class="wrapper">
             <div class="tv-hot-tours tv-moduleid-974734"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </div>
     <!-- End Block Найди сам! -->

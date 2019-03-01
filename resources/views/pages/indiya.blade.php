@@ -4,10 +4,9 @@
 @section('keywords')туры в Индию, Арамболь, Морджим, Калангут@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Туры в Индию</h1>
-        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
+            <h1>Туры в Индию</h1>
             <div class="slider_page zoom-gallery">
                 <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/1.jpg')}}">
                     <img src="{{asset('public/img/indiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Индия">
@@ -25,7 +24,7 @@
             <div class="text_info_in_page">
                <i>&laquo;5 сезонов&raquo;</i> предлагает <h2>окунуться в чарующую атмосферу сказочной Индии.</h2>
                 Для Вас забронируют отели как в Северном, так и в Южном Гоа.
-                Волшебство атмосферы, сказочные <h3>пляжи севера Арамболь или Морджим, а также Калангут,</h3> не смогут оставить вас равнодушными.</p>
+                Волшебство атмосферы, сказочные <h3>пляжи севера Арамболь или Морджим, а также Калангут,</h3> не смогут оставить вас равнодушными.
                 <p> Откройте свое сердце Индии, и она вас отблагодарит неповторимым колоритом и буйством красок.
                     Ведь Индия – одна из немногих стран, практически полностью сохранивших свои культурные традиции,
                     пришедшие еще с древних времен и внедривших новые за счет иммигрантов и стран-завоевателей.
@@ -42,7 +41,7 @@
         <!-- End block info -->
         <div class="choose_tour">
             <div class="tv-hot-tours tv-moduleid-974444"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- Block Найди сам! -->
@@ -50,7 +49,7 @@
         <div class="wrapper">
             <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

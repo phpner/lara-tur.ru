@@ -4,28 +4,24 @@
 @section('keywords')туры в Индонезию, Острова Нуса-Дуа,Острова Ява, Бали@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Туры в Индонезию</h1>
         <!-- block info -->
         <div class="info_img">
+            <h1>Туры в Индонезию</h1>
             <div class="slider_page zoom-gallery">
 
                 <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/indoneziya/1.jpg')}}">
                     <img src="{{asset('public/img/indoneziya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Индонезия">
-
                 </a>
 
                 <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/indoneziya/2.jpg')}}">
                     <img src="{{asset('public/img/indoneziya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Бали">
-
                 </a>
 
                 <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/indoneziya/3.jpg')}}">
                     <img src="{{asset('public/img/indoneziya/3.jpg')}}" alt="Индонезия Бали">
-
                 </a>
                 <a title="&laquo; 5 сезонов &raquo; Индонезия" class="popup-with-zoom-anim" href="{{asset('public/img/indoneziya/3.jpg')}}">
                     <img src="{{asset('public/img/indoneziya/4.jpg')}}" alt="Индонезия Бали">
-
                 </a>
             </div>
             <div class="text_info_in_page">
@@ -42,7 +38,7 @@
         <!-- End block info -->
         <div class="choose_tour">
             <div class="tv-hot-tours tv-moduleid-974444"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
 
@@ -51,7 +47,7 @@
         <div class="wrapper">
             <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

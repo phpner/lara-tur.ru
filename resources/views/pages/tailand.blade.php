@@ -4,10 +4,9 @@
 @section('keywords')туры, Луганск, отпуск, отдых, Таиланд, Тайский, Тайланд, отдых, турагенство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Туры в Таиланд</h1>
-        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
+            <h1>Туры в Таиланд</h1>
             <div class="slider_page zoom-gallery">
                 <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/1.jpg')}}">
                     <img src="{{asset('public/img/tailand/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Таиланд">
@@ -41,7 +40,7 @@
         <div class="wrapper">
             <h4 class="h2">ПОДБЕРИТЕ ТУР САМОСТОЯТЕЛЬНО:</h4>
             <div class="tv-search-form tv-moduleid-187833"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+            <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
     <!-- End Block Найди сам! -->

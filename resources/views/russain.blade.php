@@ -14,6 +14,6 @@
 <hr>
 <hr>
 <div class="tv-country tv-moduleid-974369"></div>
-<script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+<script  src="//tourvisor.ru/module/init.js"></script>
 </body>
 </html>
