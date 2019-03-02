@@ -566,9 +566,14 @@ header .wrapper_header {
   margin-right: 9px; }
 
 .page_contact i {
-  color: #348b35;
-  margin-right: 9px;
   font-size: 29px; }
+
+.page_contact i, .sezon {
+  color: #348b35;
+  margin-right: 9px; }
+
+.sezon {
+  font-size: 20px; }
 
 .header_contact .header_mail, .page_contact .contact_mail {
   margin-left: 10px; }

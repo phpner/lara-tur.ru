@@ -4,6 +4,11 @@
     </IfModule>
 
     RewriteEngine On
+    RewriteBase /
+
+    # убираем слэш в конце адреса
+    RewriteCond %{REQUEST_URI} .+/$ [NC]
+    RewriteRule ^(.+)(/)$ /$1 [L,R=301]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
