@@ -1,13 +1,12 @@
 @extends('layouts.app')
-@section('title')Тур агентство «5 сезонов» предлагает отдых в Турции из Луганска. Самый простой и доступный отдых для всей семьи@endsection
-@section('description')«5 сезонов» предлагает для Вас как бюджетный отдых в отелях 3 звезд, так и отдых в отелях премиум класса, в самых популярных курортах - Сиде, Аланьи, Мармариса и Бодрума@endsection
-@section('keywords')туры, Луганск, ЛНР, отпуск, отдых, Турцию, Турция, турагенство, горящие, Ростов на Дону, подбор@endsection
+@section('title')Турагентство «5 сезонов» предлагает отдых в Турции из Луганска. Самый простой и доступный отдых для всей семьи@endsection
+@section('description')«5 сезонов» предлагает для Вас как бюджетный отдых в отелях 3 звезд, так и отдых в отелях премиум класса, на самых популярных курортах - Сиде, Аланьи, Мармариса и Бодрума@endsection
+@section('keywords')туры, Луганск, ЛНР, отпуск, отдых, Турцию, Турция, турагентство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Туры в Турцию</h1>
-        <hr class="style-seven">
         <!-- block info -->
         <div class="info_img">
+            <h1>Туры в Турцию</h1>
             <div class="slider_page zoom-gallery">
                 <a title="&laquo; 5 сезонов &raquo; Турция" class="popup-with-zoom-anim" href="{{asset('public/img/tursia/turtsiya-1.jpg')}}">
                     <img src="{{asset('public/img/tursia/turtsiya-1.jpg')}}" alt="&laquo;5 сезонов&raquo; Турция">

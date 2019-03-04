@@ -9,15 +9,32 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
     <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']?>" />
-    <meta property="og:image" content="http://<?php echo $_SERVER['HTTP_HOST']?>/img/5sezonov.png" />
-    <meta property="og:image:width" content="537">
-    <meta property="og:image:height" content="240">
+
+    <meta property="og:image:height" content="447">
+    <meta property="og:image:width" content="854">
+    <meta property="og:url" content="http://5-sezonov.ru">
+    <meta property="og:image" content="http://5-sezonov.ru/img/og-image.jpg">
+    <meta property="og:title" content="Туристическое агентство &laquo;5 сезонов&raquo;">
+    <meta property="og:description" content="более 50 000 горящих туров">
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="{{ asset('public/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+
     <link rel="shortcut icon" href="{{ asset('public/img/favicon.png') }}" type="image/x-icon" />
+
+    <meta name="google-site-verification" content="AQBKVnS81kSLWXb4oBmyBGpO2n9cUHhf1d5BBjqCFZ4" />
+    <meta name="yandex-verification" content="cbcb0302c12037e8" />
     <!--[if lte 9]>
     <link rel="stylesheet" type="text/css" href="{{asset('public/css/ei.css') }}" />
     <div class="old-ie">Похоже Ваш браузер устарел, обновите его! <br>или позвоните нам <br> <span>+38 (095) 446-32-72</span></div>
@@ -201,7 +218,7 @@
             <input type="email" name="email">
             <span>Ваш email</span>
         </div>
-        <textarea placeholder="Текст"></textarea>
+        <textarea name="text" placeholder="Текст"></textarea>
         <input type="submit" class="btn" value="Отправить заявку" onsubmit="return false;">
     </form>
 </div>
@@ -366,7 +383,7 @@
         <div class="controll_input">
             <input type="email" name="email" placeholder="email">
         </div>
-        <textarea placeholder="Текст"></textarea>
+        <textarea name="text" placeholder="Текст"></textarea>
         <input type="submit" class="btn" value="Отправить заявку" onsubmit="return false;">
     </form>
 </div>

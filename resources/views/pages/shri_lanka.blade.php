@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title')Туры в Шри-Ланку – заказ онлайн горящую путевку. Лучшие цены на отдых в Шри-Ланку@endsection
 @section('description')Купить путевку на отдых в Шри-Ланку по самым низким ценам! онлайн заказ туров на сайте &laquo;5 сезонов&raquo; в Луганске.@endsection
-@section('keywords')туры, Луганск, отпуск, отдых, Шри-Ланку, отдых, турагенство, горящие, Ростов на Дону, подбор@endsection
+@section('keywords')туры, Луганск, отпуск, отдых, Шри-Ланку, отдых, турагентство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
     <section class="wrapper pt-118px">
         <!-- block info -->

@@ -69,7 +69,7 @@ class Mail extends Controller
         $mail->addAddress("phpner@gmail.com","phpner");
         $mail->addAddress("zakaz@5-sezonov.ru","5sezonov");
         $mail->FromName = 'Мой сайт';
-        $mail->Subject = "Кто-то хочет что-то спросить";
+        $mail->Subject = "Заявка с сайта 5-сезонов.";
         $mail->Body = $body;
         $mail->IsHTML(true);
 //отправка
