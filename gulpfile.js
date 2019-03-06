@@ -13,11 +13,12 @@ var plumber = require('gulp-plumber');
 gulp.task('sass', function () {
   return gulp.src('./resources/sass/*.scss')
     .pipe(plumber())
-    .pipe({autoprefixer: {
-     browsers:['last 50 versions'], 
-     add: true
-   }})
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))    
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer({
+     browsers:['last 20 versions'],
+     add: true,
+    cascade: false
+   }))
     .pipe(gulp.dest('./public/css'));
 });
 

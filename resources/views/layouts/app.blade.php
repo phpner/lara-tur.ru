@@ -8,23 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
-    <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']?>" />
-
-    <meta property="og:image:height" content="447">
-    <meta property="og:image:width" content="854">
-    <meta property="og:url" content="http://5-sezonov.ru">
-    <meta property="og:image" content="http://5-sezonov.ru/img/og-image.jpg">
-    <meta property="og:title" content="Туристическое агентство &laquo;5 сезонов&raquo;">
-    <meta property="og:description" content="более 50 000 горящих туров">
 
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://<?php echo $_SERVER['HTTP_HOST']?>/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://<?php echo $_SERVER['HTTP_HOST']?>/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://<?php echo $_SERVER['HTTP_HOST']?>/favicon-16x16.png">
+    <link rel="manifest" href="http://<?php echo $_SERVER['HTTP_HOST']?>/site.webmanifest">
+    <link rel="mask-icon" href="http://<?php echo $_SERVER['HTTP_HOST']?>/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:description" content="@yield('description')">
+    <meta property="og:image:height" content="447">
+    <meta property="og:image:width" content="854">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" />
+    <meta property="og:image" content="http://5-sezonov.ru/img/og-image.jpg">
+
+
 
     <link rel="stylesheet" href="{{ asset('public/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
@@ -59,6 +61,7 @@
         <div class="wrapper">
             <div class="header_contact">
                 <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+                <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:0721608584">072 160 85 84</a></span>
                 <span class="header_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
             </div>
             <a class="header_logo" href="/"><img id="logo" src="{{asset('img/logo.png')}}" alt="Лого 5 сезонов Луганск"></a>
@@ -144,7 +147,7 @@
     <div class="wrapper">
         <div class="bg"></div>
         <div class="section-callback__content">
-            <p class="section-callback__title">Оставьте запрос и наши менеджеры <br> подберут Вам лучший тур!</p>
+            <p class="section-callback__title">Оставьте запрос и наши менеджеры <br>подберут Вам лучший тур!</p>
             <a href="#callbackChoose" class="btn btn-brand popup-with-form">Оставить заявку </a>
         </div>
     </div>
@@ -172,14 +175,42 @@
 <footer>
     <img class="footer_bag" src="{{asset("public/img/bag.png")}}" alt="">
     <img class="footer_flat" src="{{asset("public/img/flat.png")}}" alt="">
-    <span class="footer_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-    <span class="footer_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
+    <div class="footer_contact">
+        <span class="footer_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+        <span class="footer_tel"><i class="icon-phone_android"></i><a href="tel:0721608584">072 160 85 84</a></span>
+        <span class="footer_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
+    </div>
+   <div id="ok_group_widget"></div>
+   <script>
+   !function (d, id, did, st) {
+     var js = d.createElement("script");
+     js.src = "https://connect.ok.ru/connect.js";
+     js.onload = js.onreadystatechange = function () {
+     if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+       if (!this.executed) {
+         this.executed = true;
+         setTimeout(function () {
+           OK.CONNECT.insertGroupWidget(id,did,st);
+         }, 0);
+       }
+     }};
+     d.documentElement.appendChild(js);
+   }(document,"ok_group_widget","54879000920267",'{"width":360,"height":135,"type":"feed"}');
+   </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 759361354 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-759361354"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-759361354');
+    </script>
 </footer>
 <!-- Кнопка -->
 <div class="wrapper-for-contact">
-
-
-    <div id="phpner_button-wrapper" style="position: fixed; bottom: 50px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
+    <div id="phpner_button-wrapper" style="position: fixed; bottom: 101px; right: 50px; z-index: 999; display: block;" title="Нажмите, чтобы заказать обратный звонок.">
         <div class="left-menu">
             <span>
                 <a id="vk-pc" title="Viber" href="viber://chat?number=+380954463272"><img class="viber" src="{{asset('public/img/viber.png')}}" alt="туристическое агентствоконтакты  Луганск ЛНР viber"></a>
@@ -212,7 +243,7 @@
         </div>
         <div class="controll_input">
             <input class="input-tel" type="tel" name="tel">
-            <span>Ваш телевон</span>
+            <span>Ваш телефон</span>
         </div>
         <div class="controll_input">
             <input type="email" name="email">
@@ -398,5 +429,30 @@
 <script src="{{asset('public/js/app.js')}}"></script>
 
  @yield("footer-script")
+
+<script>
+    (function(i,s,o,g,r,a,m){
+        i['GoogleAnalyticsObject']=r;
+        i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},
+            i[r].l=1*new Date();
+        a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+        a.async=1;
+        a.src=g;
+        m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-122655973-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = 'yCm96SCBrG';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//code.jivosite.com/script/widget/'+widget_id
+        ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+        if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+        else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

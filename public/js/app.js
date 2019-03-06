@@ -260,6 +260,40 @@ $(document).ready(function () {
         console.log('ywss!!')
     }
 
+    if ($(".slick-feedback ").length > 0){
+        $(".slick-feedback ").slick({
+            centerMode: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            draggable: true,
+            arrows: true,
+            dots: true,
+            speed: 1300,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: false,
+                        arrows: false,
+                    }
+                },
+
+            ]
+        });
+    }
+
+
 
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);

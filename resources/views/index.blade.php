@@ -29,6 +29,7 @@
              Мы рады ответить на любые Ваши Вопросы.
             <div class="header_contact text_contact">
                 <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
+                <span class="header_tel"><i class="icon-phone_android"></i><a href="tel:0721608584">072 160 85 84</a></span>
                 <span class="header_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
                 <span class="header_mail"><i class="icon-mail"></i><a href="#callbackChoose" class="btn btn-brand popup-with-form">Оставить заявку </a></span>
             </div>
@@ -39,6 +40,80 @@
     <div class="tv-hot-tours tv-moduleid-974374"></div>
     <script  src="//tourvisor.ru/module/init.js"></script>
     </div>
+    <!-- Отзывы-->
+    <div class="section-reviews bg_gray">
+        <div class="container">
+            <h2 class="h-heading">Наши туристы остались довольны</h2>
+            <hr class="style-seven wrapper">
+        </div>
+            <div class="slick-feedback">
+                <div class="item_slider">
+                        <div class="reviews-card__item">
+                            <div class="reviews-card__right-col">
+                                <div class="reviews-card__content">
+                                    <div class="reviews-card__name">Евгения </div>
+                                    <div class="reviews-card__date">
+                                        08 декабря 2018 г.
+                                    </div>
+                                    <div class="reviews-card__text">
+                                        Восторг и благодарность коллективу, за великолепные каникулы в Rixos Premium Dubai. Вот уже месяц прошёл со дня поездки, а впечатлений хватит ещё надолго. Логистика, сопровождение клиента, комплименты от менеджера - на высшем уровне! Спасибо!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="item_slider">
+                        <div class="reviews-card__item">
+                            <div class="reviews-card__right-col">
+                                <div class="reviews-card__content">
+                                    <div class="reviews-card__name">Елена Горященко</div>
+                                    <div class="reviews-card__date">
+                                        26 ноября 2018 г.
+                                    </div>
+                                    <div class="reviews-card__text">
+                                        Ездили в тур через менеджера Илья. Спасибо ему за оперативное оформление тура и отзывчивость! Тур был в Вену и Будапешт. Все очень понравилось, дорога прошла спокойно и быстро. Отель в Будапеште хороший, заселили быстро. Качество экскурсий было хорошее.                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="item_slider">
+                        <div class="reviews-card__item">
+                            <div class="reviews-card__right-col">
+                                <div class="reviews-card__content">
+                                    <div class="reviews-card__name">Владислав</div>
+                                    <div class="reviews-card__date">
+                                        14 ноября 2018 г.
+                                    </div>
+                                    <div class="reviews-card__text">
+                                        Мы довольны услугами турагентства "5 сезонов". Отдельное спасибо менеджеру Илье, который в кротчайшие сроки подобрал нам хороший тур в Шарм Эль Шейх. Отдых удался. Рекомендуем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_slider">
+                        <div class="reviews-card__item">
+                            <div class="reviews-card__right-col">
+                                <div class="reviews-card__content">
+                                    <div class="reviews-card__name">Наталья</div>
+                                    <div class="reviews-card__date">
+                                        12 ноября 2018 г.
+                                    </div>
+                                    <div class="reviews-card__text">
+                                        Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагентство 5 сезонов. Илья, выслушав все пожелания, предложил отдых в Турции, отель Justiniano Club Park Conti...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <span class="write-to-us btn_feed_back">
+                Оставить отзыв
+            </span>
+    </div>
+    <!--Конец отзывы-->
     @endsection
 @section('footer-script')
     <script>

@@ -21,7 +21,7 @@
                 </div>
                 <div class="controll_input">
                     <input class="input-tel" type="tel" name="tel">
-                    <span>Ваш телевон</span>
+                    <span>Ваш телефон</span>
                 </div>
                 <div class="controll_input">
                     <input type="email" name="email">
