@@ -1,29 +1,29 @@
 @extends('layouts.app')
-@section('title')Туры в Росcию – купить горящие путевки на отдых в Росcию по самым низким ценам! Туры в Росcию на <?php echo date("Y");?> год@endsection
-@section('description')5 сезонов организует уникальный и удивительный тур в Россию - огромный выбор недорогих путевок и туров в Россию: вы можете посмотреть цены на отдых в Россию!@endsection
+@section('title')Туры в Росcию – купить горящие путевки на отдых в Крым, Сочи, Геленджик, Санкт-Петербург по самым низким ценам! Туры на <?php echo date("Y");?>год@endsection
+@section('description')5 сезонов организует уникальный и удивительный тур по России - огромный выбор недорогих путевок в Крым, Сочи, Геленджик, Санкт-Петербург Вы можете посмотреть цены на отдых!@endsection
 @section('keywords')туры, Луганск, отпуск, отдых, турагентство, Росcию, горящие, Ростов на Дону, подборь, лнр@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Росcию</h1>
-            <div class="slider_page zoom-gallery">
-
-                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
-                    <img src="{{asset('public/img/russiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
+                <figure class="slider_page zoom-gallery">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/rossiya/1.jpg')}}">
+                    <img src="{{asset('public/img/rossiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
                 </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/2.jpg')}}">
-                    <img src="{{asset('public/img/russiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/rossiya/2.jpg')}}">
+                    <img src="{{asset('public/img/rossiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Росcия">
                 </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/3.jpg')}}">
-                    <img src="{{asset('public/img/russiya/3.jpg')}}" alt="туры в Росcию">
+                <a title="&laquo; 5 сезонов &raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/rossiya/3.jpg')}}">
+                    <img src="{{asset('public/img/rossiya/3.jpg')}}" alt="туры в Росcию">
                 </a>
-                <a title="&laquo;5 сезонов&raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/russiya/4.jpg')}}">
-                    <img src="{{asset('public/img/russiya/4.jpg')}}" alt="туры по Росcии">
+                <a title="&laquo;5 сезонов&raquo; Росcия" class="popup-with-zoom-anim" href="{{asset('public/img/rossiya/4.jpg')}}">
+                    <img src="{{asset('public/img/rossiya/4.jpg')}}" alt="туры по Росcии">
                 </a>
-            </div>
+            </figure>
             <div class="text_info_in_page">
                 <i>&laquo;5 сезонов&raquo;</i> организует уникальный и удивительный <h3>тур в Северную Пальмиру.</h3>
                 <h2>Бронирование билетов на отдых в Россию из Луганска.</h2>
@@ -44,6 +44,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

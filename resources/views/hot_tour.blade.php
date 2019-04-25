@@ -1,16 +1,16 @@
 @extends('layouts.app')
-@section('title')Горящие туры - купить горящие путевки на отдых из Луганска.@endsection
-@section('description')Лучшие горящие туры за границу. Туристическое агентство 5 сезонов рада предложить Вам отдых по горящим турам!@endsection
-@section('keywords')Горящие туры, горящие путевки, ЛНH, Луганск@endsection
+@section('title')горящие туры цены - из Ростова, Москва. путевки на отдых купить онлайн.@endsection
+@section('description')путевки все включено на двоих, вылет из Ростов на Дону, цены на путевки <?php echo date("Y");?> год. у нас более 50,000 горящих туров по всем странам мира!@endsection
+@section('keywords')Горящие туры, горящие путевки, ЛНH, Луганск, горящие туры цены, горящие туры цены из Ростова, горящие туры цены из Москвы @endsection
 @section('header')
     <div class="wrapper-slider">
         <div class="slider_top">
-            <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="">
-            <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="">
-            <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="">
-            <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="">
+            <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="горящие туры из Ростова">
+            <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="горящие туры цены ">
+            <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="путевки все включено ">
+            <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="горящие путевки">
         </div>
-        <h1 class="h1">Туристическое агенство <span>&laquo;5 сезонов&raquo;</span></h1>
+        <h1 class="h1"><span>цены на горящие туры</span></h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
@@ -24,8 +24,8 @@
         <hr class="style-seven">
         <div class="text_block">
             <b class="text_center">
-            Туристическое агентство «5 сезонов» предлагает Вам отдых по горящим турам!</b>
-            Здесь Вы найдете самые актуальные предложения и сможете сэкономить до <span class="danger_text">30%</span>. Чтобы не упустить свой шанс, следите за появлением горящих туров! Вы можете оставить заявку, и наши менеджеры подберут туры, которые Вам интересны.
+            Туристическое агентство «5 сезонов» предлагает Вам путевки все включено из Ростова!</b>
+            Здесь Вы найдете самые актуальные предложения и сможете сэкономить до <span class="danger_text">30%</span>, узнать цены на путевки онлайн. Чтобы не упустить свой шанс, следите за появлением горящих туров! Вы можете оставить заявку, и наши менеджеры подберут туры, которые Вам интересны.
             <b class="text_center">
                 Сделать это можно:
             </b>

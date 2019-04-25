@@ -3,24 +3,27 @@
 @section('description')Купить тур на отдых в Индию по самым низким ценам! онлайн заказ туров на сайте 5 сезонов.@endsection
 @section('keywords')туры в Индию, Арамболь, Морджим, Калангут@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Индию</h1>
-            <div class="slider_page zoom-gallery">
-                <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/1.jpg')}}">
-                    <img src="{{asset('public/img/indiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Индия">
-                </a>
 
-                <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/2.jpg')}}">
-                    <img src="{{asset('public/img/indiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры Индию">
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/1.jpg')}}">
+                        <img src="{{asset('public/img/indiya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Индия">
+                    </a>
 
-                </a>
+                    <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/2.jpg')}}">
+                        <img src="{{asset('public/img/indiya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры Индию">
 
-                <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/3.jpg')}}">
-                    <img src="{{asset('public/img/indiya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Индии">
-                </a>
-            </div>
+                    </a>
+
+                    <a title="&laquo;5 сезонов&raquo; Индия" class="popup-with-zoom-anim" href="{{asset('public/img/indiya/3.jpg')}}">
+                        <img src="{{asset('public/img/indiya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Индии">
+                    </a>
+                </figure>
+
             <div class="text_info_in_page">
                <i>&laquo;5 сезонов&raquo;</i> предлагает <h2>окунуться в чарующую атмосферу сказочной Индии.</h2>
                 Для Вас забронируют отели как в Северном, так и в Южном Гоа.
@@ -44,6 +47,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

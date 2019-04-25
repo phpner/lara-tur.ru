@@ -3,23 +3,26 @@
 @section('description')Купить путевку на отдых в Доминикану по самым низким ценам! онлайн заказ туров в Луганске!@endsection
 @section('keywords')туры в Доминикану@endsection
 @section('center')
+    <main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Доминикану</h1>
-            <div class="slider_page zoom-gallery">
-                <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominicana/1.jpg')}}">
-                    <img src="{{asset('public/img/dominicana/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Доминикана">
 
-                </a>
-                <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominicana/2.jpg')}}">
-                    <img src="{{asset('public/img/dominicana/2.jpg')}}" alt="&laquo; 5 сезонов &raquo; Доминикана">
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominikana/1.jpg')}}">
+                        <img src="{{asset('public/img/dominikana/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Доминикана">
 
-                </a>
-                <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominicana/3.jpg')}}">
-                    <img src="{{asset('public/img/dominicana/3.jpg')}}" alt="&laquo; 5 сезонов &raquo; Доминикана">
-                </a>
-            </div>
+                    </a>
+                    <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominikana/2.jpg')}}">
+                        <img src="{{asset('public/img/dominikana/2.jpg')}}" alt="&laquo; 5 сезонов &raquo; Доминикана">
+
+                    </a>
+                    <a title="&laquo; 5 сезонов &raquo; Доминикана" class="popup-with-zoom-anim" href="{{asset('public/img/dominikana/3.jpg')}}">
+                        <img src="{{asset('public/img/dominikana/3.jpg')}}" alt="&laquo; 5 сезонов &raquo; Доминикана">
+                    </a>
+                </figure>
+
             <div class="text_info_in_page">
                 <p>Берега острова Доминикана омываются лазурным Карибским морем, а с севера - Атлантическим теплым
                     океаном. Пляжи в расстояние свыше 350 км получили “Голубой флаг” за чистый песок и убранный после
@@ -38,6 +41,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

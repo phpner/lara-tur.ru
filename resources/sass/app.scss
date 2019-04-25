@@ -168,7 +168,30 @@ header .wrapper_header{
     width: 100%;
     margin: auto;
     text-align: center;
+    margin-bottom: 34px;
 }
+.page_contact .title-contact{
+    color: $green;
+    display: block;
+    font-size: 34px;
+    margin: -7px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+.h1-cont{
+    margin-top: 27px;
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    box-shadow: 0 0 2px 2px rgba(12, 12, 12, 0.22);
+}
+.page_contact .adress-in-contact{
+    display: block;
+    margin-bottom: 10px;
+}
+
 .header_contact a, .page_contact a{
     color: #5d5d5d;
     font-size: 21px;
@@ -792,13 +815,13 @@ footer i{
 .form_width{
     width: 450px!important;
 }
-.form_callback, .form_callback_choose{
+.form_callback, .form_callback_choose,.callbackCommetn{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form_callback input:not([type=submit]), .form_callback_choose input:not([type=submit]){
+.form_callback input:not([type=submit]), .form_callback_choose input:not([type=submit]), .callbackCommetn input:not([type=submit]){
     width: 100%;
     border: none;
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.55);
@@ -836,7 +859,7 @@ footer i{
     z-index: 1;
     transition: all .4s;
 }
-.form_callback input[type=submit],  .form_callback_choose input[type=submit]{
+.form_callback input[type=submit],  .form_callback_choose input[type=submit], .callbackCommetn input[type=submit]{
     border: none;
     padding: 15px 20px;
     margin-top: 15px;
@@ -849,7 +872,7 @@ footer i{
     transition: all .4s;
 }
 
-.form_callback input[type=submit]:hover, .form_callback_choose input[type=submit]:hover{
+.form_callback input[type=submit]:hover, .form_callback_choose input[type=submit]:hover, .callbackCommetn input[type=submit]:hover{
     background: rgb(163, 160, 160);
 }
 
@@ -873,7 +896,7 @@ input:-webkit-autofill {
     box-shadow: 0 0 0px 2px rgba(67, 222, 51, 0.78);
 }
 
-.form_callback  textarea, .form_callback_choose textarea{
+.form_callback  textarea, .form_callback_choose textarea, .callbackCommetn textarea{
     width: 93%;
     border: none;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.55);
@@ -1017,7 +1040,8 @@ input:-webkit-autofill {
 }
 
 .pt-118px{
-    padding-top: 118px;
+    padding-top: 138px;
+
 }
 
 .section-callback{
@@ -1107,7 +1131,7 @@ input:-webkit-autofill {
 }
 
 .contact_form h3{
-    margin: 28px 0;
+    margin: 0px 0 33px;
     font-size: 23px;
     text-transform: uppercase;
 }
@@ -1245,6 +1269,104 @@ input:-webkit-autofill {
     cursor: pointer;
     margin-top: 24px;
 }
+#tel-error{
+    background: #af5a5a;
+    width: 100%;
+    display: inline-block!important;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+
+}
+.section-kurort-turkay .item img {
+    width: 250px;
+}
+.hidden{
+    display: none;
+}
+.valid + #tel-error{
+    display: none!important;
+}
+.contact-footer-title{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #378d38;
+    display: inline-block;
+}
+
+.item_block_new{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item_block_new .item{
+    flex: 46%;
+    max-width: 574px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+.item_block_new .item .box-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 140, 47, 0.81);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.item_block_new .item .box-text .item_name{
+    display: block;
+}
+.item_block_new .item .box-text .item_price{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 900;
+    color: #f9f9f9;
+}
+
+.calendar_box{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.calendar_box .item_block{
+    margin: 10px;
+    background: rgb(243, 243, 243);
+    text-align: center;
+    position: relative;
+    border: 1px solid #b3b3b3;
+    box-shadow: 3px 5px 3px 2px rgba(0, 0, 0, 0.14);
+}
+
+.calendar_box .item_block_text{
+    padding: 10px;
+}
+
+.calendar_box .item_block .date{
+    left: 0;
+    background: #ff9a34;
+    color: #fff;
+    padding:0 5px;
+}
+
+.calendar_box .item_block .hight{
+    color: #929292;
+}
+
+.calendar_box .item_block .price{
+    color: #bf0f0f9c;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 @media only screen and (max-width : 1500px) {
     .slider_top img {
         height: 690px;
@@ -1383,6 +1505,9 @@ input:-webkit-autofill {
     }*/
     .info_img a{
         height: 340px;
+    }
+    .h1-cont{
+        margin-top: 0px;
     }
 }
 
@@ -1527,7 +1652,9 @@ input:-webkit-autofill {
         width: 100%!important;
         font-size: 28px!important;
     }*/
-
+    .map iframe{
+        height: 280px!important;
+    }
 }
 
 @media only screen and (max-width : 600px){

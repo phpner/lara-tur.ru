@@ -3,26 +3,27 @@
 @section('description')Забронировать путевку на отдых в Мексику по самым низким ценам! Курорт в Мексике — это лучшие в мире пляжи...@endsection
 @section('keywords')туры в Мексикуб Луганскб ЛНР@endsection
 @section('center')
-    <section class="wrapper pt-118px">
+    <main>
+     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Мексику</h1>
-            <div class="slider_page zoom-gallery">
-                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/1.jpg')}}">
-                    <img src="{{asset('public/img/meksika/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Мексика">
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/1.jpg')}}">
+                        <img src="{{asset('public/img/meksika/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Мексика">
 
-                </a>
+                    </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/2.jpg')}}">
-                    <img src="{{asset('public/img/meksika/2.jpg')}}" alt="&laquo;5 сезонов&raquo; ">
+                    <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/2.jpg')}}">
+                        <img src="{{asset('public/img/meksika/2.jpg')}}" alt="&laquo;5 сезонов&raquo; ">
 
-                </a>
+                    </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/3.jpg')}}">
-                    <img src="{{asset('public/img/meksika/3.jpg')}}" alt="Мексика ">
+                    <a title="&laquo; 5 сезонов &raquo; Мексика" class="popup-with-zoom-anim" href="{{asset('public/img/meksika/3.jpg')}}">
+                        <img src="{{asset('public/img/meksika/3.jpg')}}" alt="Мексика ">
+                    </a>
+                </figure>
 
-                </a>
-            </div>
             <div class="text_info_in_page">
                 <p>Туристическое агентство «5 сезонов» предлагает Вам незабываемый отдых в сказочной Мексике!</p>
                 <p>Лето круглый год! Это мир джунглей с большим количеством экзотических животных. Все здесь пропитано
@@ -87,6 +88,7 @@
             <p><span style="font-weight:400"><strong>С ноября по апрель</strong> в Мексике пик туристического сезона, температура воды в этот период до +28°С. <strong>Летом и ранней осенью</strong> туристов меньше из-за возможных осадков и ветреной погоды. Однако дожди в Мексике кратковременны и не помешают отдыху. В этот период можно приобрести горящий тур по выгодной цене.</span></p>
         </div>
     </section>
+    </main>
 
     <!-- Block Найди сам! -->
     <section class="find_by_self">

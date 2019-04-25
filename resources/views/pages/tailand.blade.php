@@ -1,26 +1,29 @@
 @extends('layouts.app')
-@section('title')Туры в Таиланд – заказ онлайн горящую путевку на отдых в Таиланде@endsection
+@section('title')Туры в Таиланд из Луганска – заказ онлайн горящую путевку на отдых в Таиланде@endsection
 @section('description')Купить путевку на отдых в Таиланде по самым низким ценам на <?php echo date("Y");?> год! онлайн заказ туров на веб-сайте &laquo;5 сезонов&raquo;.@endsection
 @section('keywords')туры, Луганск, отпуск, отдых, Таиланд, Тайский, Тайланд, отдых, турагентство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Таиланд</h1>
-            <div class="slider_page zoom-gallery">
-                <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/1.jpg')}}">
-                    <img src="{{asset('public/img/tailand/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Таиланд">
-                </a>
 
-                <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/2.jpg')}}">
-                    <img src="{{asset('public/img/tailand/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры Таиланд">
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/1.jpg')}}">
+                        <img src="{{asset('public/img/tailand/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Таиланд">
+                    </a>
 
-                </a>
+                    <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/2.jpg')}}">
+                        <img src="{{asset('public/img/tailand/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры Таиланд">
 
-                <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/3.jpg')}}">
-                    <img src="{{asset('public/img/tailand/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Таиланд">
-                </a>
-            </div>
+                    </a>
+
+                    <a title="&laquo;5 сезонов&raquo; Таиланд" class="popup-with-zoom-anim" href="{{asset('public/img/tailand/3.jpg')}}">
+                        <img src="{{asset('public/img/tailand/3.jpg')}}" alt="&laquo;5 сезонов&raquo; отдых в Таиланд">
+                    </a>
+                </figure>
+
             <div class="text_info_in_page">
                 Туристическое агентство <i>&laquo;5 сезонов&raquo;</i> предлагает бронирование билетов на отдых в
                 <h2>Таиланде из Луганска (вылет из г. Ростов-на-Дону).</h2> <br>
@@ -39,6 +42,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
 
     <!-- Block Найди сам! -->
     <section class="find_by_self">

@@ -3,27 +3,27 @@
 @section('description')Купить путевку на отдых в Болгарию по низким ценам! Онлайн заказ туров на сайте &laquo;5 сезонов&raquo;!@endsection
 @section('keywords')туры в Болгарию@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Болгарию</h1>
-            <div class="slider_page zoom-gallery">
+            <figure class="slider_page zoom-gallery">
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                    <img src="{{asset('public/img/bolgariya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
 
-            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
-                <img src="{{asset('public/img/bolgariya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
+                </a>
 
-            </a>
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/2.jpg')}}">
+                    <img src="{{asset('public/img/bolgariya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
 
-            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/2.jpg')}}">
-                <img src="{{asset('public/img/bolgariya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
+                </a>
 
-            </a>
+                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/3.jpg')}}">
+                    <img src="{{asset('public/img/bolgariya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
 
-            <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/3.jpg')}}">
-                <img src="{{asset('public/img/bolgariya/3.jpg')}}" alt="&laquo;5 сезонов&raquo; Болгария">
-
-            </a>
-            </div>
+                </a>
+            </figure>
             <div class="text_info_in_page">
                 <p>Болгария считается не очень большой страной, но в ней можно найти все, что необходимо для туриста:
                     древние города, которые богаты памятниками архитектуры, неповторимые пейзажи, великолепные горы и,
@@ -42,6 +42,7 @@
         </div>
 
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

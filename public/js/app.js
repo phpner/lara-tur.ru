@@ -60,6 +60,29 @@ $(document).ready(function () {
         }
 
     });
+    $('.zoom-gallery-kurort').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+                return item.el.attr('title');
+            }
+        },
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+
+    });
 
 
     if (Modernizr.touchevents){
@@ -70,7 +93,7 @@ $(document).ready(function () {
         });
         $(".h2").css('background', '#378d38');
     } else {
-        console.log("NO !! touch!!");
+
         $('#dropDownHolder').removeClass("hoverActive");
 
         var nav = $(".top_menu");
@@ -162,9 +185,9 @@ $(document).ready(function () {
                 beforeSend: function() {
                     $(".mfp-close").trigger("click");
                     $(".sendForm").fadeIn(400);
-                    $(form)[0].reset();
                     $(".controll_input span").removeClass('form-holder')
                     $(".controll_input input").removeClass('valid')
+                    $(form)[0].reset();
                 },
                 success: function(response) {
                   var text =  response === 'ok' ? "Спасибо. Заявка принята. <br> Мы скоро перезвоним!" :'Ошибка отправки!';
@@ -172,13 +195,13 @@ $(document).ready(function () {
                     $('#answers span').html(text);
                     $(".sendForm").fadeOut(400);
                     $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
-                    console.log(response);
+
                 },
                 error: function(res){
                     $(".sendForm").fadeOut(400);
                     $('#answers span').html("Что-то пошло не так! <br> Пропробуйте нам перезвонить");
                     $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
-                    console.log(res);
+
                 }
             });
         }
@@ -186,6 +209,7 @@ $(document).ready(function () {
 
     $(".form_callback").validate(settingFprm);
     $(".form_contact").validate(settingFprm);
+    $(".callbackCommetn").validate(settingFprm);
     $(".form_callback_choose").validate(settingFprm);
 
 
@@ -257,7 +281,6 @@ $(document).ready(function () {
             cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
             touchThreshold: 100
         });
-        console.log('ywss!!')
     }
 
     if ($(".slick-feedback ").length > 0){
@@ -294,6 +317,23 @@ $(document).ready(function () {
     }
 
 
+/*    setTimeout(function () {
+        console.log($('.container_CV').children().length);
+        if ($('.container_CV').children().length <= 0){
+        $('.container_CV').append("<jdiv class=\"content_oc\">\n" +
+            "    <jdiv class=\"main_2b __agent_3H\">\n" +
+            "        <jdiv class=\"message_20 _green_Tb\">\n" +
+            "            <jdiv class=\"text_14\">Здравствуйте! Я могу вам чем-то помочь?</jdiv>\n" +
+            "        </jdiv>\n" +
+            "    </jdiv>\n" +
+            "</jdiv>");
+        }
+
+        $('.hoverl_6R').trigger('click');
+
+
+
+    }, 10000)*/
 
   /*  $(document).on('DOMSubtreeModified',".TVModalContainer ",function () {
         console.log(this.scrollHeight);

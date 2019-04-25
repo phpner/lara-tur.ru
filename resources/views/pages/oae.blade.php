@@ -1,30 +1,27 @@
 @extends('layouts.app')
-@section('title')Туры в ОАЭ – заказ онлайн горящую путевку на отдых в Арабских Эмиратах@endsection
-@section('description')Купить путевку на отдых в Арабских Эмиратах по самым низким ценам на <?php echo date("Y");?> Бронируйте и заказывайте туры от самых простых, до Luxury апартаментов.@endsection
-@section('keywords')туры, Луганск, отпуск, отдых,  Арабских Эмиратах, ОАЭ,отдых, турагентство, горящие, Ростов на Дону, подбор@endsection
+@section('title')Арабские Эмираты – цены на отдых <?php echo date("Y");?>г. туры в ОАЭ@endsection
+@section('description')курорт ОАЭ Абу-Даби Дубай Шарджа Фуджейра Рас-эль-Хайма Аджман Умм-аль-Кувейн цена на <?php echo date("Y");?> Бронируйте и заказывайте туры от самых простых, до Luxury апартаментов.@endsection
+@section('keywords')туры, Луганск, отпуск, отдых,  Арабских Эмиратах, ОАЭ,отдых, турагентство, горящие, Ростов на Дону, подбор, ЛНР@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
-            <h1>Туры в ОАЭ</h1>
-            <div class="slider_page zoom-gallery">
+            <h1>Туры в Арабские Эмираты</h1>
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
+                        <img src="{{asset('public/img/oae/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Туры в ОАЭ ">
+                    </a>
 
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/bolgariya/1.jpg')}}">
-                    <img src="{{asset('public/img/oae/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Туры в ОАЭ ">
+                    <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/oae/2.jpg')}}">
+                        <img src="{{asset('public/img/oae/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры по Арабских Эмиратах">
+                    </a>
 
-                </a>
+                    <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/oae/3.jpg')}}">
+                        <img src="{{asset('public/img/oae/3.jpg')}}" alt="Арабских Эмиратах">
+                    </a>
+                </figure>
 
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/oae/2.jpg')}}">
-                    <img src="{{asset('public/img/oae/2.jpg')}}" alt="&laquo;5 сезонов&raquo; туры по Арабских Эмиратах">
-
-                </a>
-
-                <a title="&laquo; 5 сезонов &raquo; Болгария" class="popup-with-zoom-anim" href="{{asset('public/img/oae/3.jpg')}}">
-                    <img src="{{asset('public/img/oae/3.jpg')}}" alt="Арабских Эмиратах">
-
-                </a>
-
-            </div>
             <div  class="text_info_in_page">
                 <p><i>&laquo;5 сезонов&raquo;</i> представляет уникальную страну ОАЭ.
                     Сочетание неповторимой красоты самобытного Древнего Востока и динамично развивающего современного
@@ -32,11 +29,11 @@
                     современности.
                 Вы только вдумайтесь, сейчас в пригороде Абу Даби открылся филиал парижского Лувра.
                 Вылет из Ростова еженедельно.</p>
-                <p> Только <i>&laquo;5 сезонов&raquo;</i> предлагает волшебный отдых в сочетании с уникальными и
+                <p>Только <i>&laquo;5 сезонов&raquo;</i> предлагает волшебный отдых в сочетании с уникальными и
                     неповторимыми экскурсиями, передающими самобытную атмосферу мира Востока.
                     Бронируйте и заказывайте туры от самых простых,
                     до Luxury апартаментов. У нас индивидуальный подход к каждому клиенту!</p>
-                Туристическое агентство <i>«5 сезонов»</i> предлагает бронирование билетов на отдых в <h2>ОАЭ из Луганска</h2>
+                Туристическое агентство <i>«5 сезонов»</i> предлагает бронирование билетов на отдых по ценама <?php echo date("Y");?> года - Арабские Эмираты из Луганска.
             </div>
         </div>
         <!-- End block info -->
@@ -45,6 +42,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
 
     <!-- Block Найди сам! -->
     <section class="find_by_self">

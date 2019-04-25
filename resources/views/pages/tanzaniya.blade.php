@@ -6,12 +6,14 @@
 
 @section('menu')@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
 
         <!-- block info -->
         <div class="info_img">
             <h1>Туры в Танзанию</h1>
-            <div class="slider_page zoom-gallery">
+
+                <figure class="slider_page zoom-gallery">
                 <a title="&laquo; 5 сезонов &raquo; Танзания" class="popup-with-zoom-anim" href="{{asset('public/img/tanzaniya/1.jpg')}}">
                     <img src="{{asset('public/img/tanzaniya/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Танзания">
 
@@ -19,14 +21,13 @@
 
                 <a title="&laquo; 5 сезонов &raquo; Танзания" class="popup-with-zoom-anim" href="{{asset('public/img/tanzaniya/2.jpg')}}">
                     <img src="{{asset('public/img/tanzaniya/2.jpg')}}" alt="&laquo;5 сезонов&raquo; ">
-
                 </a>
 
                 <a title="&laquo; 5 сезонов &raquo; Танзания" class="popup-with-zoom-anim" href="{{asset('public/img/tanzaniya/3.jpg')}}">
                     <img src="{{asset('public/img/tanzaniya/3.jpg')}}" alt="Танзания ">
-
                 </a>
-            </div>
+                </figure>
+
             <div class="text_info_in_page">
                 <p>Танзания подарит Вам незабываемые впечатления и изменит Ваше мнение об Африке.
                     В Африке, у берегов Индийского океана, пляжи с ярко белым песком, национальные парки, смешение
@@ -47,6 +48,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

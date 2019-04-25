@@ -1,13 +1,18 @@
+
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+#Now, rewrite to HTTPS:
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-RewriteRule ^index\.php$ http://5-sezonov.ru [R=301,L]
+RewriteRule ^index\.php$ https://5-sezonov.ru [R=301,L]
 
 #в случае index.html:
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ http://5-sezonov.ru [R=301,L]
+RewriteRule ^index\.html$ https://5-sezonov.ru [R=301,L]
 
 RewriteRule ^(.*)$ public/$1 [L]

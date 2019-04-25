@@ -18,38 +18,31 @@ class Mail extends Controller
 
         $data = (date('d ') . $monthes[(date('n'))] . date(' Y, H:i:s'));
 
+        $body =  $data;
 
+        if($request['fromform']){
+            $body  = "<h1 style='color: indianred;text-align: center'>".trim(strip_tags($request['fromform'])."</h1>");
+            $body .=  $data;
+        }
         if($request['name']){
-            $name = trim(strip_tags($request['name']));
-        }else{
-            $name = "";
+            $body .= "<br> Имя: ".trim(strip_tags($request['name']));
         }
-        if($request['text']){
-            $text = trim(strip_tags($request['text']));
-        }else{
-            $text = "";
-        }
-
         if($request['email']){
-            $email = trim(strip_tags($request['email']));
-        }else{
-            $email = "";
+            $body .= "<br> email: ".trim(strip_tags($request['email']));
         }
 
         if($request['tel']){
-            $tel = trim(strip_tags($request['tel']));
-        }else{
-            $tel = "";
+            $body .= "<br> Телефон: ".trim(strip_tags($request['tel']));
         }
 
         if($request['field_request_country']){
-            $field_request_country = 'Страна:'. trim(strip_tags($request['field_request_country']));
-        }else{
-            $field_request_country = "";
+            $body .= "<br> Страна: ".trim(strip_tags($request['field_request_country']));
+        }
+        if($request['text']){
+            $body .= "<br> Сообщения: ".trim(strip_tags($request['text']));
         }
 
 
-        $body = "<br> Дата: $data <br> Имя: $name <br> Телефон: $tel <br>$field_request_country<br> Email: $email <br> Сообщение: $text " ;
 
         $mail = new PHPMailer(); //вызываем класс
 

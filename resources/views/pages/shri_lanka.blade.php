@@ -3,23 +3,26 @@
 @section('description')Купить путевку на отдых в Шри-Ланку по самым низким ценам! онлайн заказ туров на сайте &laquo;5 сезонов&raquo; в Луганске.@endsection
 @section('keywords')туры, Луганск, отпуск, отдых, Шри-Ланку, отдых, турагентство, горящие, Ростов на Дону, подбор@endsection
 @section('center')
+<main>
     <section class="wrapper pt-118px">
         <!-- block info -->
         <div class="info_img">
             <h1>Туры на Шри-Ланку</h1>
-            <div class="slider_page zoom-gallery">
-                <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/1.jpg')}}">
-                    <img src="{{asset('public/img/shri-lanka/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Шри-Ланку">
-                </a>
 
-                <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/2.jpg')}}">
-                    <img src="{{asset('public/img/shri-lanka/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Шри-Ланку">
-                </a>
+                <figure class="slider_page zoom-gallery">
+                    <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/1.jpg')}}">
+                        <img src="{{asset('public/img/shri-lanka/1.jpg')}}" alt="&laquo;5 сезонов&raquo; Шри-Ланку">
+                    </a>
 
-                <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/3.jpg')}}">
-                    <img src="{{asset('public/img/shri-lanka/3.jpg')}}" alt="Шри-Ланку">
-                </a>
-            </div>
+                    <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/2.jpg')}}">
+                        <img src="{{asset('public/img/shri-lanka/2.jpg')}}" alt="&laquo;5 сезонов&raquo; Шри-Ланку">
+                    </a>
+
+                    <a title="&laquo;5 сезонов&raquo; Шри-Ланку" class="popup-with-zoom-anim" href="{{asset('public/img/shri-lanka/3.jpg')}}">
+                        <img src="{{asset('public/img/shri-lanka/3.jpg')}}" alt="Шри-Ланку">
+                    </a>
+                </figure>
+
             <div class="text_info_in_page">
                 <p> Шри-Ланка - это довольно небольшой остров, который поражает своей неповторимостью! Расположен он
                     всего лишь в 800 километрах от экватора Земли!</p>
@@ -38,6 +41,7 @@
             <script  src="//tourvisor.ru/module/init.js"></script>
         </div>
     </section>
+</main>
     <!-- Block Найди сам! -->
     <section class="find_by_self">
         <div class="wrapper">

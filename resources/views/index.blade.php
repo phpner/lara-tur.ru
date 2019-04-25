@@ -1,20 +1,20 @@
 @extends('layouts.app')
-@section('title')Туристическое агентство 5 сезонов доступный отдых по самым популярным странам мира.@endsection
-@section('description')Турагентство 5 сезонов - это более 50 000 горящих туров в Европу,  ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд и другие популярные страны!@endsection
-@section('keywords')турагентство, 5 сезонов, туроператор горящий тур, Европа, ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд@endsection
+@section('title')Горящие туры и путевки из Луганска - турагентство 5 сезонов@endsection
+@section('description')Туристическое агентство 5 сезонов - это более 50 000 горящих туров в Азию, Африку и Америку, Европу,  путевки в Египет, ОАЭ, Турцию, Тайланд и другие популярные страны!@endsection
+@section('keywords')турагентство, 5 сезонов, горящие путевки, туроператор горящий тур, Европа, ОАЭ, Азию, Африку и Америку, путевки в Египет, Турцию, Тайланд, Луганск, ЛНР@endsection
 @section('header')
     <div class="wrapper-slider">
     <div class="slider_top">
         <img src="{{asset('public/img/slider_header/1.jpg')}}" alt="Турагентство 5 сезонов Европу">
-        <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Африку">
-        <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Турцию">
-        <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="Турагентство 5 сезонов доступный отдых Африку">
+        <img src="{{asset('public/img/slider_header/2.jpg')}}" alt="Турагентство Луганск">
+        <img src="{{asset('public/img/slider_header/3.jpg')}}" alt="Турагентство лнр">
+        <img src="{{asset('public/img/slider_header/4.jpg')}}" alt="горящие туры">
     </div>
         <h1  class="h1">Туристическое агентство <span>&laquo;5 сезонов&raquo;</span></h1>
     </div>
     <div class="search_block_header">
         <div class="tv-search-form tv-moduleid-187833"></div>
-        <script  src="//tourvisor.ru/module/init.js"></script>
+       <!-- <script  src="//tourvisor.ru/module/init.js"></script>-->
     </div>
 @endsection
 @section("center")
@@ -35,10 +35,35 @@
             </div>
             <em>Поторопитесь! То, что есть сегодня, возможно, не будет завтра!</em>
         </div>
-    <h2 class="h1">ОАЭ</h2>
+    <h2 class="h1">Календарь цен</h2>
+        <div class="calendar">
+            @foreach($calendar as $item)
+                <div class="calendar_item">
+                    <h4><?php  echo  $item['name']?></h4>
+
+                    @isset($item['country_price'])
+                        <div class="calendar_box">
+                            @foreach( $item['country_price'] as $cal)
+                                <div class="item_block">
+                                    <div class="date">
+                                        <?php echo  $cal['date'] ?>
+                                    </div>
+                                    <div class="item_block_text">
+                                        <div class="hight"><i><?php echo $cal['night']?></i> Ночей</div>
+                                        <div class="price"><?php echo $cal['price']?> руб.<br></div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endisset
+                    <hr>
+
+                </div>
+            @endforeach
+        </div>
         <hr class="style-seven">
     <div class="tv-hot-tours tv-moduleid-974374"></div>
-    <script  src="//tourvisor.ru/module/init.js"></script>
+   <!-- <script  src="//tourvisor.ru/module/init.js"></script>-->
     </div>
     <!-- Отзывы-->
     <div class="section-reviews bg_gray">
@@ -53,10 +78,10 @@
                                 <div class="reviews-card__content">
                                     <div class="reviews-card__name">Евгения </div>
                                     <div class="reviews-card__date">
-                                        08 декабря 2018 г.
+                                        08 февраль 2019 г.
                                     </div>
                                     <div class="reviews-card__text">
-                                        Восторг и благодарность коллективу, за великолепные каникулы в Rixos Premium Dubai. Вот уже месяц прошёл со дня поездки, а впечатлений хватит ещё надолго. Логистика, сопровождение клиента, комплименты от менеджера - на высшем уровне! Спасибо!
+                                        Очень понравился отдых в чудесной стране - Королевстве Таиланд в феврале 2019 года. Отель Амбассадор Инн в Патайе  - это просто чудо. Прекрасный отель, удивительный подбор экскурсий и самое главное, прекрасная локация отеля по отношению к центру. Патаей сделал наш отдых с детьми незабываемым.  Огромное спасибо директору Илье, за организацию этого чудесного отдыха!
                                     </div>
                                 </div>
                             </div>
@@ -71,8 +96,11 @@
                                         26 ноября 2018 г.
                                     </div>
                                     <div class="reviews-card__text">
-                                        Ездили в тур через менеджера Илья. Спасибо ему за оперативное оформление тура и отзывчивость! Тур был в Вену и Будапешт. Все очень понравилось, дорога прошла спокойно и быстро. Отель в Будапеште хороший, заселили быстро. Качество экскурсий было хорошее.                                    </div>
+                                        Понравилась удивительная поездка в Тунис. сказочный отдых и прекрасная страна. Понравилась не только мне, но и нашим деткам. Путешествуйте с агентством 5 сезонов, и вы получите удивительное наслаждение от отдыха и ярких эмоций!
+                                        Буду советовать своим близким и друзьям!
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                 </div>
@@ -90,7 +118,6 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <div class="item_slider">
                         <div class="reviews-card__item">
@@ -106,13 +133,13 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
                 </div>
             </div>
-        <span class="write-to-us btn_feed_back">
+        <a href="#callbackCommetn" class="btn btn-brand popup-with-form btn_feed_back">
                 Оставить отзыв
-            </span>
+        </a>
     </div>
+
     <!--Конец отзывы-->
     @endsection
 @section('footer-script')

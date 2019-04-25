@@ -4,12 +4,30 @@
 @section('keywords')турагентство 5 сезонов, Контакты@endsection
 @section('center')
     <section class="wrapper pt-118px">
-        <h1>Контакты</h1>
-        <hr class="style-seven">
-        <div class="page_contact">
-            <span class="contact_tel"><i class="icon-phone_android"></i><a href="tel:+380954463272">+38 (095) 446-32-72</a></span>
-            <span class="contact_mail"><i class="icon-gmail"></i><a href="mailto:zakaz@5-sezonov.ru">zakaz@5-sezonov.ru</a></span>
-            {{-- <span class="call_back"><a href="#"><i class="fas fa-headset"></i>Обратная связь</a></span>--}}
+
+
+        <div class="page_contact" itemscope itemtype="http://schema.org/Organization">
+            <h1 class="h1-cont">Контакты</h1>
+            <span class="title-contact" itemprop="name">5 сезонов</span>
+
+            <div class="adress-in-contact" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                Адрес:
+                <span itemprop="streetAddress">ул. Котова, 14/1</span>
+
+                <span itemprop="addressLocality">Луганск, Краснодон</span>,
+            </div>
+            <span itemprop="telephone" class="contact_tel"><i class="icon-phone_android"></i>
+                <a href="tel:+380954463272" >+38 (095) 446-32-72</a>
+            </span>
+            <span itemprop="telephone" class="contact_tel"><i class="icon-phone_android"></i>
+                <a href="tel:0721608584" >(072) 160-85-84</a>
+            </span>
+            <span class="contact_mail"><i class="icon-gmail"></i>
+                <a href="mailto:zakaz@5-sezonov.ru"  itemprop="email" >zakaz@5-sezonov.ru</a>
+            </span>
+        </div>
+        <div class="map">
+            <iframe src="https://yandex.ua/map-widget/v1/-/CCBONHPT" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
         </div>
         <div class="zoom-anim-dialog-info form_width contact_form">
             <form action="{{route('send-mail')}}" method="post" class="form_callback" >

@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index', ['menu' => 0]);
-});
+Route::get('/', "Pages\Main@index")->name("index");
 
 Route::get('/search', function () {
     return view('search');
@@ -28,6 +26,10 @@ Route::get('/hot-tour', function () {
 
     /* BLOCK TOUR*/
 Route::prefix('tour')->group(function () {
+
+    /**
+     * egipet
+     */
 
     Route::get('egipet', "Pages\Egipet@index")->name("egipet");
 
@@ -107,9 +109,9 @@ Route::prefix('tour')->group(function () {
     /**
      * vetnam
      */
-    Route::get('vetnam',  function (){
-        return view('pages.vetnam');
-    })->name("vetnam");
+
+    Route::get('vetnam', "Pages\Vetnam@index")->name("vetnam");
+
 
     /**
      * countries
