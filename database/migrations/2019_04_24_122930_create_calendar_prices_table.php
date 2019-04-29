@@ -13,7 +13,7 @@ class CreateCalendarPricesTable extends Migration
      */
     public function up()
     {
-        Schema::create('calendar_prices', function (Blueprint $table) {
+ Schema::create('calendar_prices', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('country');
             $table->integer('minprice');
@@ -32,6 +32,6 @@ class CreateCalendarPricesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('calendar_prices');
+       /* Schema::dropIfExists('calendar_prices');*/
     }
 }

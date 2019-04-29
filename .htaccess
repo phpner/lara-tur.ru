@@ -1,4 +1,7 @@
-
+ <FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+ </FilesMatch>
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]

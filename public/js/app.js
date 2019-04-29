@@ -213,6 +213,38 @@ $(document).ready(function () {
     $(".form_callback_choose").validate(settingFprm);
 
 
+    $(".jq_modal_form").on('submit',function (event) {
+        event.preventDefault();
+        var that = this;
+        $.ajax({
+            url: that.action,
+            type: that.method,
+            data: $(that).serialize(),
+            beforeSend: function() {
+                $(".mfp-close").trigger("click");
+                $(".sendForm").fadeIn(400);
+                $(".controll_input span").removeClass('form-holder')
+                $(".controll_input input").removeClass('valid')
+                $(that)[0].reset();
+            },
+            success: function(response) {
+                var text =  response === 'ok' ? "Спасибо. Заявка принята. <br> Мы скоро перезвоним!" :'Ошибка отправки!';
+
+                $('#answers span').html(text);
+                $(".sendForm").fadeOut(400);
+                $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
+
+            },
+            error: function(res){
+                $(".sendForm").fadeOut(400);
+                $('#answers span').html("Что-то пошло не так! <br> Пропробуйте нам перезвонить");
+                $('#answers').fadeIn(400).delay(2000).fadeOut(1000);
+
+            }
+        });
+    });
+
+
     /*Кнопка на верх*/
     $(window).scroll(function() {
 
@@ -271,7 +303,7 @@ $(document).ready(function () {
     /** Слайдер на страницах**/
     if ($(".slider_page").length > 0){
         $(".slider_page").slick({
-            autoplay: true,
+            //autoplay: true,
             draggable: true,
             arrows: false,
             dots: true,
@@ -340,4 +372,51 @@ $(document).ready(function () {
         $('footer').css('bottom', +this.scrollHeight - 450)
     });*/
 
-})
+  $(".calendar_item").on('click',function (event) {
+      console.log(event.target);
+      $(event.target).parent('.calendar_item').toggleClass("in");
+  });
+
+
+    var navListItems = $('.stepper__link'),
+        allSteps = $('.steps__step'),
+        allNextBtn = $('.next-step'),
+        allPrevBtn = $('.prev-step');
+
+    allSteps.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.find('.circle-badge').removeClass('circle-badge_green').addClass('circle-badge_gray');
+            $item.find('.circle-badge').removeClass('circle-badge_gray').addClass('circle-badge_green');
+            allSteps.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+
+    allNextBtn.click(function(e){
+        e.preventDefault();
+        var curStep = $(this).closest(".steps__step"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('.stepper__link[href="#' + curStepBtn + '"]').parent().next().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']");
+        isValid = true;
+
+        for(var i=0; i< curInputs.length; i++){
+            if (!curInputs[i].validity.valid){
+                isValid = false;
+                // $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('.stepper__item:first-child .stepper__link').trigger('click');
+});

@@ -24,6 +24,12 @@ Route::get('/hot-tour', function () {
     return view('/hot_tour',["menu" => 2]);
 })->name("hot-tour");
 
+    /**
+     * calender-price
+     */
+Route::get('calender-price', "Pages\Calender@index")->name("calender-price");
+
+
     /* BLOCK TOUR*/
 Route::prefix('tour')->group(function () {
 

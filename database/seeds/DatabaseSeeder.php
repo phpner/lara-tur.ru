@@ -3,9 +3,11 @@
 use Illuminate\Database\Seeder;
 use App\LocalPack\HttpCurl;
 use App\Model\Country;
+use Illuminate\Support\Facades\DB;
 use App\Model\Departure_city;
 use App\Model\Resort;
 use App\Model\Calendar_price;
+use App\Model\Calender_price_curort;
 
 
 class DatabaseSeeder extends Seeder
@@ -19,19 +21,26 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
 
+        /**
+         * Получаем название стран
+         */
+         $httpCurl = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/countries');
 
-        $httpCurl = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/countries');
+             foreach ($httpCurl as $id => $name) {
+                    $city = new Country();
 
-        foreach ($httpCurl as $id => $name) {
-            $city = new Country();
+                    $city->name = $name ;
+                    $city->country_id = $id;
 
-            $city->name = $name ;
-            $city->country_id = $id;
+                    $city->save();
+                }
 
-            $city->save();
-        }
-        /*
-               $http = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/departure-cities');
+
+        /**
+         *  Получаем Название вылета стран, городов
+         */
+
+           /*    $http = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/departure-cities');
 
 
                foreach ($http as $item) {
@@ -44,9 +53,14 @@ class DatabaseSeeder extends Seeder
                    $Departure_city->save();
 
                }
+           */
+
+        /**
+         * Получаем курорты
+         */
 
 
-               $http = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/resorts');
+              $http = (new HttpCurl())->getCurl('https://api.advcake.com/travelata/resorts');
 
 
                foreach ($http as $item) {
@@ -63,36 +77,91 @@ class DatabaseSeeder extends Seeder
                    $Departure_city->country_name = $item->country_name;
 
                    $Departure_city->save();
+                   echo $item->name."\n";
 
-               }   */
+               }
+
 
         /**
-         *  3
+         *  Получаем цены на страны
          */
 
 
-        $countries = Country::all();
+       $countries = Country::all();
 
-foreach ($countries as $country) {
-    //echo $country->name;
-    $http = (new HttpCurl())->getCurl('https://travelata.ru/pricestatistic/monthly-calendar?departureCity=2&countries%5B%5D='.$country->country_id.'');
-    $data = (array) $http->data;
-    foreach ($http->data as $item) {
+        $link = '';
 
-        $Departure_city = new Calendar_price;
+        foreach ($countries as $country){
+            $link .= '&countries%5B%5D='.$country->country_id.'';
+        }
 
-        $Departure_city->country = $item->country;
-        $Departure_city->minprice = $item->minprice;
-        $Departure_city->nightfrom = $item->nightfrom;
-        $Departure_city->nightto = $item->nightto;
-        $Departure_city->checkindate = $item->checkindate;
-        $Departure_city->checkinmonth = $item->checkinmonth;
 
-        $Departure_city->save();
+        $http = (new HttpCurl())->getCurl('https://travelata.ru/pricestatistic/monthly-calendar?departureCity=2'.$link.'');
 
-        echo $item->country."\n";
-    }
-}
+        foreach ($http->data as $item) {
 
+            $Departure_city = new Calendar_price;
+
+            $Departure_city->country = $item->country;
+            $Departure_city->minprice = $item->minprice;
+            $Departure_city->nightfrom = $item->nightfrom;
+            $Departure_city->nightto = $item->nightto;
+            $Departure_city->checkindate = $item->checkindate;
+            $Departure_city->checkinmonth = $item->checkinmonth;
+
+            $Departure_city->save();
+
+            echo $item->country."\n";
+        }
+
+
+
+
+        /**
+         * Получаем цены на курорты
+         */
+
+        $resorts_id =  DB::select("SELECT `name`, `resort_id`  FROM resorts WHERE resort_id  IN (2232, 1843)");
+
+        foreach ($resorts_id as $item){
+            $https = (new HttpCurl())->getCurl('https://travelata.ru/pricestatistic/russian-monthly-calendar?departureCity=2&resorts%5B%5D='.$item->resort_id.'');
+
+            foreach ($https->data as  $http){
+                $calender_price_curort = new Calender_price_curort;
+                        $calender_price_curort->checkindate    =    $http->checkindate;
+                        $calender_price_curort->resort         =    $http->resort;
+                        $calender_price_curort->minprice       =    $http->minprice;
+                        $calender_price_curort->checkinmonth   =    $http->checkinmonth;
+                        $calender_price_curort->nightfrom      =    $http->nightfrom;
+                        $calender_price_curort->nightto        =    $http->nightto;
+
+                $calender_price_curort->save();
+            }
+        }
+
+        $link = "";
+
+
+
+
+/*        $link2 = "";
+        foreach ($array_chunk[1] as $id){
+            $link2 .= '&resorts%5B%5D='.$id->id.'';
+        }
+
+        $http = (new HttpCurl())->getCurl('https://travelata.ru/pricestatistic/monthly-calendar?departureCity=2'.$link2.'');*/
+
+        dd( $http);
+
+    /*
+          foreach ($resorts_id as $item){
+          DB::table('users')->insert([
+              ['resort' => 'taylor@example.com', 'votes' => 0],
+              ['email' => 'dayle@example.com', 'votes' => 0]
+          ]);
+      }
+    */
+
+       dd($resorts_id);
     }
 }

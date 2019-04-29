@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Pages;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\LocalPack\HttpCurl;
+use Illuminate\Support\Facades\DB;
+
 
 class Egipet extends Controller
 {
@@ -20,7 +22,9 @@ class Egipet extends Controller
 
         $hot_items = (new HttpCurl())->getCurlResult($url);
 
+      $res =  DB::select('SELECT * FROM `resorts` WHERE country_id = 29 AND is_popular = true');
 
+      dd($res);
 
         return view('pages.egipet',["menu" => 3, 'page' => 'egipet','hot_items' => $hot_items]);
     }

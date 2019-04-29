@@ -13,10 +13,10 @@ class CreateResortsTable extends Migration
      */
     public function up()
     {
-       /* Schema::create('resorts', function (Blueprint $table) {
+   Schema::create('resorts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('country_name');
+            $table->string('country_name')->nullable();
             $table->integer('resort_id');
             $table->integer('country_id');
             $table->string('is_popular');
@@ -24,7 +24,7 @@ class CreateResortsTable extends Migration
             $table->string('created_at')->nullable();
             $table->string('updated_at')->nullable();
 
-        });*/
+        });
     }
 
     /**

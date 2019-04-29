@@ -27,10 +27,10 @@
     <meta property="og:image:height" content="447">
     <meta property="og:image:width" content="854">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" />
-    <meta property="og:image" content="<?php echo "http://$_SERVER[HTTP_HOST]$url"?>og-image.jpg">
+    <meta property="og:url" content="<?php echo"$_SERVER[REQUEST_SCHEME]://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" />
+    <meta property="og:image" content="<?php echo "$_SERVER[REQUEST_SCHEME]://$_SERVER[HTTP_HOST]$url"?>og-image.jpg">
 
-    <link rel="canonical" href="<?php echo "http://$_SERVER[HTTP_HOST]$urlWithOutSlesh"?>"/>
+    <link rel="canonical" href="<?php echo "$_SERVER[REQUEST_SCHEME]://$_SERVER[HTTP_HOST]$urlWithOutSlesh"?>"/>
 
     <link rel="stylesheet" href="{{ asset('public/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
@@ -48,6 +48,7 @@
     <![endif]-->
 
     <meta name="verify-admitad" content="ae210edeb0" />
+    <meta name='wmail-verification' content='3e40bbf571ea73f3874e0a2af5f0b6d8' />
 
 </head>
 <body>
@@ -83,8 +84,9 @@
             <nav>
              <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement"  class="menu">
                 <li ><a itemprop="url" class="<?php echo $menu === 0 ? 'active' : ''?>" href="/"><span  itemprop="name">Главная</span></a></li>
-                <li ><a itemprop="url" class="podbor <?php echo $menu === 7 ? 'active' : ''?>" href="{{route('choose-tour')}}"><span  itemprop="name">Календарь цен</span></a></li>
-                <li ><a itemprop="url" class="podbor <?php echo $menu === 1 ? 'active' : ''?>" href="{{route('choose-tour')}}"><span  itemprop="name">Подбор тура</span></a></li>
+                <li ><a itemprop="url" class="podbor <?php echo $menu === 7 ? 'active' : ''?>" href="{{route('calender-price')}}"><span  itemprop="name">Календарь цен</span></a></li>
+
+               <!-- <li ><a itemprop="url" class="podbor <?php echo $menu === 1 ? 'active' : ''?>" href="{{route('choose-tour')}}"><span  itemprop="name">Подбор тура</span></a></li>
                 <li><a itemprop="url" class="<?php echo $menu === 2 ? 'active' : ''?>" href="{{route('hot-tour')}}"><span  itemprop="name" >Горящие туры</span></a></li>
                 <li class="DownHolder" >
                     <a itemprop="url" class="<?php echo $menu === 3 ? 'active' : ''?>" href="#"><span itemprop="name">Страны</span></a>
@@ -137,7 +139,7 @@
                         </ul>
                         <div class="center"><a class="all_city" href="{{route('countries')}}">Все страны</a></div>
                     </div>
-                </li>
+                </li> -->
                <!--
                 <li><a  class="<?php echo $menu === 4 ? 'active' : ''?>" href="#">Наши услуги</a></li>
                 <li><a  class="<?php echo $menu === 5 ? 'active' : ''?>" href="#">О компании</a></li>

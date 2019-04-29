@@ -27,6 +27,30 @@ class Mail extends Controller
         if($request['name']){
             $body .= "<br> Имя: ".trim(strip_tags($request['name']));
         }
+
+        if($request['country']){
+            $body .= "<br> Куда хотят поехать: ".trim(strip_tags($request['country']));
+        }
+
+        if($request['adults']){
+            $body .= "<br> Кол-во взрослых: ".trim(strip_tags($request['adults']));
+        }
+
+        if($request['kids']){
+            $body .= "<br> Кол-во детей: ".trim(strip_tags($request['kids']));
+        }
+        if($request['dates']){
+            $body .= "<br> Дата вылета: ".trim(strip_tags($request['dates']));
+        }
+
+        if($request['nights_from']){
+            $body .= "<br> Ночей с: ".trim(strip_tags($request['nights_from']));
+        }
+
+        if($request['nights_to']){
+            $body .= "<br> Ночей по: ".trim(strip_tags($request['nights_to']));
+        }
+
         if($request['email']){
             $body .= "<br> email: ".trim(strip_tags($request['email']));
         }

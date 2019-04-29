@@ -17,7 +17,7 @@ class Main extends Controller
 
     public function index()
     {
-        $item = (new Index)->getPriceCalender();
+        $item = (new Index)->getPriceCalender([29,68,92,87]);
 
 
         return view('index',["menu" => 0, 'calendar' => $item]);

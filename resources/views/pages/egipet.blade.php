@@ -39,6 +39,7 @@
 
             </div>
         </div>
+
         <!-- End block info -->
 
       {{--  <div class="choose_tour">
