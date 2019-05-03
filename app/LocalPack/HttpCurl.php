@@ -51,4 +51,53 @@ class HttpCurl
         return $this->item;
     }
 
+    /**
+     * @param $param
+     * Поиск туров
+     */
+
+    public function getSearch($param){
+
+        $url = (isset($param['urlm'])) ?  'https://search.bankturov.ru' . $param['urlm'] . '?' : 'https://search.bankturov.ru';
+
+        foreach ($param['param'] as $p => $value){
+            if ($p === "resort_id" && !is_array($value)){
+                $url .= $p.'='.$value.'&';
+            }elseif ($p === "resort_id" && is_array($value )){
+                foreach ($value as $p2 => $val){
+                    $url .= 'resort_id%5B%5D='.$val.'&';
+                }
+            }else{
+               // print_r($p); echo "-------"; print_r($value); echo "\n";
+                if ($p === "mealType" && is_array($value )){
+                    foreach ($value as $mealType)
+                        $url .= 'mealType'.'%5B%5D='.$mealType.'&';
+                }elseif ($p === "hotelStars" && is_array($value )){
+                    foreach ($value as $hotelStars)
+                        $url .= 'hotelStars'.'%5B%5D='.$hotelStars.'&';
+                }else{
+
+                    $url .= $p.'='.$value.'&';
+                }
+
+            }
+
+        }
+
+
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$url); // set url to post to
+        curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);// allow redirects
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); // return into a variable
+        curl_setopt($ch, CURLOPT_TIMEOUT, 3); // times out after 4s
+        //curl_setopt($ch, CURLOPT_POST, 1); // set POST method
+        //curl_setopt($ch, CURLOPT_POSTFIELDS, "url=index%3Dbooks&field-keywords=PHP+MYSQL"); // add POST fields
+        $result = curl_exec($ch); // run the whole process
+        curl_close($ch);
+
+        return $result;
+    }
+
 }

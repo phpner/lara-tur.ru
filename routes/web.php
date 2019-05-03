@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use App\LocalPack\HttpCurl;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +18,8 @@ Route::get('/', "Pages\Main@index")->name("index");
 Route::get('/search', function () {
     return view('search');
 });
-Route::get('/choose-tour', function () {
+
+Route::match(['get', 'post'],'/choose-tour', function (Request $request) {
     return view('choose_tour',["menu" => 1]);
 })->name("choose-tour");
 
@@ -28,6 +31,18 @@ Route::get('/hot-tour', function () {
      * calender-price
      */
 Route::get('calender-price', "Pages\Calender@index")->name("calender-price");
+
+
+/**
+ * shearsh-tout
+ */
+
+Route::get('/curl',function (Request $request){
+
+    $curl = ( new HttpCurl())->getSearch($request->all());
+
+    return $curl;
+})->name("shearsh-tout");
 
 
     /* BLOCK TOUR*/
@@ -130,7 +145,15 @@ Route::prefix('tour')->group(function () {
 
 
 });
+
 /* END BLOCK TOUR*/
 
 /*mail*/
 Route::post('/send-mail', "Mail@sendForm" )->name("send-mail");
+
+
+/**
+ * Отправка письма заказа тура через AJAX
+ */
+
+Route::post('/order/tour/email', "Order@sendEmail");

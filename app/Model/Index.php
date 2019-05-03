@@ -73,7 +73,7 @@ class Index extends Model
             UNION 
                 SELECT *  FROM `calender_price_curorts` WHERE `resort` IN ('.$name->resort_id.') AND  `nightfrom` = 14  GROUP BY `checkinmonth` HAVING MIN(`minprice`)
             ');
-            
+
             $arrRes[$name->resort_id]['name'] = $name->name;
             $arrRes[$name->resort_id]['country_id'] = $name->resort_id;
             $arrRes[$name->resort_id]['img'] = "/img/calender/".$name->resort_id.".jpg";
@@ -92,7 +92,9 @@ class Index extends Model
         $arr = [];
         $html = " <div class='calendar_box'>";
         $i = 0;
+
            foreach ($items as $item){
+               $night = ((int) $item->nightfrom <= 3) ? 'Ночи' : 'Ночей';
               $menuActive =  ($i >= 7) ? 'hiddenClass' : '';
                $i++;
                $price = number_format($item->minprice / 2, 0, '', ',');
@@ -103,7 +105,7 @@ class Index extends Model
 
                        $html .= "<div class=\"item_block_text\">";
 
-                           $html .= " <div class=\"hight\"><i>$item->nightfrom</i> Ночей</div>";
+                           $html .= " <div class=\"hight\"><i>$item->nightfrom</i> $night </div>";
                            $html .= " <div class=\"price\">$price руб.<br></div>";
 
                        $html .= "</div>";

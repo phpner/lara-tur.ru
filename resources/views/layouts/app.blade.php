@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+    @yield('style')
 
     <link rel="shortcut icon" href="{{ asset('public/img/favicon.png') }}" type="image/x-icon" />
 
@@ -457,6 +458,7 @@
 <script src="{{asset('public/js/modernizr-custom.js')}}"></script>
 <script src="{{asset('public/js/slick.min.js')}}"></script>
 <script src="{{asset('public/js/jquery.validate.min.js')}}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="{{asset('public/js/app.js')}}"></script>
 
  @yield("footer-script")
