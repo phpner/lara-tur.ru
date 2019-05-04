@@ -2645,7 +2645,8 @@ var bgtSearchForm = function () {
             if (_vals.departure != 0 && _vals.destination != 0) {
                 _fills.additionalParameters();
             }
-            $('.b-text.datepicker-from').datepicker().data('datepicker').clear();
+           //$('.b-text.datepicker-from').datepicker().data('datepicker').clear();
+
 
         },
 
@@ -2815,10 +2816,10 @@ var bgtSearchForm = function () {
                     });
                     _objs.$curorts.trigger("liszt:updated");
 
+
                     // проставляем даты
 
                     _vals.dates = data.data.dates[0];
-
                     var stop = 0;
 
                     // Если есть запомненная дата
@@ -2895,7 +2896,40 @@ var bgtSearchForm = function () {
                     }
 
                     // Установка "дат по"
+                    $(reverseDates).each(function () {
+                        if (stop) {
+                            return;
+                        }
 
+                        // Дата из строки
+                        var dt1 = parseInt(this.substring(0, 2));
+                        var mon1 = parseInt(this.substring(3, 5));
+                        var yr1 = parseInt(this.substring(6, 10));
+                        var date1 = new Date(yr1, mon1 - 1, dt1);
+
+                        if (!_vals.week_date) {
+                            _vals.week_date = new Date();
+                        }
+
+                        // Строка из даты
+                        var curr_date = _vals.week_date.getDate();
+                        if (curr_date < 10) {
+                            curr_date = '0' + curr_date;
+                        }
+                        var curr_month = _vals.week_date.getMonth() + 1;
+                        if (curr_month < 10) {
+                            curr_month = '0' + curr_month;
+                        }
+                        var curr_year = _vals.week_date.getFullYear();
+                        var stringDate = curr_date + "." + curr_month + "." + curr_year;
+
+                        if (stringDate == this || (_vals.week_date - date1) >= 0) {
+                            _objs.$date_to.val(this);
+                            
+                            stop = 1;
+                            return;
+                        }
+                    });
 
                     _methods.preSearchDates();
 
@@ -2906,6 +2940,12 @@ var bgtSearchForm = function () {
                     else {
                         _objs.$discount_banner.hide();
                     }
+
+                    /*var date1 = $('.b-text.datepicker-from').datepicker().data('datepicker');
+                    console.log(_vals.dates);
+                    date1.update({
+                        startDate:   new Date(),
+                    });*/
                 },
                 error: function (xhr, status, errorThrown) {
                     console.log(status + '\n' + xhr.responseText);
@@ -3182,14 +3222,10 @@ var bgtSearchForm = function () {
         scrollToResult: function (force) {
             force = force || false;
             if (!_is_scrolled || force) {
-
-
-                $('body').animate({
-                    scrollTop: $('.results').offset().top
-                }, 1200);
-
-
-
+                console.log(_objs.$info);
+                $('html, body').animate({
+                    scrollTop: _objs.$info
+                }, 2000);
                 _is_scrolled = true;
             }
         },
@@ -3515,7 +3551,26 @@ var bgtSearchForm = function () {
 
             var urlImg = obj.residenses.hotel_image.replace(/(^\/\/.*)(\/i\/p\/)(.*)/ig,"$1/i/im/$3");
 
+            urlImg =  (urlImg === '') ? "/public/img/logo.png" : urlImg;
+
             var from = $(".chzn-container-single.departures span").text();
+
+            var starsHotel =  obj.residenses.star_name.replace(/\D+/g,"");
+
+            //stars
+            var starsHtml = '';
+            if (obj.residenses.star_name === "HV-1") {
+                starsHtml += '<div class="text">'+ obj.residenses.star_name + '</div>' ;
+            }else{
+                for (let i=0; i < 5 ;i++){
+                    starsHtml += (i < starsHotel) ? '<i class="yellow-stars fas fa-star"></i>' : '<i class="gray-stars fas fa-star"></i>';
+                }
+            }
+
+            // Дети
+            var kids = '';
+            kids = (obj.kids > 0 ) ? '<p><span>Детей: </span>' + obj.kids +'</p>' : '';
+
 
             return '' +
                 '<div class="offer-tour" offer_id="' + obj.offer_id + '">'
@@ -3532,12 +3587,15 @@ var bgtSearchForm = function () {
                 '<div class="night-tour"><span>Ночей: </span>' + obj.nights + '</div>'
                 +
                 '<div><span>Гостиница: </span><a class="hotel_name b-markdown gagarin" href="//hotels.sletat.ru/?id=' + obj.residenses.hotel_id + '" target="_blank">'
-                + obj.residenses.hotel_name + ' ' + obj.residenses.star_name + '</a></div>'
+                + obj.residenses.hotel_name + '</a></div>'
                 +
                 '<div class="nomer-razme"><span>Номер : </span>' + obj.residenses.o_room_name + '<i> '+ obj.residenses.ht_pl_description+'</i></div>'
                 +
                 '<div><span>Курорт: </span>' + obj.curort +'</div>'
                 +
+                '<div class="tour-peaple"><p><span>Взрослых: </span> ' + obj.adults +'</p>'+ kids +'</div>'
+                +
+
                 '</div>'
                 // '<td class="center">' + '<span class="surcharge" original-title="' + originalSurcharges + '">' + obj.surcharge.currency.symbol + ' ' + surcharges + '</span>' + '</td>' +
 
@@ -3546,12 +3604,16 @@ var bgtSearchForm = function () {
                 +
                 '<div class="mesta-tour">' + tickets + hotel_in_stop
                 +
-                '<span class="q"> <i class="fas fa-utensils"></i>'
+                '<span class="q"> <i class="fas fa-utensils"></i> '
                 +
                 obj.residenses.meal_const +'/'+
                 obj.meal_description
                 +
-                '</span></div>'
+                '</span>'
+                +
+                '<div class="tour-stars">'+starsHtml +'</div>'
+                +
+                '</div>'
                 +
                 '</div>'
                 +
@@ -3613,6 +3675,7 @@ var bgtSearchForm = function () {
         },
 
         showSearchEndInfo: function () {
+            console.log('here!!');
             $('.search_progress', _objs.$info).hide();
             $('.full', _objs.$info).show();
             $('.empty', _objs.$info).hide();
@@ -3754,6 +3817,7 @@ var bgtSearchForm = function () {
         },
 
         afterFillResultTable: function (data) {
+
             var all = data.additional.all;
             var length = data.data.length;
             var SID = data.additional.SID;
@@ -3762,13 +3826,14 @@ var bgtSearchForm = function () {
             if (_options.show_sid) {
                 _objs.$sid.text('SID: ' + SID);
             }
-
             // Если поиск не закончился, то продолжаем его
-            if (all != 1) {
+            if (all > 1) {
                 _methods.showSearchProcessInfo(SID);
+                console.log('all----');
             }
             // Поиск закончился
             else {
+                console.log('here!');
                 _methods.hideLoader();
                 _process_search = false;
                 _is_scrolled = false;
@@ -3977,7 +4042,7 @@ var bgtSearchForm = function () {
             _objs.$departures = $('select.departures', $wrapper);
             _objs.$destinations = $('select.destinations', $wrapper);
             _objs.$turoperators = $('select.turoperators', $wrapper);
-            _objs.$dates = $('.b-text.datepicker', $wrapper);
+            _objs.$dates = $('.b-text.datepicker-from', $wrapper);
             _objs.$date_from = $('.b-text.datepicker-from', $wrapper);
             _objs.$date_to = $('.b-text.datepicker-to', $wrapper);
 
@@ -3997,7 +4062,7 @@ var bgtSearchForm = function () {
             _objs.$hotel_types = $('input[name="hotel-type\[\]"]', $wrapper);
             _objs.$meal_types = $('input[name="meal-type\[\]"]', $wrapper);
             _objs.$child_ages = $('select[name="child_ages\[\]"]', $wrapper);
-            _objs.$child_ages_wr = $('.b-column.child_age .wrapper', $wrapper);
+            _objs.$child_ages_wr = $('.b-column.child_age .wrapper-search', $wrapper);
             _objs.$additional = $('.additional', $wrapper);
             _objs.$info = $('.info', $wrapper);
             _objs.$warning = $('.warning', $wrapper);
@@ -4238,6 +4303,12 @@ var bgtSearchForm = function () {
                     }
                 });
             });
+
+/*            $(".b-button>input[type='submit']").on('click',function(){
+                $("html,body").animate({scrollTop:$(".results").offset().top}, 400, 'swing', function() {
+                    console.log($(".results").offset().top);
+                });
+            });*/
 
         }
 

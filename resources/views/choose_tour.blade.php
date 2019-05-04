@@ -85,7 +85,7 @@
                                             <div class="b-column half">
                                                 <li class="dm_form_element date first date_from" style="margin-right: 20px;">
                                                     <label class="lebel-form">Вылет с:</label>
-                                                    <input style="float: left;" readonly="readonly" class="b-text small  datepicker-from" type="text" data-position="bottom left"  />
+                                                    <input style="float: left;" readonly="readonly" class="b-text small datepicker-start  datepicker-from" type="text" data-position="bottom left"  />
                                                 </li>
 
                                             </div>
@@ -94,7 +94,7 @@
                                             <div class="b-column half">
                                                 <li class="dm_form_element date first date_to" style="margin-right: 20px;">
                                                     <label class="lebel-form">по:</label>
-                                                    <input style="float: left;" readonly="readonly" class="b-text small  datepicker-to" type="text" data-position="bottom left"  />
+                                                    <input style="float: left;" readonly="readonly" class="b-text small datepicker-start  datepicker-to" type="text" data-position="bottom left"  />
                                                 </li>
                                             </div>
 
@@ -338,27 +338,20 @@
                                     </div>
                                 </div>
                             </form>
-
-                            <div class="info">
-                                <h1 class="caption">Найдено более</h1>
+                            <div class="info">  <h1 class="caption">Найдено более</h1>
                                 <hr/>
-
                                 <p class="full b-markdown gagarin">
                                     <span class='sid'></span>
-                                    <span class="notice notice_round">
-                Цены указаны с учетом
-                <span class="discount-text">максимальных скидок</span> за <span class="people">2-х взрослых</span>.
-                                                <span class="surcharge_added">Топливные и сервисные сборы включены.</span>
-                                                <span class="schengen" style="display: inline;">
-                    Туры можно приобрести при наличии действующей Шенгенской визы.<br>
-                    <span class="notice notice_round" style="display: inline;">
-                        Как оформить визу через сервисно-визовые центры <a href="news/273" target="_blank" style="font-weight: bold;">самостоятельно</a>?
-                    </span>
+                                    <span class="notice notice_round">Цены указаны с учетом</span>
+                                        <span class="discount-text">максимальных скидок</span> за <span class="people">2-х взрослых</span>.
+                                            <span class="surcharge_added">Топливные и сервисные сборы включены.
+                                                <span class="schengen" style="display: inline;">Туры можно приобрести при наличии действующей Шенгенской визы.<br>
+                                                    <span class="notice notice_round" style="display: inline;">Как оформить визу через сервисно-визовые центры <a href="news/273" target="_blank" style="font-weight: bold;">самостоятельно</a>?</span>
                                                 </span>
-                                                </span>
+                                            </span>
                                     <span class="notice notice_to" style="display: none;">
-                <span>Цены совпадают 1 в 1 с поисковиком туроператора!</span>
-                                                </span>
+                                         <span>Цены совпадают 1 в 1 с поисковиком туроператора!</span>
+                                    </span>
                                 </p>
 
                                 <p class="empty">
@@ -374,7 +367,7 @@
                                 <div>
                                     <div class="b-flash yellow">
                                         <div class="text">
-                                            <b><i>Внимание!</b></i> Показаны не все результаты поиска. Для получения полного результата повторите поисковый запрос позднее.
+                                            <b><i>Внимание!</i></b> Показаны не все результаты поиска. Для получения полного результата повторите поисковый запрос позднее.
                                             <div class="operators">
                                             </div>
                                         </div>

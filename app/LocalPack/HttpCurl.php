@@ -75,8 +75,10 @@ class HttpCurl
                 }elseif ($p === "hotelStars" && is_array($value )){
                     foreach ($value as $hotelStars)
                         $url .= 'hotelStars'.'%5B%5D='.$hotelStars.'&';
+                }elseif ($p === "child_ages" && is_array($value )){
+                    foreach ($value as $child_ages)
+                        $url .= 'child_ages'.'%5B%5D='.$child_ages.'&';
                 }else{
-
                     $url .= $p.'='.$value.'&';
                 }
 

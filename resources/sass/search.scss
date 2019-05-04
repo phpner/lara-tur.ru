@@ -363,7 +363,7 @@
 }
 
 .otour_search .counts li:first-child {
-    padding-right: 20%;
+    padding-right: 8px;
 }
 
 .otour_search .counts .wrapper-search,
@@ -392,13 +392,14 @@
 }
 
 .otour_search .child_age li {
-    width: 25%;
+    width: 96px;
+    text-align:center;
     display: inline-block;
 }
 
 .otour_search .child_age li.dm_form_element:nth-child(3),
 .otour_search .child_age li.dm_form_element:nth-child(4) {
-    padding-left: 12.5%;
+    padding-left: 15px;
 }
 
 .otour_search .nights .separate {
@@ -6022,6 +6023,7 @@ ul.format li {
 
 .b-column.half.child_age{
     display: none;
+    width: 100%!important;
 }
 
 .block-sec{
@@ -6038,7 +6040,7 @@ ul.format li {
 
 
 .img-tour img{
-    width: 200px;
+    width: 250px;
     height: 100%;
 }
 .results .offer-tour:nth-child(odd){
@@ -6153,7 +6155,7 @@ ul.format li {
 
 .obedy-tour .q i{
     color: #348b35;
-    margin-right: 5px;
+    margin-right: 13px;
     margin-left: 3px;
 }
 .info .caption{
@@ -6238,6 +6240,34 @@ ul.format li {
 }
 .date-tour span{
     font-weight: 800;
+}
+
+.mesta-tour .yellow-stars{
+    color: #ff9a34;
+    font-size: 25px!important;
+}
+.tour-stars{
+    text-align: center;
+}
+.mesta-tour .gray-stars{
+    color: #a3a0a0;
+    font-size: 25px!important;
+}
+.mesta-tour  .tour-stars .text{
+    text-align: center;
+    color: #ff9a34;
+    font-weight: bold;
+}
+ .tour-peaple{
+    display: flex;
+}
+
+ .tour-peaple p{
+    margin-right: 8px;
+}
+ .tour-peaple p span{
+    margin-right: 8px!important;
+    width: auto!important;
 }
 /*==========  Desktop First Method  ==========*/
 
